@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.exe.config
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.exe
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.pdb
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Form1.resources
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Properties.Resources.resources
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.GenerateResource.cache
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
+C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.NetCity.resources
