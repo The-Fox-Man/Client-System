@@ -10,19 +10,20 @@ using System.Windows.Forms;
 
 namespace FoxManPr
 {
-    public partial class NetCity : Form
+    public partial class login : Form
     {
-        public NetCity()
+        public login()
         {
             InitializeComponent();
         }
 
-        private void NetCity_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            Reg t = new Reg();
+            t.ShowDialog();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

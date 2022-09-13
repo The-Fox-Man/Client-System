@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace FoxManPr
 {
-    public partial class NetCity : Form
+    public partial class Teachers : Form
     {
-        public NetCity()
+        public Teachers()
         {
             InitializeComponent();
-        }
-
-        private void NetCity_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
