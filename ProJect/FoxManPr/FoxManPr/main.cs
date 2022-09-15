@@ -19,16 +19,7 @@ namespace FoxManPr
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*if (pan.Size.Height > 100)
-            {
-                pan.Size = new Size(pan.Size.Width, filtr.Location.Y + filtr.Size.Height);
-            }
-            else if (pan.Size.Height < 50)
-            {
-              pan.Size = new Size(pan.Size.Width, 140);
-            }*/
-            NetCity wha = new NetCity();
-            wha.ShowDialog();
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -48,8 +39,7 @@ namespace FoxManPr
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Teachers t = new Teachers();
-            t.ShowDialog();
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -68,6 +58,36 @@ namespace FoxManPr
         {
             Base t = new Base();
             t.ShowDialog();
+        }
+
+        private void filtr_Click(object sender, EventArgs e)
+        {
+             /*if (pan.Size.Height > 100)
+            {
+                pan.Size = new Size(pan.Size.Width, filtr.Location.Y + filtr.Size.Height);
+            }
+            else if (pan.Size.Height < 50)
+            {
+              pan.Size = new Size(pan.Size.Width, 140);
+            }*/
+            NetCity wha = new NetCity();
+            wha.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void teachers_Click(object sender, EventArgs e)
+        {
+             Teachers t = new Teachers();
+             t.ShowDialog();
         }
     }
 }
