@@ -7,14 +7,44 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.IO;
 namespace FoxManPr
 {
+    public struct people
+    {
+        public string name;
+        public string surname;
+        public string type;
+        public Label lbl;
+
+        public people(string _name, string _surname, string _type)
+        {
+            name = _name;
+            surname = _surname;
+            type = _type;
+            lbl = new Label();
+        }
+    }
+
     public partial class main : Form
     {
+        public static List<people> human = new List<people>();
         public main()
         {
             InitializeComponent();
+
+            string[] lines = File.ReadAllLines("../../txt/users.txt");
+
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
+                people peopl = new people(parts[0], parts[1], parts[2]);
+                human.Add(peopl);
+            }
+            //        foreach (people p in human)
+            //      {
+            //        p.lbl.Location = new Point();
+            //  } //я сделал с людями это а надо делать с предметами и распсисанием
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -88,6 +118,11 @@ namespace FoxManPr
         {
              Teachers t = new Teachers();
              t.ShowDialog();
+        }
+
+        private void main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

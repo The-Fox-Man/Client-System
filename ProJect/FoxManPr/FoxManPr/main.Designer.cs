@@ -159,6 +159,7 @@
             this.Controls.Add(this.menu);
             this.Controls.Add(this.pan);
             this.Name = "main";
+            this.Load += new System.EventHandler(this.main_Load);
             this.pan.ResumeLayout(false);
             this.pan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
