@@ -14,3 +14,18 @@ C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr
 C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Reg.resources
 C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Teachers.resources
 C:\Users\user\Desktop\ProjectFoxGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Base.resources
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.exe.config
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.exe
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.pdb
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.AssemblyReference.cache
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Base.resources
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.login.resources
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.main.resources
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Properties.Resources.resources
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.NetCity.resources
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Reg.resources
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Teachers.resources
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.GenerateResource.cache
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.CoreCompileInputs.cache
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
+D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
