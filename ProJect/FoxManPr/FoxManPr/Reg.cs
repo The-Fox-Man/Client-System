@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace FoxManPr
 {
@@ -29,15 +30,16 @@ namespace FoxManPr
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(one.Text == "" || two.Text == "" || three.Text == "" || four.Text == "")
+            if(one.Text == "" || two.Text == "" || three.Text == "" || four.Text == "" || five.Text == "")
             {
                 MessageBox.Show("Fuck you");      
             }
             else
             {
+                File.AppendAllText("../../txt/users.txt", Environment.NewLine + one.Text + ", " + two.Text + ", "
+                                       + five.Text + ", " + four.Text + ", " + three.Text);
                 MessageBox.Show("Yeee");
-                Reg g = new Reg();
-                g.Close();
+                Close();
             }
         }
     }

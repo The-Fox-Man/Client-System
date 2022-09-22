@@ -29,3 +29,4 @@ D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\F
 D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.CoreCompileInputs.cache
 D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
 D:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.NetCityTeachrers.resources

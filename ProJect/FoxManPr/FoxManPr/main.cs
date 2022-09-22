@@ -74,8 +74,27 @@ namespace FoxManPr
 
         private void button5_Click(object sender, EventArgs e)
         {
-            login t = new login();
-            t.ShowDialog();
+            if (login.nameForm == "")
+            {
+                login t = new login();
+                t.ShowDialog();
+                button5.Text = "Войти";
+            }
+            else
+            {
+                login.nameForm = "";
+                login.surnForm = "";
+                login.postForm = "";
+                login.typeForm = "";
+                button5.Text = "Выйти";
+            }
+            if (login.nameForm == "")
+            {
+                loginlbl.Text = "Вы не вошли.";
+                button5.Text = "Войти";
+            }
+            else { loginlbl.Text = login.nameForm + " " + login.surnForm;   button5.Text = "Выйти";}
+          
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -92,16 +111,29 @@ namespace FoxManPr
 
         private void filtr_Click(object sender, EventArgs e)
         {
-             /*if (pan.Size.Height > 100)
+            /*if (pan.Size.Height > 100)
+           {
+               pan.Size = new Size(pan.Size.Width, filtr.Location.Y + filtr.Size.Height);
+           }
+           else if (pan.Size.Height < 50)
+           {
+             pan.Size = new Size(pan.Size.Width, 140);
+           }*/
+            if (login.typeForm == "Ученик")
             {
-                pan.Size = new Size(pan.Size.Width, filtr.Location.Y + filtr.Size.Height);
+                NetCity wha = new NetCity();
+                wha.ShowDialog();
+                
             }
-            else if (pan.Size.Height < 50)
+            else if (login.typeForm == "Учитель")
             {
-              pan.Size = new Size(pan.Size.Width, 140);
-            }*/
-            NetCity wha = new NetCity();
-            wha.ShowDialog();
+                NetCityTeachrers wha = new NetCityTeachrers();
+                wha.ShowDialog();
+            }
+            else if(login.typeForm == "")
+            {
+                MessageBox.Show("Сначала войдите.", "Программа");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -121,6 +153,11 @@ namespace FoxManPr
         }
 
         private void main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

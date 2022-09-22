@@ -15,6 +15,7 @@ namespace FoxManPr
         public NetCity()
         {
             InitializeComponent();
+            user.Text = login.nameForm + login.surnForm;
         }
 
         private void NetCity_Load(object sender, EventArgs e)
@@ -38,6 +39,11 @@ namespace FoxManPr
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void user_Click(object sender, EventArgs e)
         {
 
         }

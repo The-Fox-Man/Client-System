@@ -35,18 +35,18 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.loginlbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pic = new System.Windows.Forms.PictureBox();
             this.teachers = new System.Windows.Forms.Button();
             this.about = new System.Windows.Forms.Button();
             this.spravk = new System.Windows.Forms.Button();
             this.sgo = new System.Windows.Forms.Button();
             this.menu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pic = new System.Windows.Forms.PictureBox();
             this.pan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
             // pan
@@ -57,7 +57,7 @@
             this.pan.Controls.Add(this.button7);
             this.pan.Controls.Add(this.button6);
             this.pan.Controls.Add(this.button5);
-            this.pan.Controls.Add(this.label2);
+            this.pan.Controls.Add(this.loginlbl);
             this.pan.Controls.Add(this.label1);
             this.pan.Controls.Add(this.pic);
             this.pan.Name = "pan";
@@ -97,22 +97,16 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // label2
+            // loginlbl
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.loginlbl, "loginlbl");
+            this.loginlbl.Name = "loginlbl";
+            this.loginlbl.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            // 
-            // pic
-            // 
-            resources.ApplyResources(this.pic, "pic");
-            this.pic.Image = global::FoxManPr.Properties.Resources.gymn13;
-            this.pic.Name = "pic";
-            this.pic.TabStop = false;
             // 
             // teachers
             // 
@@ -166,6 +160,13 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // pic
+            // 
+            resources.ApplyResources(this.pic, "pic");
+            this.pic.Image = global::FoxManPr.Properties.Resources.gymn13;
+            this.pic.Name = "pic";
+            this.pic.TabStop = false;
+            // 
             // main
             // 
             resources.ApplyResources(this, "$this");
@@ -177,8 +178,8 @@
             this.Load += new System.EventHandler(this.main_Load);
             this.pan.ResumeLayout(false);
             this.pan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             this.menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -191,7 +192,7 @@
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label loginlbl;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button teachers;
         private System.Windows.Forms.Button about;
