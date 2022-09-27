@@ -18,12 +18,14 @@ namespace FoxManPr
         public static string type = ""; 
         public static string pass = "";
         public static string post = "";
+        public static string clas = "";
 
 
         public static string nameForm = "";
         public static string surnForm = "";
         public static string postForm = "";
         public static string typeForm = "";
+        public static string clasForm = "";
         public login()
         {
             InitializeComponent();
@@ -51,6 +53,7 @@ namespace FoxManPr
                 type = word[2];
                 pass = word[3];
                 post = word[4];
+                clas = word[5];
 
                 if (t1.Text == name && t2.Text == pass || t1.Text == post && t2.Text == pass)
                 {
@@ -58,6 +61,7 @@ namespace FoxManPr
                     surnForm = surn;
                     postForm = post;
                     typeForm = type;
+                    clasForm = clas;
                     MessageBox.Show("ВЫ успешно вошли!", "Программа");
                 }
                 else { MessageBox.Show("Неверный адрес почты или пароль. Или поля пустые. Внимательно посмотрите, не содержат ли поля лишних пробелов или символов. Либо ВЫ не зарегестрированы.", "Программа"); }

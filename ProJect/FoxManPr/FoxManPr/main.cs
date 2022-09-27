@@ -12,17 +12,29 @@ namespace FoxManPr
 {
     public struct people
     {
-        public string name;
-        public string surname;
-        public string type;
-        public Label lbl;
-
-        public people(string _name, string _surname, string _type)
+        public string cl;
+        public string numb;
+        public string day;
+        public string one;
+        public string two;
+        public string three;
+        public string four;
+        public string five;
+        public string six;
+        public string seven;
+        public people(string _cl, string _numb, string _day, string _1les, string _2les,
+                      string _3les, string _4les, string _5les, string _6les, string _7les)
         {
-            name = _name;
-            surname = _surname;
-            type = _type;
-            lbl = new Label();
+            cl = _cl;
+            numb = _numb;
+            day = _day;
+            one = _1les;
+            two = _2les;
+            three = _3les;
+            four = _4les;
+            five = _5les;
+            six = _6les;
+            seven = _7les;
         }
     }
 
@@ -33,14 +45,14 @@ namespace FoxManPr
         {
             InitializeComponent();
 
-            string[] lines = File.ReadAllLines("../../txt/users.txt");
+            string[] lines = File.ReadAllLines("../../txt/subjects.txt");
 
-            foreach (string line in lines)
+           /*  foreach (string line in lines)
             {
-                string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
+               string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
                 people peopl = new people(parts[0], parts[1], parts[2]);
-                human.Add(peopl);
-            }
+                human.Add(peopl)
+            };*/
             //        foreach (people p in human)
             //      {
             //        p.lbl.Location = new Point();
