@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+using MySql.Data;
+using MySql.Data.MySqlClient;
+using System.Data.Common;
+
 namespace FoxManPr
 {
     public partial class login : Form
@@ -26,6 +30,8 @@ namespace FoxManPr
         public static string postForm = "";
         public static string typeForm = "";
         public static string clasForm = "";
+
+        const string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
         public login()
         {
             InitializeComponent();
@@ -44,7 +50,22 @@ namespace FoxManPr
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string[] li = File.ReadAllLines("../../txt/users.txt");
+            MySqlConnection con = new MySqlConnection(connect);
+            con.Open();
+                MySqlCommand com = new MySqlCommand("SELECT name, surn, type, pass, post, clas FROM users", con);
+                DbDataReader reader = com.ExecuteReader();
+                while(reader.Read())
+                {
+                   name = reader.GetValue(0).ToString();  
+                   surn = reader.GetValue(1).ToString();  
+                   type = reader.GetValue(2).ToString(); 
+                   pass = reader.GetValue(3).ToString();  
+                   post = reader.GetValue(4).ToString(); 
+                   clas = reader.GetValue(5).ToString();
+                }
+            reader.Close();
+            con.Close();
+           /*string[] li = File.ReadAllLines("../../txt/users.txt");
             foreach (string objects in li)
             {
                 string[] word = objects.Split(new string[] { ", " }, StringSplitOptions.None);
@@ -53,7 +74,7 @@ namespace FoxManPr
                 type = word[2];
                 pass = word[3];
                 post = word[4];
-                clas = word[5];
+                clas = word[5];*/
 
                 if (t1.Text == name && t2.Text == pass || t1.Text == post && t2.Text == pass)
                 {
@@ -65,7 +86,7 @@ namespace FoxManPr
                     MessageBox.Show("ВЫ успешно вошли!", "Программа");
                 }
                 else { MessageBox.Show("Неверный адрес почты или пароль. Или поля пустые. Внимательно посмотрите, не содержат ли поля лишних пробелов или символов. Либо ВЫ не зарегестрированы.", "Программа"); }
-            }
+            //}
 
             Close();
         }

@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+using System.Data.Common;
 
 namespace FoxManPr
 {
     public partial class NetCity : Form
     {
-       /* public static string mon1sub;
+        /*public static string mon1sub;
         public static string mon2sub;
         public static string mon3sub;
         public static string mon4sub;
@@ -60,86 +63,117 @@ namespace FoxManPr
         public static string sat5sub;
         public static string sat6sub;
         public static string sat7sub;*/
-
-        public static string days;
         public static string clase;
+        public static string date;
+        public static string days;
+        public static string fst;
+        public static string scd;
+        public static string thd;
+        public static string frt;
+        public static string fif;
+        public static string six;
+        public static string svn;
+
+
+
+
+        const string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
         public NetCity()
         {
             InitializeComponent();
             user.Text = login.nameForm + login.surnForm;
 
-            string[] lines = File.ReadAllLines("../../txt/subjects.txt");
+            /* string[] lines = File.ReadAllLines("../../txt/subjects.txt");
 
-            foreach (string line in lines)
-            {
-                string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
-                /*   people peopl = new people(parts[0], parts[1], parts[2], parts[3], parts[4],
-                                             parts[5], parts[6], parts[7], parts[8], parts[9]);*/
-                clase = parts[0];
-                days = parts[2];
+             foreach (string line in lines)
+             {
+                 string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
+                 /*   people peopl = new people(parts[0], parts[1], parts[2], parts[3], parts[4],
+                                                  parts[5], parts[6], parts[7], parts[8], parts[9]);*/
+                MySqlConnection con = new MySqlConnection(connect);
+                con.Open();
+                MySqlCommand com = new MySqlCommand("SELECT clas, date, day, 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects", con);
+                DbDataReader reader = com.ExecuteReader();
+                while (reader.Read())
+                {
+                    clase = reader.GetValue(0).ToString();
+                    date = reader.GetValue(1).ToString();
+                    days = reader.GetValue(2).ToString();
+                    fst = reader.GetValue(3).ToString();
+                    scd = reader.GetValue(4).ToString();
+                    thd = reader.GetValue(5).ToString();
+                    frt = reader.GetValue(6).ToString();
+                    fif = reader.GetValue(7).ToString();
+                    six = reader.GetValue(8).ToString();
+                    svn = reader.GetValue(9).ToString();
+                }
+                reader.Close();
+                con.Close();
+               //   clase = parts[0];
+                 // days = parts[2];
 
                 if(clase == login.clasForm)
                 {
-                    if(parts[2] == "пн")
+                    if(days == "пн")
                     {
-                        t1str1st1.Text = parts[3];
-                        t1str2st1.Text = parts[4];
-                        t1str3st1.Text = parts[5];
-                        t1str4st1.Text = parts[6];
-                        t1str5st1.Text = parts[7];
-                        t1str6st1.Text = parts[8];
-                        t1str7st1.Text = parts[9];
+                        t1str1st1.Text = fst;
+                        t1str2st1.Text = scd;
+                        t1str3st1.Text = thd;
+                        t1str4st1.Text = frt;
+                        t1str5st1.Text = fif;
+                        t1str6st1.Text = six;
+                        t1str7st1.Text = svn;
                     }
 
-                if(parts[2] == "вт")
+                if(days == "вт")
                     {
-                        tuesb1.Text = parts[3];
-                        tuesb2.Text = parts[4];
-                        tuesb3.Text = parts[5];
-                        tuesb4.Text = parts[6];
-                        tuesb5.Text = parts[7];
-                        tuesb6.Text = parts[8];
-                        tuesb7.Text = parts[9];
+                        tuesb1.Text = fst;
+                        tuesb2.Text = scd;
+                        tuesb3.Text = thd;
+                        tuesb4.Text = frt;
+                        tuesb5.Text = fif;
+                        tuesb6.Text = six;
+                        tuesb7.Text = svn;
                     }
-                if(parts[2] == "ср")
+                if(days == "ср")
                     {
-                        wensb1.Text = parts[3];
-                        wensb2.Text = parts[4];
-                        wensb3.Text = parts[5];
-                        wensb4.Text = parts[6];
-                        wensb5.Text = parts[7];
-                        wensb6.Text = parts[8];
-                        wensb7.Text = parts[9];
+                        wensb1.Text = fst;
+                        wensb2.Text = scd;
+                        wensb3.Text = thd;
+                        wensb4.Text = frt;
+                        wensb5.Text = fif;
+                        wensb6.Text = six;
+                        wensb7.Text = svn;
                     }
-                if(parts[2] == "чт")
+                if(days == "чт")
                     {
-                        thrsb1.Text = parts[3];
-                        thrsb2.Text = parts[4];
-                        thrsb3.Text = parts[5];
-                        thrsb4.Text = parts[6];
-                        thrsb5.Text = parts[7];
-                        thrsb6.Text = parts[8];
-                        thrsb7.Text = parts[9];
+                        thrsb1.Text = fst;
+                        thrsb2.Text = scd;
+                        thrsb3.Text = thd;
+                        thrsb4.Text = frt;
+                        thrsb5.Text = fif;
+                        thrsb6.Text = six;
+                        thrsb7.Text = svn;
                     }
-                if(parts[2] == "пт")
+                if(days == "пт")
                     {
-                        frisb1.Text = parts[3];
-                        frisb2.Text = parts[4];
-                        frisb3.Text = parts[5];
-                        frisb4.Text = parts[6];
-                        frisb5.Text = parts[7];
-                        frisb6.Text = parts[8];
-                        frisb7.Text = parts[9];
+                        frisb1.Text = fst;
+                        frisb2.Text = scd;
+                        frisb3.Text = thd;
+                        frisb4.Text = frt;
+                        frisb5.Text = fif;
+                        frisb6.Text = six;
+                        frisb7.Text = svn;
                     }
-                if(parts[2] == "сб")
+                if(days == "сб")
                     {
-                        satsb1.Text = parts[3];
-                        satsb2.Text = parts[4];
-                        satsb3.Text = parts[5];
-                        satsb4.Text = parts[6];
-                        satsb5.Text = parts[7];
-                        satsb6.Text = parts[8];
-                        satsb7.Text = parts[9];
+                        satsb1.Text = fst;
+                        satsb2.Text = scd;
+                        satsb3.Text = thd;
+                        satsb4.Text = frt;
+                        satsb5.Text = fif;
+                        satsb6.Text = six;
+                        satsb7.Text = svn;
                     }
                 }
                // if(day = )
@@ -148,7 +182,7 @@ namespace FoxManPr
                 {
                   //  tbl1.t1str1str2 сделать не листом а переменнными и присваивать значение каждой ячейке
                 }*/
-            }
+            //}
         }
         private void NetCity_Load(object sender, EventArgs e)
         {
