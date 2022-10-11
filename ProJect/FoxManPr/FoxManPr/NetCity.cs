@@ -15,54 +15,7 @@ using System.Data.Common;
 namespace FoxManPr
 {
     public partial class NetCity : Form
-    {
-        /*public static string mon1sub;
-        public static string mon2sub;
-        public static string mon3sub;
-        public static string mon4sub;
-        public static string mon5sub;
-        public static string mon6sub;
-        public static string mon7sub;
-
-        public static string tue1sub;
-        public static string tue2sub;
-        public static string tue3sub;
-        public static string tue4sub;
-        public static string tue5sub;
-        public static string tue6sub;
-        public static string tue7sub;
-
-        public static string wen1sub;
-        public static string wen2sub;
-        public static string wen3sub;
-        public static string wen4sub;
-        public static string wen5sub;
-        public static string wen6sub;
-        public static string wen7sub;
-
-        public static string thr1sub;
-        public static string thr2sub;
-        public static string thr3sub;
-        public static string thr4sub;
-        public static string thr5sub;
-        public static string thr6sub;
-        public static string thr7sub;
-
-        public static string fri1sub;
-        public static string fri2sub;
-        public static string fri3sub;
-        public static string fri4sub;
-        public static string fri5sub;
-        public static string fri6sub;
-        public static string fri7sub;
-
-        public static string sat1sub;
-        public static string sat2sub;
-        public static string sat3sub;
-        public static string sat4sub;
-        public static string sat5sub;
-        public static string sat6sub;
-        public static string sat7sub;*/
+    { 
         public static string clase;
         public static string date;
         public static string days;
@@ -74,41 +27,73 @@ namespace FoxManPr
         public static string six;
         public static string svn;
 
-
+       
 
 
         const string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
+
+        public static List<string> MySelect(string cmd)
+        {
+            List<string> list = new List<string>();
+            MySqlCommand cm = new MySqlCommand(cmd, Program.con);
+         //    com = new MySqlCommand("SELECT clas, date, day, 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects", con);
+            DbDataReader reader = cm.ExecuteReader();
+            while(reader.Read())
+            {
+                for(int i = 0; i<reader.FieldCount;i++)
+                {
+                    list.Add(reader.GetValue(i).ToString());
+                }
+            }
+            reader.Close();
+
+            return list;
+        }
         public NetCity()
         {
             InitializeComponent();
             user.Text = login.nameForm + login.surnForm;
 
-            /* string[] lines = File.ReadAllLines("../../txt/subjects.txt");
+            List<string> subject = MySelect("SELECT clas, date, day, 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");//jhujyuj
 
-             foreach (string line in lines)
-             {
-                 string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
-                 /*   people peopl = new people(parts[0], parts[1], parts[2], parts[3], parts[4],
-                                                  parts[5], parts[6], parts[7], parts[8], parts[9]);*/
-                MySqlConnection con = new MySqlConnection(connect);
-                con.Open();
-                MySqlCommand com = new MySqlCommand("SELECT clas, date, day, 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects", con);
-                DbDataReader reader = com.ExecuteReader();
-                while (reader.Read())
+            List<string> sub = new List<string>();
+
+            for(int i = 0; i < tbl1.RowCount; i++)
+            {
+                sub.Add("Ро" + i);// do the mysql cnnect
+            }
+            for (int i = 0; i < tbl1.RowCount; i++)
+            {
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = sub[i];
+                tbl1.Controls.Add(lbl, 1, i);
+            }
+            //if(mon){lbl[0].Text = subject[0]} !!!!!!
+                
+                 
+              /*  while (reader.Read())
                 {
+                /*for(int i=0; i<reader.FieldCount;i++)
+                {
+                    sub.Add(reader.GetValue(i).ToString());
+                }
+                    sub.Add(reader.GetValue(0).ToString());
                     clase = reader.GetValue(0).ToString();
                     date = reader.GetValue(1).ToString();
                     days = reader.GetValue(2).ToString();
-                    fst = reader.GetValue(3).ToString();
+                  fst = reader.GetValue(3).ToString();
                     scd = reader.GetValue(4).ToString();
                     thd = reader.GetValue(5).ToString();
                     frt = reader.GetValue(6).ToString();
                     fif = reader.GetValue(7).ToString();
                     six = reader.GetValue(8).ToString();
                     svn = reader.GetValue(9).ToString();
-                }
-                reader.Close();
-                con.Close();
+                
+              
+         
                //   clase = parts[0];
                  // days = parts[2];
 
@@ -116,72 +101,75 @@ namespace FoxManPr
                 {
                     if(days == "пн")
                     {
-                        t1str1st1.Text = fst;
-                        t1str2st1.Text = scd;
-                        t1str3st1.Text = thd;
-                        t1str4st1.Text = frt;
-                        t1str5st1.Text = fif;
-                        t1str6st1.Text = six;
-                        t1str7st1.Text = svn;
+                        t1str1st1.Text = reader.GetValue(0).ToString();
+                        t1str2st1.Text = reader.GetValue(1).ToString();
+                        t1str3st1.Text = reader.GetValue(2).ToString();
+                        t1str4st1.Text = reader.GetValue(3).ToString();
+                        t1str5st1.Text = reader.GetValue(4).ToString();
+                        t1str6st1.Text = reader.GetValue(5).ToString();
+                        t1str7st1.Text = reader.GetValue(6).ToString();
                     }
 
                 if(days == "вт")
                     {
-                        tuesb1.Text = fst;
-                        tuesb2.Text = scd;
-                        tuesb3.Text = thd;
-                        tuesb4.Text = frt;
-                        tuesb5.Text = fif;
-                        tuesb6.Text = six;
-                        tuesb7.Text = svn;
+                        tuesb1.Text = reader.GetValue(0).ToString();
+                        tuesb2.Text = reader.GetValue(1).ToString();
+                        tuesb3.Text = reader.GetValue(2).ToString();
+                        tuesb4.Text = reader.GetValue(3).ToString();
+                        tuesb5.Text = reader.GetValue(4).ToString();
+                        tuesb6.Text = reader.GetValue(5).ToString();
+                        tuesb7.Text = reader.GetValue(6).ToString();
                     }
                 if(days == "ср")
                     {
-                        wensb1.Text = fst;
-                        wensb2.Text = scd;
-                        wensb3.Text = thd;
-                        wensb4.Text = frt;
-                        wensb5.Text = fif;
-                        wensb6.Text = six;
-                        wensb7.Text = svn;
+                        wensb1.Text = reader.GetValue(0).ToString();
+                        wensb2.Text = reader.GetValue(1).ToString();
+                        wensb3.Text = reader.GetValue(2).ToString();
+                        wensb4.Text = reader.GetValue(3).ToString();
+                        wensb5.Text = reader.GetValue(4).ToString();
+                        wensb6.Text = reader.GetValue(5).ToString();
+                        wensb7.Text = reader.GetValue(6).ToString();
                     }
                 if(days == "чт")
                     {
-                        thrsb1.Text = fst;
-                        thrsb2.Text = scd;
-                        thrsb3.Text = thd;
-                        thrsb4.Text = frt;
-                        thrsb5.Text = fif;
-                        thrsb6.Text = six;
-                        thrsb7.Text = svn;
+                        thrsb1.Text = reader.GetValue(0).ToString();
+                        thrsb2.Text = reader.GetValue(1).ToString();
+                        thrsb3.Text = reader.GetValue(2).ToString();
+                        thrsb4.Text = reader.GetValue(3).ToString();
+                        thrsb5.Text = reader.GetValue(4).ToString();
+                        thrsb6.Text = reader.GetValue(5).ToString();
+                        thrsb7.Text = reader.GetValue(6).ToString();
                     }
                 if(days == "пт")
                     {
-                        frisb1.Text = fst;
-                        frisb2.Text = scd;
-                        frisb3.Text = thd;
-                        frisb4.Text = frt;
-                        frisb5.Text = fif;
-                        frisb6.Text = six;
-                        frisb7.Text = svn;
+                        frisb1.Text = reader.GetValue(0).ToString();
+                        frisb2.Text = reader.GetValue(1).ToString();
+                        frisb3.Text = reader.GetValue(2).ToString();
+                        frisb4.Text = reader.GetValue(3).ToString();
+                        frisb5.Text = reader.GetValue(4).ToString();
+                        frisb6.Text = reader.GetValue(5).ToString();
+                        frisb7.Text = reader.GetValue(6).ToString();
                     }
                 if(days == "сб")
                     {
-                        satsb1.Text = fst;
-                        satsb2.Text = scd;
-                        satsb3.Text = thd;
-                        satsb4.Text = frt;
-                        satsb5.Text = fif;
-                        satsb6.Text = six;
-                        satsb7.Text = svn;
+                        satsb1.Text = reader.GetValue(0).ToString();
+                        satsb2.Text = reader.GetValue(1).ToString();
+                        satsb3.Text = reader.GetValue(2).ToString();
+                        satsb4.Text = reader.GetValue(3).ToString();
+                        satsb5.Text = reader.GetValue(4).ToString();
+                        satsb6.Text = reader.GetValue(5).ToString();
+                        satsb7.Text = reader.GetValue(6).ToString();
                     }
                 }
-               // if(day = )
-                /*
-                if(login.clas == parts[0] && day.Text == parts[2])
-                {
-                  //  tbl1.t1str1str2 сделать не листом а переменнными и присваивать значение каждой ячейке
-                }*/
+            }
+            reader.Close();
+            con.Close();*/
+            // if(day = )
+            /*
+            if(login.clas == parts[0] && day.Text == parts[2])
+            {
+              //  tbl1.t1str1str2 сделать не листом а переменнными и присваивать значение каждой ячейке
+            }*/
             //}
         }
         private void NetCity_Load(object sender, EventArgs e)

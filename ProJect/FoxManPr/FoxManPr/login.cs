@@ -56,6 +56,7 @@ namespace FoxManPr
                 DbDataReader reader = com.ExecuteReader();
                 while(reader.Read())
                 {
+
                    name = reader.GetValue(0).ToString();  
                    surn = reader.GetValue(1).ToString();  
                    type = reader.GetValue(2).ToString(); 
@@ -63,8 +64,7 @@ namespace FoxManPr
                    post = reader.GetValue(4).ToString(); 
                    clas = reader.GetValue(5).ToString();
                 }
-            reader.Close();
-            con.Close();
+            
            /*string[] li = File.ReadAllLines("../../txt/users.txt");
             foreach (string objects in li)
             {
@@ -87,7 +87,8 @@ namespace FoxManPr
                 }
                 else { MessageBox.Show("Неверный адрес почты или пароль. Или поля пустые. Внимательно посмотрите, не содержат ли поля лишних пробелов или символов. Либо ВЫ не зарегестрированы.", "Программа"); }
             //}
-
+            reader.Close();
+            con.Close();
             Close();
         }
     }
