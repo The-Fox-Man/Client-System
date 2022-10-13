@@ -36,7 +36,6 @@ namespace FoxManPr
         {
             List<string> list = new List<string>();
             MySqlCommand cm = new MySqlCommand(cmd, Program.con);
-         //    com = new MySqlCommand("SELECT clas, date, day, 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects", con);
             DbDataReader reader = cm.ExecuteReader();
             while(reader.Read())
             {
@@ -54,123 +53,79 @@ namespace FoxManPr
             InitializeComponent();
             user.Text = login.nameForm + login.surnForm;
 
-            List<string> subject = MySelect("SELECT clas, date, day, 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");//jhujyuj
+            List<string> subject = MySelect("SELECT clas, date, day, 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");
 
             List<string> sub = new List<string>();
 
-            for(int i = 0; i < tbl1.RowCount; i++)
-            {
-                sub.Add("Ро" + i);// do the mysql cnnect
-            }
             for (int i = 0; i < tbl1.RowCount; i++)
             {
                 Label lbl = new Label();
                 lbl.Dock = DockStyle.Fill;
                 lbl.Location = new Point(3, 0);
                 lbl.Size = new Size(32, 32);
-                lbl.Text = sub[i];
+                lbl.Text = subject[i];
                 tbl1.Controls.Add(lbl, 1, i);
             }
-            //if(mon){lbl[0].Text = subject[0]} !!!!!!
-                
-                 
-              /*  while (reader.Read())
+
+            for (int i = 10; i < tbl2.RowCount; i++)
+            {
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = subject[i];
+                tbl2.Controls.Add(lbl, 1, i-10);
+            }
+/*
+            if (subject[0] == login.clasForm)
+            {
+                if (subject[2] == "пн")
                 {
-                /*for(int i=0; i<reader.FieldCount;i++)
-                {
-                    sub.Add(reader.GetValue(i).ToString());
+                    for (int i = 0; i < tbl1.RowCount; i++)
+                    {
+                        sub.Add(subject[3]);
+                        sub.Add(subject[4]);
+                        sub.Add(subject[5]);
+                        sub.Add(subject[6]);
+                        sub.Add(subject[7]);
+                        sub.Add(subject[8]);
+                        sub.Add(subject[9]);
+                    }
+                    for (int i = 0; i < tbl1.RowCount; i++)
+                    {
+                        Label lbl = new Label();
+                        lbl.Dock = DockStyle.Fill;
+                        lbl.Location = new Point(3, 0);
+                        lbl.Size = new Size(32, 32);
+                        lbl.Text = sub[i];
+                        tbl1.Controls.Add(lbl, 1, i);
+                    }
                 }
-                    sub.Add(reader.GetValue(0).ToString());
-                    clase = reader.GetValue(0).ToString();
-                    date = reader.GetValue(1).ToString();
-                    days = reader.GetValue(2).ToString();
-                  fst = reader.GetValue(3).ToString();
-                    scd = reader.GetValue(4).ToString();
-                    thd = reader.GetValue(5).ToString();
-                    frt = reader.GetValue(6).ToString();
-                    fif = reader.GetValue(7).ToString();
-                    six = reader.GetValue(8).ToString();
-                    svn = reader.GetValue(9).ToString();
-                
-              
-         
-               //   clase = parts[0];
-                 // days = parts[2];
-
-                if(clase == login.clasForm)
+                //if (subject[2] == "ср")
                 {
-                    if(days == "пн")
+                    for (int i = 10; i < tbl2.RowCount; i++)
                     {
-                        t1str1st1.Text = reader.GetValue(0).ToString();
-                        t1str2st1.Text = reader.GetValue(1).ToString();
-                        t1str3st1.Text = reader.GetValue(2).ToString();
-                        t1str4st1.Text = reader.GetValue(3).ToString();
-                        t1str5st1.Text = reader.GetValue(4).ToString();
-                        t1str6st1.Text = reader.GetValue(5).ToString();
-                        t1str7st1.Text = reader.GetValue(6).ToString();
+                        sub.Add(subject[3]);
+                        sub.Add(subject[4]);
+                        sub.Add(subject[5]);
+                        sub.Add(subject[6]);
+                        sub.Add(subject[7]);
+                        sub.Add(subject[8]);
+                        sub.Add(subject[9]);
                     }
-
-                if(days == "вт")
+                    for (int i = 0; i < tbl2.RowCount; i++)
                     {
-                        tuesb1.Text = reader.GetValue(0).ToString();
-                        tuesb2.Text = reader.GetValue(1).ToString();
-                        tuesb3.Text = reader.GetValue(2).ToString();
-                        tuesb4.Text = reader.GetValue(3).ToString();
-                        tuesb5.Text = reader.GetValue(4).ToString();
-                        tuesb6.Text = reader.GetValue(5).ToString();
-                        tuesb7.Text = reader.GetValue(6).ToString();
-                    }
-                if(days == "ср")
-                    {
-                        wensb1.Text = reader.GetValue(0).ToString();
-                        wensb2.Text = reader.GetValue(1).ToString();
-                        wensb3.Text = reader.GetValue(2).ToString();
-                        wensb4.Text = reader.GetValue(3).ToString();
-                        wensb5.Text = reader.GetValue(4).ToString();
-                        wensb6.Text = reader.GetValue(5).ToString();
-                        wensb7.Text = reader.GetValue(6).ToString();
-                    }
-                if(days == "чт")
-                    {
-                        thrsb1.Text = reader.GetValue(0).ToString();
-                        thrsb2.Text = reader.GetValue(1).ToString();
-                        thrsb3.Text = reader.GetValue(2).ToString();
-                        thrsb4.Text = reader.GetValue(3).ToString();
-                        thrsb5.Text = reader.GetValue(4).ToString();
-                        thrsb6.Text = reader.GetValue(5).ToString();
-                        thrsb7.Text = reader.GetValue(6).ToString();
-                    }
-                if(days == "пт")
-                    {
-                        frisb1.Text = reader.GetValue(0).ToString();
-                        frisb2.Text = reader.GetValue(1).ToString();
-                        frisb3.Text = reader.GetValue(2).ToString();
-                        frisb4.Text = reader.GetValue(3).ToString();
-                        frisb5.Text = reader.GetValue(4).ToString();
-                        frisb6.Text = reader.GetValue(5).ToString();
-                        frisb7.Text = reader.GetValue(6).ToString();
-                    }
-                if(days == "сб")
-                    {
-                        satsb1.Text = reader.GetValue(0).ToString();
-                        satsb2.Text = reader.GetValue(1).ToString();
-                        satsb3.Text = reader.GetValue(2).ToString();
-                        satsb4.Text = reader.GetValue(3).ToString();
-                        satsb5.Text = reader.GetValue(4).ToString();
-                        satsb6.Text = reader.GetValue(5).ToString();
-                        satsb7.Text = reader.GetValue(6).ToString();
+                        Label lbl = new Label();
+                        lbl.Dock = DockStyle.Fill;
+                        lbl.Location = new Point(3, 0);
+                        lbl.Size = new Size(32, 32);
+                        lbl.Text = sub[i];
+                        tbl2.Controls.Add(lbl, 1, i);
                     }
                 }
             }
-            reader.Close();
-            con.Close();*/
-            // if(day = )
-            /*
-            if(login.clas == parts[0] && day.Text == parts[2])
-            {
-              //  tbl1.t1str1str2 сделать не листом а переменнными и присваивать значение каждой ячейке
-            }*/
-            //}
+*/
+
         }
         private void NetCity_Load(object sender, EventArgs e)
         {
@@ -208,6 +163,16 @@ namespace FoxManPr
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tuesb1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbl2_Paint(object sender, PaintEventArgs e)
         {
 
         }
