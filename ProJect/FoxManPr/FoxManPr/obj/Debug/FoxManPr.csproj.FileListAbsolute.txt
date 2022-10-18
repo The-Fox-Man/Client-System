@@ -51,3 +51,5 @@ C:\Users\user\Desktop\yep\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.Co
 C:\Users\user\Desktop\yep\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.CopyComplete
 C:\Users\user\Desktop\yep\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
 C:\Users\user\Desktop\yep\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
+C:\Users\user\Desktop\yep\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.admin.resources
+C:\Users\user\Desktop\yep\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.adminSub.resources

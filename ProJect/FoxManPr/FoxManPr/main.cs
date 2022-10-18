@@ -173,5 +173,11 @@ namespace FoxManPr
         {
 
         }
+
+        private void admin_Click(object sender, EventArgs e)
+        {
+            admin g = new admin();
+            g.ShowDialog();
+        }
     }
 }

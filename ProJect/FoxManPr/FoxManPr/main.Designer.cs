@@ -37,21 +37,23 @@
             this.button5 = new System.Windows.Forms.Button();
             this.loginlbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pic = new System.Windows.Forms.PictureBox();
             this.teachers = new System.Windows.Forms.Button();
             this.about = new System.Windows.Forms.Button();
             this.spravk = new System.Windows.Forms.Button();
             this.sgo = new System.Windows.Forms.Button();
             this.menu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pic = new System.Windows.Forms.PictureBox();
+            this.admin = new System.Windows.Forms.Button();
             this.pan.SuspendLayout();
-            this.menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pan
             // 
             resources.ApplyResources(this.pan, "pan");
+            this.pan.Controls.Add(this.admin);
             this.pan.Controls.Add(this.richTextBox1);
             this.pan.Controls.Add(this.exit);
             this.pan.Controls.Add(this.button7);
@@ -108,6 +110,13 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // pic
+            // 
+            resources.ApplyResources(this.pic, "pic");
+            this.pic.Image = global::FoxManPr.Properties.Resources.gymn13;
+            this.pic.Name = "pic";
+            this.pic.TabStop = false;
+            // 
             // teachers
             // 
             this.teachers.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -160,12 +169,12 @@
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // pic
+            // admin
             // 
-            resources.ApplyResources(this.pic, "pic");
-            this.pic.Image = global::FoxManPr.Properties.Resources.gymn13;
-            this.pic.Name = "pic";
-            this.pic.TabStop = false;
+            resources.ApplyResources(this.admin, "admin");
+            this.admin.Name = "admin";
+            this.admin.UseVisualStyleBackColor = true;
+            this.admin.Click += new System.EventHandler(this.admin_Click);
             // 
             // main
             // 
@@ -178,8 +187,8 @@
             this.Load += new System.EventHandler(this.main_Load);
             this.pan.ResumeLayout(false);
             this.pan.PerformLayout();
-            this.menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
+            this.menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -201,6 +210,7 @@
         private System.Windows.Forms.Panel menu;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button admin;
     }
 }
 

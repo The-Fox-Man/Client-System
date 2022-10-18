@@ -122,6 +122,30 @@
     <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="admin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 140</value>
+  </data>
+  <data name="admin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 35</value>
+  </data>
+  <data name="admin.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="admin.Text" xml:space="preserve">
+    <value>Администратор</value>
+  </data>
+  <data name="&gt;&gt;admin.Name" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="&gt;&gt;admin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;admin.Parent" xml:space="preserve">
+    <value>pan</value>
+  </data>
+  <data name="&gt;&gt;admin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 281</value>
   </data>
@@ -144,7 +168,7 @@
     <value>pan</value>
   </data>
   <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="exit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -157,7 +181,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 35</value>
+    <value>141, 35</value>
   </data>
   <data name="exit.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -175,7 +199,7 @@
     <value>pan</value>
   </data>
   <data name="&gt;&gt;exit.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -205,7 +229,7 @@
     <value>pan</value>
   </data>
   <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -235,7 +259,7 @@
     <value>pan</value>
   </data>
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -265,7 +289,7 @@
     <value>pan</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="loginlbl.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -298,7 +322,7 @@
     <value>pan</value>
   </data>
   <data name="&gt;&gt;loginlbl.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -334,7 +358,7 @@
     <value>pan</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="pic.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -367,7 +391,7 @@
     <value>pan</value>
   </data>
   <data name="&gt;&gt;pic.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="pan.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 54</value>
@@ -584,9 +608,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>706, 661</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>

@@ -53,9 +53,7 @@ namespace FoxManPr
             InitializeComponent();
             user.Text = login.nameForm + login.surnForm;
 
-            List<string> subject = MySelect("SELECT clas, date, day, 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");
-
-            List<string> sub = new List<string>();
+            List<string> subject = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");
 
             for (int i = 0; i < tbl1.RowCount; i++)
             {
@@ -67,14 +65,14 @@ namespace FoxManPr
                 tbl1.Controls.Add(lbl, 1, i);
             }
 
-            for (int i = 10; i < tbl2.RowCount; i++)
+            for (int i = 0; i < tbl2.RowCount; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject[i];
-                tbl2.Controls.Add(lbl, 1, i-10);
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = subject[i + 7];
+                tbl2.Controls.Add(lbl1, 1, i);
             }
 /*
             if (subject[0] == login.clasForm)
