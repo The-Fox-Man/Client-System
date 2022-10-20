@@ -48,6 +48,8 @@ namespace FoxManPr
 
             return list;
         }
+
+
         public NetCity()
         {
             InitializeComponent();
