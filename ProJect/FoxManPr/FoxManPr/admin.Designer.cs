@@ -1,6 +1,6 @@
 ﻿namespace FoxManPr
 {
-    partial class admin
+    partial class Admin
     {
         /// <summary>
         /// Required designer variable.
@@ -41,13 +41,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // admin
+            // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 661);
+            this.ClientSize = new System.Drawing.Size(235, 238);
             this.Controls.Add(this.button1);
-            this.Name = "admin";
+            this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "admin";
             this.Load += new System.EventHandler(this.admin_Load);

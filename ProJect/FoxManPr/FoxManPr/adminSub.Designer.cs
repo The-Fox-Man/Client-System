@@ -57,8 +57,9 @@
             this.pan1.Controls.Add(this.label9);
             this.pan1.Location = new System.Drawing.Point(12, 12);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(1101, 531);
+            this.pan1.Size = new System.Drawing.Size(1200, 531);
             this.pan1.TabIndex = 0;
+            this.pan1.Paint += new System.Windows.Forms.PaintEventHandler(this.pan1_Paint);
             // 
             // label9
             // 
@@ -227,7 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 861);
+            this.ClientSize = new System.Drawing.Size(1184, 861);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pan1);

@@ -57,7 +57,7 @@ namespace FoxManPr
 
             List<string> subject = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");
 
-            for (int i = 0; i < tbl1.RowCount; i++)
+            for (int i = 0; i < subject.Count; i++)
             {
                 Label lbl = new Label();
                 lbl.Dock = DockStyle.Fill;
@@ -67,64 +67,51 @@ namespace FoxManPr
                 tbl1.Controls.Add(lbl, 1, i);
             }
 
-            for (int i = 0; i < tbl2.RowCount; i++)
+            for (int i = 7; i < subject.Count; i++)
             {
                 Label lbl1 = new Label();
                 lbl1.Dock = DockStyle.Fill;
                 lbl1.Location = new Point(3, 0);
                 lbl1.Size = new Size(32, 32);
-                lbl1.Text = subject[i + 7];
-                tbl2.Controls.Add(lbl1, 1, i);
+                lbl1.Text = subject[i];
+                tbl2.Controls.Add(lbl1, 1, i - 7);
             }
-/*
-            if (subject[0] == login.clasForm)
+           for (int i = 14; i < subject.Count; i++)
             {
-                if (subject[2] == "пн")
-                {
-                    for (int i = 0; i < tbl1.RowCount; i++)
-                    {
-                        sub.Add(subject[3]);
-                        sub.Add(subject[4]);
-                        sub.Add(subject[5]);
-                        sub.Add(subject[6]);
-                        sub.Add(subject[7]);
-                        sub.Add(subject[8]);
-                        sub.Add(subject[9]);
-                    }
-                    for (int i = 0; i < tbl1.RowCount; i++)
-                    {
-                        Label lbl = new Label();
-                        lbl.Dock = DockStyle.Fill;
-                        lbl.Location = new Point(3, 0);
-                        lbl.Size = new Size(32, 32);
-                        lbl.Text = sub[i];
-                        tbl1.Controls.Add(lbl, 1, i);
-                    }
-                }
-                //if (subject[2] == "ср")
-                {
-                    for (int i = 10; i < tbl2.RowCount; i++)
-                    {
-                        sub.Add(subject[3]);
-                        sub.Add(subject[4]);
-                        sub.Add(subject[5]);
-                        sub.Add(subject[6]);
-                        sub.Add(subject[7]);
-                        sub.Add(subject[8]);
-                        sub.Add(subject[9]);
-                    }
-                    for (int i = 0; i < tbl2.RowCount; i++)
-                    {
-                        Label lbl = new Label();
-                        lbl.Dock = DockStyle.Fill;
-                        lbl.Location = new Point(3, 0);
-                        lbl.Size = new Size(32, 32);
-                        lbl.Text = sub[i];
-                        tbl2.Controls.Add(lbl, 1, i);
-                    }
-                }
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = subject[i];
+                tbl2.Controls.Add(lbl1, 1, i - 14);
             }
-*/
+            for (int i = 21; i < subject.Count; i++)
+            {
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = subject[i];
+                tbl2.Controls.Add(lbl1, 1, i - 21);
+            }
+            for (int i = 28; i < subject.Count; i++)
+            {
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = subject[i];
+                tbl2.Controls.Add(lbl1, 1, i - 28);
+            }
+            for (int i = 35; i < subject.Count; i++)
+            {
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = subject[i];
+                tbl2.Controls.Add(lbl1, 1, i - 35);
+            }
 
         }
         private void NetCity_Load(object sender, EventArgs e)

@@ -50,45 +50,34 @@ namespace FoxManPr
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection(connect);
-            con.Open();
-                MySqlCommand com = new MySqlCommand("SELECT name, surn, type, pass, post, clas FROM users", con);
-                DbDataReader reader = com.ExecuteReader();
-                while(reader.Read())
-                {
+            List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas FROM users");
 
-                   name = reader.GetValue(0).ToString();  
-                   surn = reader.GetValue(1).ToString();  
-                   type = reader.GetValue(2).ToString(); 
-                   pass = reader.GetValue(3).ToString();  
-                   post = reader.GetValue(4).ToString(); 
-                   clas = reader.GetValue(5).ToString();
-                }
-            
-           /*string[] li = File.ReadAllLines("../../txt/users.txt");
-            foreach (string objects in li)
+            /*string[] li = File.ReadAllLines("../../txt/users.txt");
+             foreach (string objects in li)
+             {
+                 string[] word = objects.Split(new string[] { ", " }, StringSplitOptions.None);
+                 name = word[0];
+                 surn = word[1];
+                 type = word[2];
+                 pass = word[3];
+                 post = word[4];
+                 clas = word[5];*/
+            for (int i = 0; i < list.Count; i+=6)
             {
-                string[] word = objects.Split(new string[] { ", " }, StringSplitOptions.None);
-                name = word[0];
-                surn = word[1];
-                type = word[2];
-                pass = word[3];
-                post = word[4];
-                clas = word[5];*/
-
-                if (t1.Text == name && t2.Text == pass || t1.Text == post && t2.Text == pass)
+                if (t1.Text == list[i+4] && t2.Text == list[i+3] || t1.Text == list[i] && t2.Text == list[i+3])
                 {
-                    nameForm = name;
-                    surnForm = surn;
-                    postForm = post;
-                    typeForm = type;
-                    clasForm = clas;
+                    nameForm = list[i];
+                    surnForm = list[i+1];
+                    postForm = list[i+4];
+                    typeForm = list[i+2];
+                    clasForm = list[i+5];
                     MessageBox.Show("ВЫ успешно вошли!", "Программа");
                 }
+
                 else { MessageBox.Show("Неверный адрес почты или пароль. Или поля пустые. Внимательно посмотрите, не содержат ли поля лишних пробелов или символов. Либо ВЫ не зарегестрированы.", "Программа"); }
+            }
             //}
-            reader.Close();
-            con.Close();
+        
             Close();
         }
     }

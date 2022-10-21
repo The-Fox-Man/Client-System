@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace FoxManPr
 {
-    public partial class admin : Form
+    public partial class Admin : Form
     {
-        public admin()
+        public Admin()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            adminSub m = new adminSub();
+            m.ShowDialog();
         }
 
         private void admin_Load(object sender, EventArgs e)
         {
-            adminSub m = new adminSub();
-            m.ShowDialog();
+       
         }
     }
 }

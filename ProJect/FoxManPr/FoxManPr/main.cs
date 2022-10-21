@@ -45,7 +45,7 @@ namespace FoxManPr
         {
             InitializeComponent();
 
-            string[] lines = File.ReadAllLines("../../txt/subjects.txt");
+           // string[] lines = File.ReadAllLines("../../txt/subjects.txt");
 
            /*  foreach (string line in lines)
             {
@@ -176,8 +176,8 @@ namespace FoxManPr
 
         private void admin_Click(object sender, EventArgs e)
         {
-            admin g = new admin();
-            g.ShowDialog();
+            Admin u = new Admin();
+            u.ShowDialog();
         }
     }
 }
