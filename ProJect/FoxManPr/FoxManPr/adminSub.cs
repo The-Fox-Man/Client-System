@@ -18,10 +18,16 @@ namespace FoxManPr
         public adminSub()
         {
             InitializeComponent();
+
+
+
+
+      
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string[] parts = cm.Text.Split(new char[] {','});
             MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th)" 
                                                 + "VALUES('"+ textBox1.Text + "', '"+ textBox2.Text + "', " +
                                                 "'"+ textBox3.Text + "', '"+ textBox4.Text + "'," +
@@ -31,21 +37,23 @@ namespace FoxManPr
             MessageBox.Show("YUP");
             adminSub_Load(sender, e);
             return;
+           
         }
 
         private void adminSub_Load(object sender, EventArgs e)
         {
-            List<string> list = NetCity.MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");
+            List<string> list = NetCity.MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th, id FROM subjects");
 
             pan1.Controls.Clear();
             int y = 50;
             int x = 50;
-            for (int i = 0; i < list.Count; i+=7)
+            for (int i = 0; i < list.Count; i+=8)
             {
                 Label lbl = new Label();
                 lbl.Location = new Point(10, y);
                 lbl.Size = new Size(145, 65);
                 lbl.Text = list[i];
+                lbl.Tag = list[i + 7];
                 pan1.Controls.Add(lbl);
 
                 Label lbl1 = new Label();
@@ -105,7 +113,7 @@ namespace FoxManPr
             {
                 if (control.Location == new Point(10, y))
                 {
-                    MySqlCommand cmd = new MySqlCommand("DELETE FROM subjects WHERE 1t = '" + control.Text + "'", Program.con);
+                    MySqlCommand cmd = new MySqlCommand("DELETE FROM subjects WHERE id = '" + control.Tag + "'", Program.con);
                     DbDataReader read = cmd.ExecuteReader();
                     read.Close();
                     MessageBox.Show("YUP");

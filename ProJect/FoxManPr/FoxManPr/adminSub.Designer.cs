@@ -47,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.cm = new System.Windows.Forms.ComboBox();
             this.pan1.SuspendLayout();
             this.pan2.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +74,7 @@
             // pan2
             // 
             this.pan2.AutoScroll = true;
+            this.pan2.Controls.Add(this.cm);
             this.pan2.Controls.Add(this.textBox7);
             this.pan2.Controls.Add(this.textBox6);
             this.pan2.Controls.Add(this.textBox5);
@@ -224,6 +226,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cm
+            // 
+            this.cm.FormattingEnabled = true;
+            this.cm.Location = new System.Drawing.Point(313, 74);
+            this.cm.Name = "cm";
+            this.cm.Size = new System.Drawing.Size(277, 21);
+            this.cm.TabIndex = 48;
+            // 
             // adminSub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,5 +275,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cm;
     }
 }

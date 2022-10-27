@@ -18,12 +18,24 @@ namespace FoxManPr
         public TeachersForm()
         {
             InitializeComponent();
+
+          /*  List<string> list = NetCity.MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th, id FROM subjects");
+            cm.Items.Clear();
+            for (int i = 0; i < list.Count; i+=7)
+            {
+                cm.Items.Add(list[i] + "," + list[i + 1] + "," + list[i+2] + ","
+                             + list[i + 3] + "," + list[i + 4] + list[i + 5] + ","
+                             + list[i + 6] + "," + list[i + 7]);
+
+            }*/
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string[] parts = cm.Text.Split(new char[] { ',' });
             MySqlCommand cmd = new MySqlCommand("INSERT INTO teachers(name, surn)"
-            + "VALUES('" + textBox1.Text + "', '" + textBox2.Text + "')", Program.con);
+            + "VALUES('" + textBox1.Text + "', '" + textBox2.Text  + "')", Program.con);
             DbDataReader read = cmd.ExecuteReader();
             read.Close();
             MessageBox.Show("YUP");
