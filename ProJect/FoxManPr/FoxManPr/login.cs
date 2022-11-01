@@ -50,7 +50,7 @@ namespace FoxManPr
 
         private void button2_Click(object sender, EventArgs e)
         {
-            List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas FROM users");
+            List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
 
             /*string[] li = File.ReadAllLines("../../txt/users.txt");
              foreach (string objects in li)

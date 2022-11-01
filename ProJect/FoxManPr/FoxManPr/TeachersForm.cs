@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 //using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FoxManPr
 {
@@ -30,12 +31,11 @@ namespace FoxManPr
             }*/
 
         }
-
+        string yep = "Учитель";
         private void button1_Click(object sender, EventArgs e)
         {
             string[] parts = cm.Text.Split(new char[] { ',' });
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO teachers(name, surn)"
-            + "VALUES('" + textBox1.Text + "', '" + textBox2.Text  + "')", Program.con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + label5.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + "" + "')", Program.con);
             DbDataReader read = cmd.ExecuteReader();
             read.Close();
             MessageBox.Show("YUP");
@@ -45,36 +45,40 @@ namespace FoxManPr
 
         private void TeachersForm_Load(object sender, EventArgs e)
         {
-            List<string> list = NetCity.MySelect("SELECT name, surn, id FROM teachers");
+            List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
 
             pan1.Controls.Clear();
             int y = 50;
             int x = 50;
-            for (int i = 0; i < list.Count; i += 3)
+            
+            for (int i = 0; i < list.Count; i += 7)
             {
-                Label lbl = new Label();
-                lbl.Location = new Point(10, y);
-                lbl.Size = new Size(145, 65);
-                lbl.Text = list[i];
-                lbl.Tag = list[i+2];
-                pan1.Controls.Add(lbl);
+                if (list[i + 2] == "Учитель")
+                {
+                    Label lbl = new Label();
+                    lbl.Location = new Point(10, y);
+                    lbl.Size = new Size(145, 65);
+                    lbl.Text = list[i];
+                    lbl.Tag = list[i + 6];
+                    pan1.Controls.Add(lbl);
 
-                Label lbl1 = new Label();
-                lbl1.Location = new Point(160, y);
-                lbl1.Size = new Size(145, 65);
-                lbl1.Text = list[i + 1];
-                pan1.Controls.Add(lbl1);
+                    Label lbl1 = new Label();
+                    lbl1.Location = new Point(160, y);
+                    lbl1.Size = new Size(145, 65);
+                    lbl1.Text = list[i + 1];
+                    pan1.Controls.Add(lbl1);
 
-                Button btn = new Button();
-                btn.Location = new Point(310, y);
-                btn.Size = new Size(109, 30);
-                btn.TabIndex = 0;
-                btn.Text = "Удалить";
-                btn.UseVisualStyleBackColor = true;
-                btn.Click += new EventHandler(delete);
-                pan1.Controls.Add(btn);
+                    Button btn = new Button();
+                    btn.Location = new Point(310, y);
+                    btn.Size = new Size(109, 30);
+                    btn.TabIndex = 0;
+                    btn.Text = "Удалить";
+                    btn.UseVisualStyleBackColor = true;
+                    btn.Click += new EventHandler(delete);
+                    pan1.Controls.Add(btn);
 
-                y += 70;
+                    y += 70;
+                }
             }
         }
             private void delete(object sender, EventArgs e)
@@ -86,7 +90,7 @@ namespace FoxManPr
                 {
                     if (control.Location == new Point(10, y))
                     {
-                        MySqlCommand cmd = new MySqlCommand("DELETE FROM teachers WHERE id = '" + control.Tag + "'", Program.con);
+                        MySqlCommand cmd = new MySqlCommand("DELETE FROM users WHERE id = '" + control.Tag + "'", Program.con);
                         DbDataReader read = cmd.ExecuteReader();
                         read.Close();
                         MessageBox.Show("YUP");
@@ -95,6 +99,15 @@ namespace FoxManPr
                     }
                 }
             }
-      
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

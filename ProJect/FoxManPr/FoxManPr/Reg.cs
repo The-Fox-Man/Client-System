@@ -30,17 +30,27 @@ namespace FoxManPr
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(one.Text == "" || two.Text == "" || three.Text == "" || four.Text == "" || five.Text == "")
+            if(one.Text == "" || two.Text == "" || five.Text == "" || four.Text == "" || threee.Text == "" || six.Text == "")
             {
                 MessageBox.Show("Fuck you");      
             }
             else
             {
                 File.AppendAllText("../../txt/users.txt", Environment.NewLine + one.Text + ", " + two.Text + ", "
-                                       + five.Text + ", " + four.Text + ", " + three.Text);
+                                       + threee.Text + ", " + four.Text + ", " + five.Text);
                 MessageBox.Show("Yeee");
                 Close();
             }
+        }
+
+        private void five_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
