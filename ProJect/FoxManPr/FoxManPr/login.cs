@@ -62,7 +62,7 @@ namespace FoxManPr
                  pass = word[3];
                  post = word[4];
                  clas = word[5];*/
-            for (int i = 0; i < list.Count; i+=6)
+            for (int i = 0; i < list.Count; i+=7)
             {
                 if (t1.Text == list[i+4] && t2.Text == list[i+3] || t1.Text == list[i] && t2.Text == list[i+3])
                 {

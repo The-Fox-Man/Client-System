@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.Common;
 
 namespace FoxManPr
 {
@@ -32,22 +35,20 @@ namespace FoxManPr
         {
             if(one.Text == "" || two.Text == "" || five.Text == "" || four.Text == "" || threee.Text == "" || six.Text == "")
             {
-                MessageBox.Show("Fuck you");      
+                MessageBox.Show("Fuck you");
             }
             else
             {
-                File.AppendAllText("../../txt/users.txt", Environment.NewLine + one.Text + ", " + two.Text + ", "
-                                       + threee.Text + ", " + four.Text + ", " + five.Text);
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + one.Text + "', '" + two.Text + "', '" + threee.Text + "', '" + four.Text + "', '" + five.Text + "', '" + six.Text + "')", Program.con);
+                DbDataReader read = cmd.ExecuteReader();
+                read.Close();
                 MessageBox.Show("Yeee");
                 Close();
             }
         }
-
         private void five_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
-
         private void label5_Click(object sender, EventArgs e)
         {
 
