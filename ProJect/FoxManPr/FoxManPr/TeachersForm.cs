@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.Common;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,9 +35,13 @@ namespace FoxManPr
         string yep = "Учитель";
         private void button1_Click(object sender, EventArgs e)
         {
+            List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
             string[] parts = cm.Text.Split(new char[] { ',' });
             MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + label5.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + "" + "')", Program.con);
             DbDataReader read = cmd.ExecuteReader();
+            MySqlCommand cmdn = new MySqlCommand("INSERT INTO teachers(name, surn) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "')", Program.con);
+            DbDataReader rea = cmdn.ExecuteReader();
+            rea.Close();
             read.Close();
             MessageBox.Show("YUP");
             TeachersForm_Load(sender, e);
@@ -91,6 +96,7 @@ namespace FoxManPr
                     if (control.Location == new Point(10, y))
                     {
                         MySqlCommand cmd = new MySqlCommand("DELETE FROM users WHERE id = '" + control.Tag + "'", Program.con);
+                  //  MySqlCommand cm new MySqlCommand("DELETE FROM teachers WHERE idtag = '" + control.Tag + "'", Program.con);
                         DbDataReader read = cmd.ExecuteReader();
                         read.Close();
                         MessageBox.Show("YUP");

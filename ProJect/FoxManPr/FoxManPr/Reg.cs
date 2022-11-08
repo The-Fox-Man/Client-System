@@ -39,11 +39,27 @@ namespace FoxManPr
             }
             else
             {
-                MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + one.Text + "', '" + two.Text + "', '" + threee.Text + "', '" + four.Text + "', '" + five.Text + "', '" + six.Text + "')", Program.con);
-                DbDataReader read = cmd.ExecuteReader();
-                read.Close();
-                MessageBox.Show("Yeee");
-                Close();
+                if (threee.Text == "Ученик")
+                {
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + one.Text + "', '" + two.Text + "', '" + threee.Text + "', '" + four.Text + "', '" + five.Text + "', '" + six.Text + "')", Program.con);
+                    DbDataReader read = cmd.ExecuteReader();
+                    read.Close();
+                    MessageBox.Show("Yeeeз");   
+                    Close();
+                }
+                if (threee.Text == "Учитель")
+                {
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + one.Text + "', '" + two.Text + "', '" + threee.Text + "', '" + four.Text + "', '" + five.Text + "', '" + six.Text + "')", Program.con);
+                    DbDataReader read = cmd.ExecuteReader();
+                    read.Close();
+                    MySqlCommand cm = new MySqlCommand("INSERT INTO teachers(name, surn) VALUES('" + one.Text + "', '" + two.Text + "')", Program.con);
+                    DbDataReader rea = cm.ExecuteReader();
+                    rea.Close();
+                    MessageBox.Show("Yeee");
+                    Close();
+
+                }
+
             }
         }
         private void five_SelectedIndexChanged(object sender, EventArgs e)
