@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using MySql.Data.MySqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.Common;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FoxManPr
 {
@@ -19,6 +19,11 @@ namespace FoxManPr
         public Reg()
         {
             InitializeComponent();
+            if(threee.Text == "Учитель")
+            {
+                txt.Visible = true;
+                l.Visible = true; // сбрасывай на форму другой и заставляй писать кодик
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -52,9 +57,12 @@ namespace FoxManPr
                     MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + one.Text + "', '" + two.Text + "', '" + threee.Text + "', '" + four.Text + "', '" + five.Text + "', '" + six.Text + "')", Program.con);
                     DbDataReader read = cmd.ExecuteReader();
                     read.Close();
-                    MySqlCommand cm = new MySqlCommand("INSERT INTO teachers(name, surn) VALUES('" + one.Text + "', '" + two.Text + "')", Program.con);
+                    List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE post = '" + five.Text + "' AND pass = '" + four.Text + "'");
+                    MySqlCommand cm = new MySqlCommand("INSERT INTO teachers(name, surn, idtag) VALUES('" + one.Text + "', '" + two.Text + "', '" + list[6] + "')", Program.con);
                     DbDataReader rea = cm.ExecuteReader();
                     rea.Close();
+                    
+                    
                     MessageBox.Show("Yeee");
                     Close();
 

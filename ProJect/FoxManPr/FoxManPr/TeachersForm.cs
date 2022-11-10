@@ -39,10 +39,12 @@ namespace FoxManPr
             string[] parts = cm.Text.Split(new char[] { ',' });
             MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + label5.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + "" + "')", Program.con);
             DbDataReader read = cmd.ExecuteReader();
-            MySqlCommand cmdn = new MySqlCommand("INSERT INTO teachers(name, surn) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "')", Program.con);
+            read.Close();
+            List<string> list1 = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE post = '" + textBox4.Text + "' AND pass = '" + textBox3.Text + "'");
+            MySqlCommand cmdn = new MySqlCommand("INSERT INTO teachers(name, surn, idtag) VALUES('" + textBox1.Text + "', '" + textBox2.Text  + "', '" + list1[6] + "')", Program.con);
             DbDataReader rea = cmdn.ExecuteReader();
             rea.Close();
-            read.Close();
+            
             MessageBox.Show("YUP");
             TeachersForm_Load(sender, e);
             return;
@@ -96,9 +98,12 @@ namespace FoxManPr
                     if (control.Location == new Point(10, y))
                     {
                         MySqlCommand cmd = new MySqlCommand("DELETE FROM users WHERE id = '" + control.Tag + "'", Program.con);
-                  //  MySqlCommand cm new MySqlCommand("DELETE FROM teachers WHERE idtag = '" + control.Tag + "'", Program.con);
                         DbDataReader read = cmd.ExecuteReader();
                         read.Close();
+
+                        MySqlCommand cm = new MySqlCommand("DELETE FROM teachers WHERE idtag = '" + control.Tag + "'", Program.con);
+                        DbDataReader rea = cm.ExecuteReader();
+                        rea.Close();
                         MessageBox.Show("YUP");
                         TeachersForm_Load(sender, e);
                         return;

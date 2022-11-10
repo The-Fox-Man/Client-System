@@ -41,6 +41,8 @@
             this.six = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.threee = new System.Windows.Forms.ComboBox();
+            this.txt = new System.Windows.Forms.TextBox();
+            this.l = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +89,7 @@
             // one
             // 
             this.one.Location = new System.Drawing.Point(70, 7);
-            this.one.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.one.Margin = new System.Windows.Forms.Padding(2);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(153, 20);
             this.one.TabIndex = 4;
@@ -95,7 +97,7 @@
             // two
             // 
             this.two.Location = new System.Drawing.Point(70, 32);
-            this.two.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.two.Margin = new System.Windows.Forms.Padding(2);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(153, 20);
             this.two.TabIndex = 5;
@@ -103,7 +105,7 @@
             // five
             // 
             this.five.Location = new System.Drawing.Point(71, 107);
-            this.five.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.five.Margin = new System.Windows.Forms.Padding(2);
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(153, 20);
             this.five.TabIndex = 6;
@@ -111,15 +113,15 @@
             // four
             // 
             this.four.Location = new System.Drawing.Point(71, 83);
-            this.four.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.four.Margin = new System.Windows.Forms.Padding(2);
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(153, 20);
             this.four.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 187);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(92, 278);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 19);
             this.button1.TabIndex = 8;
@@ -141,7 +143,7 @@
             // six
             // 
             this.six.Location = new System.Drawing.Point(71, 136);
-            this.six.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.six.Margin = new System.Windows.Forms.Padding(2);
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(153, 20);
             this.six.TabIndex = 11;
@@ -167,11 +169,31 @@
             this.threee.Size = new System.Drawing.Size(152, 21);
             this.threee.TabIndex = 12;
             // 
+            // txt
+            // 
+            this.txt.Location = new System.Drawing.Point(92, 181);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(131, 20);
+            this.txt.TabIndex = 13;
+            this.txt.Visible = false;
+            // 
+            // l
+            // 
+            this.l.AutoSize = true;
+            this.l.Location = new System.Drawing.Point(9, 184);
+            this.l.Name = "l";
+            this.l.Size = new System.Drawing.Size(69, 13);
+            this.l.TabIndex = 14;
+            this.l.Text = "Special code";
+            this.l.Visible = false;
+            // 
             // Reg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(231, 214);
+            this.ClientSize = new System.Drawing.Size(231, 308);
+            this.Controls.Add(this.l);
+            this.Controls.Add(this.txt);
             this.Controls.Add(this.threee);
             this.Controls.Add(this.six);
             this.Controls.Add(this.label6);
@@ -185,7 +207,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Reg";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reg";
@@ -210,5 +232,7 @@
         private System.Windows.Forms.TextBox six;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox threee;
+        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.Label l;
     }
 }
