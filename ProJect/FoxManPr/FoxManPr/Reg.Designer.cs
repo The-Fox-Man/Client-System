@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ComboBox jojo;
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +44,10 @@
             this.threee = new System.Windows.Forms.ComboBox();
             this.txt = new System.Windows.Forms.TextBox();
             this.l = new System.Windows.Forms.Label();
+            this.bub = new System.Windows.Forms.Button();
+            this.txt2 = new System.Windows.Forms.ComboBox();
+            this.a = new System.Windows.Forms.Label();
+            jojo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -120,7 +125,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 278);
+            this.button1.Location = new System.Drawing.Point(92, 376);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 19);
@@ -171,7 +176,7 @@
             // 
             // txt
             // 
-            this.txt.Location = new System.Drawing.Point(92, 181);
+            this.txt.Location = new System.Drawing.Point(92, 205);
             this.txt.Name = "txt";
             this.txt.Size = new System.Drawing.Size(131, 20);
             this.txt.TabIndex = 13;
@@ -180,18 +185,61 @@
             // l
             // 
             this.l.AutoSize = true;
-            this.l.Location = new System.Drawing.Point(9, 184);
+            this.l.Location = new System.Drawing.Point(9, 208);
             this.l.Name = "l";
             this.l.Size = new System.Drawing.Size(69, 13);
             this.l.TabIndex = 14;
             this.l.Text = "Special code";
             this.l.Visible = false;
             // 
+            // bub
+            // 
+            this.bub.Location = new System.Drawing.Point(10, 172);
+            this.bub.Name = "bub";
+            this.bub.Size = new System.Drawing.Size(75, 23);
+            this.bub.TabIndex = 15;
+            this.bub.Text = "Я учитель";
+            this.bub.UseVisualStyleBackColor = true;
+            this.bub.Click += new System.EventHandler(this.bub_Click);
+            // 
+            // txt2
+            // 
+            this.txt2.FormattingEnabled = true;
+            this.txt2.Location = new System.Drawing.Point(92, 248);
+            this.txt2.Name = "txt2";
+            this.txt2.Size = new System.Drawing.Size(131, 21);
+            this.txt2.TabIndex = 16;
+            this.txt2.Visible = false;
+            // 
+            // a
+            // 
+            this.a.AutoSize = true;
+            this.a.Location = new System.Drawing.Point(14, 251);
+            this.a.Name = "a";
+            this.a.Size = new System.Drawing.Size(52, 13);
+            this.a.TabIndex = 17;
+            this.a.Text = "Предмет";
+            this.a.Visible = false;
+            // 
+            // jojo
+            // 
+            jojo.FormattingEnabled = true;
+            jojo.Location = new System.Drawing.Point(15, 339);
+            jojo.Name = "jojo";
+            jojo.Size = new System.Drawing.Size(121, 21);
+            jojo.TabIndex = 18;
+            jojo.Visible = false;
+            jojo.SelectedIndexChanged += new System.EventHandler(this.jojo_SelectedIndexChanged);
+            // 
             // Reg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(231, 308);
+            this.ClientSize = new System.Drawing.Size(231, 406);
+            this.Controls.Add(jojo);
+            this.Controls.Add(this.a);
+            this.Controls.Add(this.txt2);
+            this.Controls.Add(this.bub);
             this.Controls.Add(this.l);
             this.Controls.Add(this.txt);
             this.Controls.Add(this.threee);
@@ -234,5 +282,8 @@
         private System.Windows.Forms.ComboBox threee;
         private System.Windows.Forms.TextBox txt;
         private System.Windows.Forms.Label l;
+        private System.Windows.Forms.Button bub;
+        private System.Windows.Forms.ComboBox txt2;
+        private System.Windows.Forms.Label a;
     }
 }

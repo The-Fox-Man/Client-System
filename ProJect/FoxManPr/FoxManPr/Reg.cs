@@ -10,19 +10,27 @@ using System.Windows.Forms;
 using System.IO;
 using MySql.Data.MySqlClient;
 using System.Data.Common;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace FoxManPr
 {
     public partial class Reg : Form
     {
+        bool boob = false;
         public Reg()
         {
             InitializeComponent();
-            if(threee.Text == "Учитель")
+
+            List<string> list = NetCity.MySelect("SELECT name, id FROM sub");
+            for (int i = 0; i < list.Count; i+=2)
             {
-                txt.Visible = true;
-                l.Visible = true; // сбрасывай на форму другой и заставляй писать кодик
+                txt2.Items.Add(list[i]);
+                
+            }
+            for (int i = 0; i < list.Count; i+=1)
+            {
+                //jojo.Items.Add(list[i]); доделать добавление айди
+
             }
         }
 
@@ -52,13 +60,13 @@ namespace FoxManPr
                     MessageBox.Show("Yeeeз");   
                     Close();
                 }
-                if (threee.Text == "Учитель")
+                if (threee.Text == "Учитель" && boob && txt.Text == "9910801" && txt2.Text != "")
                 {
                     MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + one.Text + "', '" + two.Text + "', '" + threee.Text + "', '" + four.Text + "', '" + five.Text + "', '" + six.Text + "')", Program.con);
                     DbDataReader read = cmd.ExecuteReader();
                     read.Close();
                     List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE post = '" + five.Text + "' AND pass = '" + four.Text + "'");
-                    MySqlCommand cm = new MySqlCommand("INSERT INTO teachers(name, surn, idtag) VALUES('" + one.Text + "', '" + two.Text + "', '" + list[6] + "')", Program.con);
+                    MySqlCommand cm = new MySqlCommand("INSERT INTO teachers(name, surn, idtag, idsub) VALUES('" + one.Text + "', '" + two.Text + "', '" + list[6] + "', '" + txt2.Text + "')", Program.con);
                     DbDataReader rea = cm.ExecuteReader();
                     rea.Close();
                     
@@ -74,6 +82,20 @@ namespace FoxManPr
         {
         }
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bub_Click(object sender, EventArgs e)
+        {
+            txt.Visible = true;
+            l.Visible = true;
+            a.Visible = true;
+            txt2.Visible = true;
+            boob = true;
+        }
+
+        private void jojo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
