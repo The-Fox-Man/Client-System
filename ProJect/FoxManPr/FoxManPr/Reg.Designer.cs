@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ComboBox jojo;
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +46,7 @@
             this.bub = new System.Windows.Forms.Button();
             this.txt2 = new System.Windows.Forms.ComboBox();
             this.a = new System.Windows.Forms.Label();
-            jojo = new System.Windows.Forms.ComboBox();
+            this.gg = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -221,22 +220,21 @@
             this.a.Text = "Предмет";
             this.a.Visible = false;
             // 
-            // jojo
+            // gg
             // 
-            jojo.FormattingEnabled = true;
-            jojo.Location = new System.Drawing.Point(15, 339);
-            jojo.Name = "jojo";
-            jojo.Size = new System.Drawing.Size(121, 21);
-            jojo.TabIndex = 18;
-            jojo.Visible = false;
-            jojo.SelectedIndexChanged += new System.EventHandler(this.jojo_SelectedIndexChanged);
+            this.gg.AutoSize = true;
+            this.gg.Location = new System.Drawing.Point(13, 301);
+            this.gg.Name = "gg";
+            this.gg.Size = new System.Drawing.Size(35, 13);
+            this.gg.TabIndex = 18;
+            this.gg.Text = "label7";
             // 
             // Reg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(231, 406);
-            this.Controls.Add(jojo);
+            this.Controls.Add(this.gg);
             this.Controls.Add(this.a);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.bub);
@@ -285,5 +283,6 @@
         private System.Windows.Forms.Button bub;
         private System.Windows.Forms.ComboBox txt2;
         private System.Windows.Forms.Label a;
+        private System.Windows.Forms.Label gg;
     }
 }
