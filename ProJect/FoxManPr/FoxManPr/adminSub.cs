@@ -18,20 +18,31 @@ namespace FoxManPr
         public adminSub()
         {
             InitializeComponent();
+            List<string> list = NetCity.MySelect("SELECT name, id FROM sub");
+            for (int i = 0; i < list.Count; i += 2)
+            {
+                t1.Items.Add(list[i]);
+                t2.Items.Add(list[i]);
+                t3.Items.Add(list[i]);
+                t4.Items.Add(list[i]);
+                t5.Items.Add(list[i]);
+                t6.Items.Add(list[i]);
+                t7.Items.Add(list[i]);
+            }
 
 
 
 
-      
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string[] parts = cm.Text.Split(new char[] {','});
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th)" 
-                                                + "VALUES('"+ textBox1.Text + "', '"+ textBox2.Text + "', " +
-                                                "'"+ textBox3.Text + "', '"+ textBox4.Text + "'," +
-                                                " '"+ textBox5.Text + "', '"+ textBox6.Text + "', '"+ textBox7.Text + "')", Program.con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas)" 
+                                                + "VALUES('"+ t1.Text + "', '"+ t2.Text + "', " +
+                                                "'"+ t3.Text + "', '"+ t4.Text + "'," +
+                                                " '"+ t5.Text + "', '"+ t6.Text + "', '" 
+                                                + t7.Text + "', '" + t8.Text + "', '" + t9.Text + "')", Program.con);
             DbDataReader read = cmd.ExecuteReader();
             read.Close();
             MessageBox.Show("YUP");

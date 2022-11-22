@@ -62,7 +62,6 @@ namespace FoxManPr
                 }
                 if (threee.Text == "Учитель" && boob && txt.Text == "9910801" && txt2.Text != "")
                 {
-                    
 
                     MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + one.Text + "', '" + two.Text + "', '" + threee.Text + "', '" + four.Text + "', '" + five.Text + "', '" + "" + "')", Program.con);
                     DbDataReader read = cmd.ExecuteReader();
@@ -102,6 +101,16 @@ namespace FoxManPr
         private void jojo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            txt.Visible = false;
+            l.Visible = false;
+            a.Visible = false;
+            txt2.Visible = false;
+            boob = false;
+            six.Enabled = true;
         }
     }
 }

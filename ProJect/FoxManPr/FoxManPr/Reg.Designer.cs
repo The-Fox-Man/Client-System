@@ -47,6 +47,7 @@
             this.txt2 = new System.Windows.Forms.ComboBox();
             this.a = new System.Windows.Forms.Label();
             this.gg = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -124,7 +125,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 376);
+            this.button1.Location = new System.Drawing.Point(92, 322);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 19);
@@ -225,15 +226,25 @@
             this.gg.AutoSize = true;
             this.gg.Location = new System.Drawing.Point(13, 301);
             this.gg.Name = "gg";
-            this.gg.Size = new System.Drawing.Size(35, 13);
+            this.gg.Size = new System.Drawing.Size(0, 13);
             this.gg.TabIndex = 18;
-            this.gg.Text = "label7";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(92, 172);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(131, 23);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "А нет, верните, ученик";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Reg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(231, 406);
+            this.ClientSize = new System.Drawing.Size(231, 349);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.gg);
             this.Controls.Add(this.a);
             this.Controls.Add(this.txt2);
@@ -284,5 +295,6 @@
         private System.Windows.Forms.ComboBox txt2;
         private System.Windows.Forms.Label a;
         private System.Windows.Forms.Label gg;
+        private System.Windows.Forms.Button button2;
     }
 }
