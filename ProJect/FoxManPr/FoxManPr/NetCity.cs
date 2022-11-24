@@ -53,7 +53,7 @@ namespace FoxManPr
         public NetCity()
         {
             InitializeComponent();
-            user.Text = login.nameForm + login.surnForm;
+            user.Text = login.nameForm + " " + login.surnForm;
 
           //  List<string> subject = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");
             List<string>  subject = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects WHERE clas = '" + login.clasForm + "' AND day = '" + "пн" + "'");

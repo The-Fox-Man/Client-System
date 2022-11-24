@@ -30,6 +30,7 @@ namespace FoxManPr
         public static string postForm = "";
         public static string typeForm = "";
         public static string clasForm = "";
+        public static string subidForm= "";
 
         const string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
         public login()
@@ -50,8 +51,8 @@ namespace FoxManPr
 
         private void button2_Click(object sender, EventArgs e)
         {
-            List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
-
+            List<string> list =  NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
+            List<string> list2 = NetCity.MySelect("SELECT idsub FROM teachers WHERE idtag = '" + list[6] + "'");
             /*string[] li = File.ReadAllLines("../../txt/users.txt");
              foreach (string objects in li)
              {
@@ -71,9 +72,14 @@ namespace FoxManPr
                     postForm = list[i+4];
                     typeForm = list[i+2];
                     clasForm = list[i+5];
-                    
+                     if (typeForm == "Учитель")
+                     {
+                        subidForm = list2[0];
+                     }
                 }
             }
+
+            
             if (nameForm != "") { MessageBox.Show("ВЫ успешно вошли!", "Программа"); }
             else { MessageBox.Show("Неверный адрес почты или пароль. Или поля пустые. Внимательно посмотрите, не содержат ли поля лишних пробелов или символов. Либо ВЫ не зарегестрированы.", "Программа"); }
             //}

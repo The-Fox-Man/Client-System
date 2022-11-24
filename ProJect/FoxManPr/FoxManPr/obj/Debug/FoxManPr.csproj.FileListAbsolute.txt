@@ -95,3 +95,4 @@ C:\Users\user\Desktop\YUUUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.
 C:\Users\user\Desktop\YUUUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
 C:\Users\user\Desktop\YUUUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
 C:\Users\user\Desktop\YUUUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.TeachersForm.resources
+C:\Users\user\Desktop\YUUUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.UserMarks.resources
