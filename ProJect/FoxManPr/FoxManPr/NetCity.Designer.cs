@@ -33,6 +33,7 @@
             this.tbl5 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl4 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbl2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -42,6 +43,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.date2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.date1 = new System.Windows.Forms.Label();
@@ -49,11 +51,10 @@
             this.tbl1 = new System.Windows.Forms.TableLayoutPanel();
             this.user = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.date2 = new System.Windows.Forms.Label();
-            this.number = new System.Windows.Forms.Label();
             this.next = new System.Windows.Forms.Button();
-            this.tbl2 = new System.Windows.Forms.TableLayoutPanel();
+            this.number = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -92,7 +93,7 @@
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tb6.Location = new System.Drawing.Point(391, 569);
             this.tb6.Margin = new System.Windows.Forms.Padding(2);
             this.tb6.Name = "tb6";
@@ -115,7 +116,7 @@
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tbl5.Location = new System.Drawing.Point(11, 570);
             this.tbl5.Margin = new System.Windows.Forms.Padding(2);
             this.tbl5.Name = "tbl5";
@@ -138,7 +139,7 @@
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tbl4.Location = new System.Drawing.Point(390, 307);
             this.tbl4.Margin = new System.Windows.Forms.Padding(2);
             this.tbl4.Name = "tbl4";
@@ -161,7 +162,7 @@
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tbl3.Location = new System.Drawing.Point(11, 307);
             this.tbl3.Margin = new System.Windows.Forms.Padding(2);
             this.tbl3.Name = "tbl3";
@@ -176,6 +177,30 @@
             this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tbl3.Size = new System.Drawing.Size(310, 228);
             this.tbl3.TabIndex = 19;
+            // 
+            // tbl2
+            // 
+            this.tbl2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tbl2.ColumnCount = 4;
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tbl2.Location = new System.Drawing.Point(390, 45);
+            this.tbl2.Margin = new System.Windows.Forms.Padding(2);
+            this.tbl2.Name = "tbl2";
+            this.tbl2.RowCount = 7;
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tbl2.Size = new System.Drawing.Size(310, 228);
+            this.tbl2.TabIndex = 18;
+            this.tbl2.Paint += new System.Windows.Forms.PaintEventHandler(this.tbl2_Paint);
             // 
             // panel7
             // 
@@ -274,6 +299,16 @@
             this.panel3.Size = new System.Drawing.Size(310, 29);
             this.panel3.TabIndex = 13;
             // 
+            // date2
+            // 
+            this.date2.AutoSize = true;
+            this.date2.Location = new System.Drawing.Point(39, 10);
+            this.date2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date2.Name = "date2";
+            this.date2.Size = new System.Drawing.Size(61, 13);
+            this.date2.TabIndex = 12;
+            this.date2.Text = "02.09.2022";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -324,7 +359,7 @@
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tbl1.Location = new System.Drawing.Point(11, 45);
             this.tbl1.Margin = new System.Windows.Forms.Padding(2);
             this.tbl1.Name = "tbl1";
@@ -355,6 +390,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.next);
             this.panel1.Controls.Add(this.number);
             this.panel1.Controls.Add(this.label1);
@@ -367,24 +403,15 @@
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label1
+            // next
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Ученик";
-            // 
-            // date2
-            // 
-            this.date2.AutoSize = true;
-            this.date2.Location = new System.Drawing.Point(39, 10);
-            this.date2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.date2.Name = "date2";
-            this.date2.Size = new System.Drawing.Size(61, 13);
-            this.date2.TabIndex = 12;
-            this.date2.Text = "02.09.2022";
+            this.next.Location = new System.Drawing.Point(447, 28);
+            this.next.Name = "next";
+            this.next.Size = new System.Drawing.Size(75, 23);
+            this.next.TabIndex = 4;
+            this.next.Text = "Вперёд";
+            this.next.UseVisualStyleBackColor = true;
+            this.next.Click += new System.EventHandler(this.next_Click);
             // 
             // number
             // 
@@ -395,39 +422,24 @@
             this.number.TabIndex = 3;
             this.number.Text = "label15";
             // 
-            // next
+            // label1
             // 
-            this.next.Location = new System.Drawing.Point(447, 28);
-            this.next.Name = "next";
-            this.next.Size = new System.Drawing.Size(75, 23);
-            this.next.TabIndex = 4;
-            this.next.Text = "button1";
-            this.next.UseVisualStyleBackColor = true;
-            this.next.Click += new System.EventHandler(this.next_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Ученик";
             // 
-            // tbl2
+            // button1
             // 
-            this.tbl2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tbl2.ColumnCount = 4;
-            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
-            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
-            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tbl2.Location = new System.Drawing.Point(390, 45);
-            this.tbl2.Margin = new System.Windows.Forms.Padding(2);
-            this.tbl2.Name = "tbl2";
-            this.tbl2.RowCount = 7;
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tbl2.Size = new System.Drawing.Size(310, 228);
-            this.tbl2.TabIndex = 18;
-            this.tbl2.Paint += new System.Windows.Forms.PaintEventHandler(this.tbl2_Paint);
+            this.button1.Location = new System.Drawing.Point(223, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Назад";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // NetCity
             // 
@@ -488,5 +500,6 @@
         private System.Windows.Forms.Label number;
         private System.Windows.Forms.Button next;
         private System.Windows.Forms.TableLayoutPanel tbl2;
+        private System.Windows.Forms.Button button1;
     }
 }

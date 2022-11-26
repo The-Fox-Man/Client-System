@@ -49,6 +49,7 @@ namespace FoxManPr
         int monE = 09;
         int yeaE = 2022;
 
+      //  int d = 0;
 
         const string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
 
@@ -84,8 +85,8 @@ namespace FoxManPr
          //   List<string> sub = MySelect("SELECT name FROM sub WHERE id = '"+ mark[2] +"'");
 
 
-            number.Text = dayS + "." + monS + "." + yeaS + " - " + dayE + "." + monE + "." + yeaE;
-            date1.Text = dayS + "." + monS + "." + yeaS;
+            number.Text = dayS  + "." + monS + "." + yeaS + " - " + dayE + "." + monE + "." + yeaE;
+            date1.Text = dayS  + "." + monS + "." + yeaS;
             date2.Text = dayS + 1 + "." + monS + "." + yeaS;
 
             for (int i = 0; i < subject.Count; i++)
@@ -319,6 +320,76 @@ namespace FoxManPr
 
             dayS = dayS + 7;
             dayE = dayE + 7;
+
+
+            if (monE == 9 && dayE > 30) { dayE = dayE - 30; monE = 10; }
+            if (monE == 9 && dayE == 0) { dayE = 1; }
+            if (monS == 9 && dayS > 30) { dayS = dayS - 30; monS = 10; }
+            if (monS == 9 && dayS == 0) { dayS = 1; }
+
+            if (monE == 10 && dayE > 31) { dayE = dayE - 31; monE = 11; }
+            if (monS == 10 && dayS > 31) { dayS = dayS - 31; monS = 11; }
+
+            if (monE == 11 && dayE > 30) { dayE = dayE - 30; monE = 12; }
+            if (monS == 11 && dayS > 30) { dayS = dayS - 30; monS = 12; }
+
+            if (monE == 12 && dayE > 31) { dayE = dayE - 31; monE = 1; yeaE = yeaE + 1; }
+            if (monS == 12 && dayS > 31) { dayS = dayS - 31; monS = 1; yeaS = yeaS + 1; }
+
+            if (monE == 1 && dayE > 31) { dayE = dayE - 31; monE = 2; }
+            if (monS == 1 && dayS > 31) { dayS = dayS - 31; monS = 2; }
+
+            if (monE == 2 && dayE > 28)
+            {
+                if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
+                { dayE = dayE - 29; monE = 3; }
+                else
+                { dayE = dayE - 28; monE = 3; }
+            }
+            if (monE == 2 && dayE == 0)
+            {
+                if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
+                { dayE = 1; }
+                else
+                { dayE = 1; }
+            }
+            if (monS == 2 && dayS > 28)
+            { 
+                if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
+                { dayS = dayS - 29; monS = 3; }
+                else
+                { dayS = dayS - 28; monS = 3; }
+            }
+            if (monS == 2 && dayS == 0)
+            {
+                if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
+                { dayS = 1; }
+                else
+                { dayS = 1; }
+            }
+
+
+            if (monE == 3 && dayE > 31) { dayE = dayE - 31; monE = 4; }
+            if (monE == 3 && dayE < 1) { dayE = 1; }
+            if (monS == 3 && dayS > 31) { dayS = dayS - 31; monS = 4; }
+            if (monS == 3 && dayS < 1) { dayS = 1; }
+
+
+            if (monE == 4 && dayE > 30) { dayE = dayE - 30; monE = 5; }
+            if (monS == 4 && dayS > 30) { dayS = dayS - 30; monS = 5; }
+
+            if (monE == 5 && dayE > 31) { dayE = dayE - 31; monE = 6; }
+            if (monS == 5 && dayS > 31) { dayS = dayS - 31; monS = 6; }
+
+            if (monE == 6 && dayE > 30) { dayE = dayE - 30; monE = 7; }
+            if (monS == 6 && dayS > 30) { dayS = dayS - 30; monS = 7; }
+
+            if (monE == 7 && dayE > 31) { dayE = dayE - 31; monE = 8; }
+            if (monS == 7 && dayS > 31) { dayS = dayS - 31; monS = 8; }
+
+            if (monE == 8 && dayE > 31) { dayE = dayE - 31; monE = 9; }
+            if (monS == 8 && dayS > 31) { dayS = dayS - 31; monS = 9; }
+
             number.Text = dayS + "." + monS + "." + yeaS + " - " + dayE + "." + monE + "." + yeaE;
             date1.Text = dayS + "." + monS + "." + yeaS;
             date2.Text = dayS + 1 + "." + monS + "." + yeaS;
@@ -433,8 +504,215 @@ namespace FoxManPr
                 lbl1.Text = Convert.ToString(i + 1);
                 tb6.Controls.Add(lbl1, 0, i);
             }
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tbl1.Controls.Clear();
+            tbl2.Controls.Clear();
+            tbl3.Controls.Clear();
+            tbl4.Controls.Clear();
+            tbl5.Controls.Clear();
+            tb6.Controls.Clear();
 
+            dayS = dayS - 7;
+            dayE = dayE - 7;
+            
+
+            if (monE == 10 && dayE < 0) { dayE = dayE + 30; monE = 9; }
+            if (monE == 10 && dayE == 0) { dayE = 30; monE = monE - 1; }
+            if (monS == 10 && dayS < 0) { dayS = dayS + 30; monS = 9; }
+            if (monS == 10 && dayS == 0) { dayS = 30; monS = monS - 1; }
+
+            if (monE == 11 && dayE < 0) { dayE = dayE + 31; monE = 10; }
+            if (monE == 11 && dayE == 0) { dayE = 31; monE = monE - 1; }
+            if (monS == 11 && dayS < 0) { dayS = dayS + 31; monS = 10; }
+            if (monS == 11 && dayS == 0) { dayS = 31; monS = monS - 1; }
+
+            if (monE == 12 && dayE < 0) { dayE = dayE + 30; monE = 11; }
+            if (monE == 12 && dayE == 0) { dayE = 30; monE = monE - 1; }
+            if (monS == 12 && dayS < 0) { dayS = dayS + 30; monS = 11; }
+            if (monS == 12 && dayS == 0) { dayS = 30; monS = monS - 1; }
+
+            if (monE == 1 && dayE < 0) { dayE = dayE + 31; monE = 12; yeaE = yeaE - 1; }
+            if (monE == 1 && dayE == 0) { dayE = 31; monE = monE - 1; }
+            if (monS == 1 && dayS < 0) { dayS = dayS + 31; monS = 12; yeaS = yeaS - 1; }
+            if (monS == 1 && dayS == 0) { dayS = 31; monS = monS - 1; }
+
+            if (monE == 2 && dayE < 0) { dayE = dayE + 31; monE = 1; }
+            if (monE == 2 && dayE == 0) { dayE = 31; monE = monE - 1; }
+            if (monS == 2 && dayS < 0) { dayS = dayS + 31; monS = 1; }
+
+            if (monE == 3 && dayE < 0)
+            {
+                if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
+                { dayE = dayE + 29; monE = 2; }
+                else
+                { dayE = dayE + 28; monE = 2; }
+            }
+            if (monE == 3 && dayE == 0)
+            {
+                if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
+                { dayE = 29; monE = monE - 1; }
+                else
+                { dayE = 28; monE = monE - 1; } 
+            }
+            if (monS == 3 && dayS < 0)
+            {
+                if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
+                { dayS = dayS + 29; monS = 2; }
+                else
+                { dayS = dayS + 28; monS = 2; }
+            }
+            if (monS == 2 && dayS == 23)
+            {
+                 dayS = dayS - 1; 
+            }
+
+            if (monE == 4 && dayE < 0) { dayE = dayE + 31; monE = 3; }
+            if (monE == 4 && dayE == 0) { dayE = 31; monE = monE - 1; }
+            if (monS == 4 && dayS < 0) { dayS = dayS + 31; monS = 3; }
+            if (monS == 4 && dayS == 0) { dayS = 31; monS = monS - 1; }
+
+            if (monE == 5 && dayE < 0) { dayE = dayE + 30; monE = 4; }
+            if (monE == 5 && dayE == 0) { dayE = 30; monE = monE - 1; }
+            if (monS == 5 && dayS < 0) { dayS = dayS + 30; monS = 4; }
+            if (monS == 5 && dayS == 0) { dayS = 30; monS = monS - 1; }
+
+            if (monE == 6 && dayE < 0) { dayE = dayE + 31; monE = 5; }
+            if (monE == 6 && dayE == 0) { dayE = 31; monE = monE - 1; }
+            if (monS == 6 && dayS < 0) { dayS = dayS + 31; monS = 5; }
+            if (monS == 6 && dayS == 0) { dayS = 31; monS = monS - 1; }
+
+            if (monE == 7 && dayE < 0) { dayE = dayE + 30; monE = 6; }
+            if (monE == 7 && dayE == 0) { dayE = 30; monE = monE - 1; }
+            if (monS == 7 && dayS < 0) { dayS = dayS + 30; monS = 6; }
+            if (monS == 7 && dayS == 0) { dayS = 38; monS = monS - 1; }
+
+            if (monE == 8 && dayE < 0) { dayE = dayE + 31; monE = 7; }
+            if (monE == 8 && dayE == 0) { dayE = 31; monE = monE - 1; }
+            if (monS == 8 && dayS < 0) { dayS = dayS + 31; monS = 7; }
+            if (monS == 8 && dayS == 0) { dayS = 31; monS = monS - 1; }
+
+            if (monE == 9 && dayE < 0) { dayE = dayE + 31; monE = 8; }
+            if (monE == 9 && dayE == 0) { dayE = 31; monE = monE - 1; }
+            if (monS == 9 && dayS < 0) { dayS = dayS + 31; monS = 8; }
+            if (monS == 9 && dayS == 0) { dayS = 31; monS = monS - 1; }
+
+            number.Text = dayS + "." + monS + "." + yeaS + " - " + dayE + "." + monE + "." + yeaE;
+            date1.Text = dayS + "." + monS + "." + yeaS;
+            date2.Text = dayS + 1 + "." + monS + "." + yeaS;
+            number.Controls.Clear();
+
+            for (int i = 0; i < subject.Count; i++)
+            {
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = subject[i];
+                tbl1.Controls.Add(lbl, 1, i);
+
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = Convert.ToString(i + 1);
+                tbl1.Controls.Add(lbl1, 0, i);
+            }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                if (mark[i + 1] == date1.Text)
+                {
+                    lbl1 = new Label();
+                    lbl1.Dock = DockStyle.Fill;
+                    lbl1.Location = new Point(3, 0);
+                    lbl1.Size = new Size(32, 32);
+                    lbl1.Text = mark[i];
+                    tbl1.Controls.Add(lbl1, 3, Convert.ToInt32(mark[i + 2]) - 1);
+
+                }
+            }
+            for (int i = 0; i < subject2.Count; i++)
+            {
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = subject2[i];
+                tbl2.Controls.Add(lbl, 1, i);
+
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = Convert.ToString(i + 1);
+                tbl2.Controls.Add(lbl1, 0, i);
+            }
+            for (int i = 0; i < subject3.Count; i++)
+            {
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = subject3[i];
+                tbl3.Controls.Add(lbl, 1, i);
+
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = Convert.ToString(i + 1);
+                tbl3.Controls.Add(lbl1, 0, i);
+            }
+            for (int i = 0; i < subject4.Count; i++)
+            {
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = subject4[i];
+                tbl4.Controls.Add(lbl, 1, i);
+
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = Convert.ToString(i + 1);
+                tbl4.Controls.Add(lbl1, 0, i);
+            }
+            for (int i = 0; i < subject5.Count; i++)
+            {
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = subject5[i];
+                tbl5.Controls.Add(lbl, 1, i);
+
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = Convert.ToString(i + 1);
+                tbl5.Controls.Add(lbl1, 0, i);
+            }
+            for (int i = 0; i < subject6.Count; i++)
+            {
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = subject6[i];
+                tb6.Controls.Add(lbl, 1, i);
+
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = Convert.ToString(i + 1);
+                tb6.Controls.Add(lbl1, 0, i);
+            }
         }
     }
 }
