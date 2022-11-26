@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data.Common;
@@ -31,6 +30,7 @@ namespace FoxManPr
         public static string typeForm = "";
         public static string clasForm = "";
         public static string subidForm= "";
+        public static string idForm   = "";
 
         const string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
         public login()
@@ -72,6 +72,7 @@ namespace FoxManPr
                     postForm = list[i+4];
                     typeForm = list[i+2];
                     clasForm = list[i+5];
+                    idForm   = list[i+6];
                      if (typeForm == "Учитель")
                      {
                         subidForm = list2[0];

@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Data = new System.Windows.Forms.Label();
             this.Type = new System.Windows.Forms.Label();
+            this.Data = new System.Windows.Forms.Label();
+            this.panel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,15 +45,6 @@
             this.panel1.Size = new System.Drawing.Size(986, 54);
             this.panel1.TabIndex = 0;
             // 
-            // Data
-            // 
-            this.Data.AutoSize = true;
-            this.Data.Location = new System.Drawing.Point(13, 13);
-            this.Data.Name = "Data";
-            this.Data.Size = new System.Drawing.Size(35, 13);
-            this.Data.TabIndex = 0;
-            this.Data.Text = "label1";
-            // 
             // Type
             // 
             this.Type.AutoSize = true;
@@ -62,13 +54,31 @@
             this.Type.TabIndex = 1;
             this.Type.Text = "label1";
             // 
+            // Data
+            // 
+            this.Data.AutoSize = true;
+            this.Data.Location = new System.Drawing.Point(13, 13);
+            this.Data.Name = "Data";
+            this.Data.Size = new System.Drawing.Size(35, 13);
+            this.Data.TabIndex = 0;
+            this.Data.Text = "label1";
+            // 
+            // panel
+            // 
+            this.panel.Location = new System.Drawing.Point(0, 60);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(986, 501);
+            this.panel.TabIndex = 1;
+            // 
             // UserMarks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
             this.Name = "UserMarks";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserMarks";
             this.Load += new System.EventHandler(this.UserMarks_Load);
             this.panel1.ResumeLayout(false);
@@ -82,5 +92,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label Data;
         private System.Windows.Forms.Label Type;
+        private System.Windows.Forms.Panel panel;
     }
 }
