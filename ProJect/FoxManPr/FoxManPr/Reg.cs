@@ -20,7 +20,9 @@ namespace FoxManPr
         public Reg()
         {
             InitializeComponent();
-            List<string> list = NetCity.MySelect("SELECT name, id FROM sub");
+            List<string> list  = NetCity.MySelect("SELECT name, id FROM sub");
+            List<string> list2 = NetCity.MySelect("SELECT class, id FROM  classes");
+
             /*  for (int i = 1; i < list.Count; i+=2)
               {
                   txt2.Items.Add(list[i]);   
@@ -29,8 +31,11 @@ namespace FoxManPr
             {
                 txt2.Items.Add(list[i]);
             }
-           
-            
+            for (int i = 0; i < list2.Count; i += 2)
+            {
+                six.Items.Add(list2[i]);
+            }
+
 
         }
 

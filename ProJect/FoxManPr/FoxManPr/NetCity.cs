@@ -88,6 +88,10 @@ namespace FoxManPr
             number.Text = dayS  + "." + monS + "." + yeaS + " - " + dayE + "." + monE + "." + yeaE;
             date1.Text = dayS  + "." + monS + "." + yeaS;
             date2.Text = dayS + 1 + "." + monS + "." + yeaS;
+            date3.Text = dayS + 2 + "." + monS + "." + yeaS;
+            date4.Text = dayS + 3 + "." + monS + "." + yeaS;
+            date5.Text = dayS + 4 + "." + monS + "." + yeaS;
+            date6.Text = dayS + 5 + "." + monS + "." + yeaS;
 
             for (int i = 0; i < subject.Count; i++)
             {
@@ -393,6 +397,10 @@ namespace FoxManPr
             number.Text = dayS + "." + monS + "." + yeaS + " - " + dayE + "." + monE + "." + yeaE;
             date1.Text = dayS + "." + monS + "." + yeaS;
             date2.Text = dayS + 1 + "." + monS + "." + yeaS;
+            date3.Text = dayS + 2 + "." + monS + "." + yeaS;
+            date4.Text = dayS + 3 + "." + monS + "." + yeaS;
+            date5.Text = dayS + 4 + "." + monS + "." + yeaS;
+            date6.Text = dayS + 5 + "." + monS + "." + yeaS;
             number.Controls.Clear();
 
             for (int i = 0; i < subject.Count; i++)
@@ -602,6 +610,10 @@ namespace FoxManPr
             number.Text = dayS + "." + monS + "." + yeaS + " - " + dayE + "." + monE + "." + yeaE;
             date1.Text = dayS + "." + monS + "." + yeaS;
             date2.Text = dayS + 1 + "." + monS + "." + yeaS;
+            date3.Text = dayS + 2 + "." + monS + "." + yeaS;
+            date4.Text = dayS + 3 + "." + monS + "." + yeaS;
+            date5.Text = dayS + 4 + "." + monS + "." + yeaS;
+            date6.Text = dayS + 5 + "." + monS + "." + yeaS;
             number.Controls.Clear();
 
             for (int i = 0; i < subject.Count; i++)

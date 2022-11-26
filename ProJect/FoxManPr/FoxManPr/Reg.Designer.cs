@@ -38,7 +38,6 @@
             this.four = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.six = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.threee = new System.Windows.Forms.ComboBox();
             this.txt = new System.Windows.Forms.TextBox();
@@ -48,6 +47,7 @@
             this.a = new System.Windows.Forms.Label();
             this.gg = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.six = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -145,14 +145,6 @@
             this.label5.Text = "Тип:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // six
-            // 
-            this.six.Location = new System.Drawing.Point(71, 136);
-            this.six.Margin = new System.Windows.Forms.Padding(2);
-            this.six.Name = "six";
-            this.six.Size = new System.Drawing.Size(153, 20);
-            this.six.TabIndex = 11;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -239,11 +231,20 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // six
+            // 
+            this.six.FormattingEnabled = true;
+            this.six.Location = new System.Drawing.Point(70, 138);
+            this.six.Name = "six";
+            this.six.Size = new System.Drawing.Size(154, 21);
+            this.six.TabIndex = 20;
+            // 
             // Reg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(231, 349);
+            this.Controls.Add(this.six);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.gg);
             this.Controls.Add(this.a);
@@ -252,7 +253,6 @@
             this.Controls.Add(this.l);
             this.Controls.Add(this.txt);
             this.Controls.Add(this.threee);
-            this.Controls.Add(this.six);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.four);
@@ -286,7 +286,6 @@
         private System.Windows.Forms.TextBox four;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox six;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox threee;
         private System.Windows.Forms.TextBox txt;
@@ -296,5 +295,6 @@
         private System.Windows.Forms.Label a;
         private System.Windows.Forms.Label gg;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox six;
     }
 }

@@ -55,6 +55,10 @@
             this.number = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.date3 = new System.Windows.Forms.Label();
+            this.date4 = new System.Windows.Forms.Label();
+            this.date5 = new System.Windows.Forms.Label();
+            this.date6 = new System.Windows.Forms.Label();
             this.panel.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -205,6 +209,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel7.Controls.Add(this.date6);
             this.panel7.Controls.Add(this.label3);
             this.panel7.Location = new System.Drawing.Point(390, 539);
             this.panel7.Margin = new System.Windows.Forms.Padding(2);
@@ -226,6 +231,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel6.Controls.Add(this.date5);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Location = new System.Drawing.Point(11, 537);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
@@ -248,6 +254,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel5.Controls.Add(this.date4);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Location = new System.Drawing.Point(390, 275);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
@@ -269,6 +276,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel4.Controls.Add(this.date3);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(11, 275);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
@@ -416,7 +424,7 @@
             // number
             // 
             this.number.AutoSize = true;
-            this.number.Location = new System.Drawing.Point(323, 34);
+            this.number.Location = new System.Drawing.Point(304, 35);
             this.number.Name = "number";
             this.number.Size = new System.Drawing.Size(41, 13);
             this.number.TabIndex = 3;
@@ -440,6 +448,46 @@
             this.button1.Text = "Назад";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // date3
+            // 
+            this.date3.AutoSize = true;
+            this.date3.Location = new System.Drawing.Point(37, 10);
+            this.date3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date3.Name = "date3";
+            this.date3.Size = new System.Drawing.Size(61, 13);
+            this.date3.TabIndex = 13;
+            this.date3.Text = "03.09.2022";
+            // 
+            // date4
+            // 
+            this.date4.AutoSize = true;
+            this.date4.Location = new System.Drawing.Point(37, 9);
+            this.date4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date4.Name = "date4";
+            this.date4.Size = new System.Drawing.Size(61, 13);
+            this.date4.TabIndex = 14;
+            this.date4.Text = "04.09.2022";
+            // 
+            // date5
+            // 
+            this.date5.AutoSize = true;
+            this.date5.Location = new System.Drawing.Point(38, 9);
+            this.date5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date5.Name = "date5";
+            this.date5.Size = new System.Drawing.Size(61, 13);
+            this.date5.TabIndex = 15;
+            this.date5.Text = "05.09.2022";
+            // 
+            // date6
+            // 
+            this.date6.AutoSize = true;
+            this.date6.Location = new System.Drawing.Point(37, 8);
+            this.date6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date6.Name = "date6";
+            this.date6.Size = new System.Drawing.Size(61, 13);
+            this.date6.TabIndex = 16;
+            this.date6.Text = "06.09.2022";
             // 
             // NetCity
             // 
@@ -501,5 +549,9 @@
         private System.Windows.Forms.Button next;
         private System.Windows.Forms.TableLayoutPanel tbl2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label date6;
+        private System.Windows.Forms.Label date5;
+        private System.Windows.Forms.Label date4;
+        private System.Windows.Forms.Label date3;
     }
 }

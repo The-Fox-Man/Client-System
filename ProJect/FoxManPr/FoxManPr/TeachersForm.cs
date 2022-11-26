@@ -95,7 +95,7 @@ namespace FoxManPr
 
                 foreach (Control control in pan1.Controls)
                 {
-                    if (control.Location == new Point(10, y))
+                    if (control.Location == new Point(10, y + AutoScrollPosition.Y))
                     {
                         MySqlCommand cmd = new MySqlCommand("DELETE FROM users WHERE id = '" + control.Tag + "'", Program.con);
                         DbDataReader read = cmd.ExecuteReader();

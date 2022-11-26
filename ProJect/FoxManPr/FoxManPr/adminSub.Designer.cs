@@ -31,6 +31,17 @@
             this.pan1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.pan2 = new System.Windows.Forms.Panel();
+            this.t9 = new System.Windows.Forms.ComboBox();
+            this.t8 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.t4 = new System.Windows.Forms.ComboBox();
+            this.t7 = new System.Windows.Forms.ComboBox();
+            this.t6 = new System.Windows.Forms.ComboBox();
+            this.t5 = new System.Windows.Forms.ComboBox();
+            this.t3 = new System.Windows.Forms.ComboBox();
+            this.t2 = new System.Windows.Forms.ComboBox();
+            this.t1 = new System.Windows.Forms.ComboBox();
             this.cm = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -41,17 +52,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.t1 = new System.Windows.Forms.ComboBox();
-            this.t2 = new System.Windows.Forms.ComboBox();
-            this.t3 = new System.Windows.Forms.ComboBox();
-            this.t5 = new System.Windows.Forms.ComboBox();
-            this.t6 = new System.Windows.Forms.ComboBox();
-            this.t7 = new System.Windows.Forms.ComboBox();
-            this.t4 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.t8 = new System.Windows.Forms.ComboBox();
-            this.t9 = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cm1 = new System.Windows.Forms.ComboBox();
+            this.butt = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cm2 = new System.Windows.Forms.ComboBox();
             this.pan1.SuspendLayout();
             this.pan2.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +68,7 @@
             this.pan1.Controls.Add(this.label9);
             this.pan1.Location = new System.Drawing.Point(12, 12);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(1170, 531);
+            this.pan1.Size = new System.Drawing.Size(1379, 531);
             this.pan1.TabIndex = 0;
             this.pan1.Paint += new System.Windows.Forms.PaintEventHandler(this.pan1_Paint);
             // 
@@ -78,6 +84,12 @@
             // pan2
             // 
             this.pan2.AutoScroll = true;
+            this.pan2.Controls.Add(this.cm2);
+            this.pan2.Controls.Add(this.label14);
+            this.pan2.Controls.Add(this.butt);
+            this.pan2.Controls.Add(this.cm1);
+            this.pan2.Controls.Add(this.label13);
+            this.pan2.Controls.Add(this.label12);
             this.pan2.Controls.Add(this.t9);
             this.pan2.Controls.Add(this.t8);
             this.pan2.Controls.Add(this.label11);
@@ -100,13 +112,110 @@
             this.pan2.Controls.Add(this.label1);
             this.pan2.Location = new System.Drawing.Point(12, 559);
             this.pan2.Name = "pan2";
-            this.pan2.Size = new System.Drawing.Size(1170, 255);
+            this.pan2.Size = new System.Drawing.Size(1379, 255);
             this.pan2.TabIndex = 1;
+            // 
+            // t9
+            // 
+            this.t9.FormattingEnabled = true;
+            this.t9.Location = new System.Drawing.Point(371, 105);
+            this.t9.Name = "t9";
+            this.t9.Size = new System.Drawing.Size(167, 21);
+            this.t9.TabIndex = 59;
+            // 
+            // t8
+            // 
+            this.t8.FormattingEnabled = true;
+            this.t8.Items.AddRange(new object[] {
+            "пн",
+            "вт",
+            "ср",
+            "чт",
+            "пт",
+            "сб"});
+            this.t8.Location = new System.Drawing.Point(371, 70);
+            this.t8.Name = "t8";
+            this.t8.Size = new System.Drawing.Size(167, 21);
+            this.t8.TabIndex = 58;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(327, 108);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 13);
+            this.label11.TabIndex = 57;
+            this.label11.Text = "Класс";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(327, 73);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 13);
+            this.label10.TabIndex = 56;
+            this.label10.Text = "День";
+            // 
+            // t4
+            // 
+            this.t4.FormattingEnabled = true;
+            this.t4.Location = new System.Drawing.Point(68, 153);
+            this.t4.Name = "t4";
+            this.t4.Size = new System.Drawing.Size(168, 21);
+            this.t4.TabIndex = 55;
+            // 
+            // t7
+            // 
+            this.t7.FormattingEnabled = true;
+            this.t7.Location = new System.Drawing.Point(69, 231);
+            this.t7.Name = "t7";
+            this.t7.Size = new System.Drawing.Size(167, 21);
+            this.t7.TabIndex = 54;
+            // 
+            // t6
+            // 
+            this.t6.FormattingEnabled = true;
+            this.t6.Location = new System.Drawing.Point(68, 207);
+            this.t6.Name = "t6";
+            this.t6.Size = new System.Drawing.Size(168, 21);
+            this.t6.TabIndex = 53;
+            // 
+            // t5
+            // 
+            this.t5.FormattingEnabled = true;
+            this.t5.Location = new System.Drawing.Point(68, 179);
+            this.t5.Name = "t5";
+            this.t5.Size = new System.Drawing.Size(168, 21);
+            this.t5.TabIndex = 52;
+            // 
+            // t3
+            // 
+            this.t3.FormattingEnabled = true;
+            this.t3.Location = new System.Drawing.Point(68, 127);
+            this.t3.Name = "t3";
+            this.t3.Size = new System.Drawing.Size(168, 21);
+            this.t3.TabIndex = 51;
+            // 
+            // t2
+            // 
+            this.t2.FormattingEnabled = true;
+            this.t2.Location = new System.Drawing.Point(69, 100);
+            this.t2.Name = "t2";
+            this.t2.Size = new System.Drawing.Size(167, 21);
+            this.t2.TabIndex = 50;
+            // 
+            // t1
+            // 
+            this.t1.FormattingEnabled = true;
+            this.t1.Location = new System.Drawing.Point(69, 74);
+            this.t1.Name = "t1";
+            this.t1.Size = new System.Drawing.Size(167, 21);
+            this.t1.TabIndex = 49;
             // 
             // cm
             // 
             this.cm.FormattingEnabled = true;
-            this.cm.Location = new System.Drawing.Point(854, 74);
+            this.cm.Location = new System.Drawing.Point(261, 145);
             this.cm.Name = "cm";
             this.cm.Size = new System.Drawing.Size(277, 21);
             this.cm.TabIndex = 48;
@@ -187,114 +296,80 @@
             // 
             this.button1.Location = new System.Drawing.Point(16, 830);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(551, 23);
+            this.button1.Size = new System.Drawing.Size(1375, 23);
             this.button1.TabIndex = 15;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // t1
+            // label12
             // 
-            this.t1.FormattingEnabled = true;
-            this.t1.Location = new System.Drawing.Point(69, 74);
-            this.t1.Name = "t1";
-            this.t1.Size = new System.Drawing.Size(167, 21);
-            this.t1.TabIndex = 49;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(1055, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 13);
+            this.label12.TabIndex = 60;
+            this.label12.Text = "Фильтр";
             // 
-            // t2
+            // label13
             // 
-            this.t2.FormattingEnabled = true;
-            this.t2.Location = new System.Drawing.Point(69, 100);
-            this.t2.Name = "t2";
-            this.t2.Size = new System.Drawing.Size(167, 21);
-            this.t2.TabIndex = 50;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(1061, 46);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.TabIndex = 61;
+            this.label13.Text = "Класс:";
             // 
-            // t3
+            // cm1
             // 
-            this.t3.FormattingEnabled = true;
-            this.t3.Location = new System.Drawing.Point(68, 127);
-            this.t3.Name = "t3";
-            this.t3.Size = new System.Drawing.Size(168, 21);
-            this.t3.TabIndex = 51;
+            this.cm1.FormattingEnabled = true;
+            this.cm1.Items.AddRange(new object[] {
+            ""});
+            this.cm1.Location = new System.Drawing.Point(1108, 43);
+            this.cm1.Name = "cm1";
+            this.cm1.Size = new System.Drawing.Size(254, 21);
+            this.cm1.TabIndex = 62;
             // 
-            // t5
+            // butt
             // 
-            this.t5.FormattingEnabled = true;
-            this.t5.Location = new System.Drawing.Point(68, 179);
-            this.t5.Name = "t5";
-            this.t5.Size = new System.Drawing.Size(168, 21);
-            this.t5.TabIndex = 52;
+            this.butt.Location = new System.Drawing.Point(1261, 223);
+            this.butt.Name = "butt";
+            this.butt.Size = new System.Drawing.Size(101, 23);
+            this.butt.TabIndex = 63;
+            this.butt.Text = "Отфильтровать";
+            this.butt.UseVisualStyleBackColor = true;
+            this.butt.Click += new System.EventHandler(this.butt_Click);
             // 
-            // t6
+            // label14
             // 
-            this.t6.FormattingEnabled = true;
-            this.t6.Location = new System.Drawing.Point(68, 207);
-            this.t6.Name = "t6";
-            this.t6.Size = new System.Drawing.Size(168, 21);
-            this.t6.TabIndex = 53;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(1062, 78);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(37, 13);
+            this.label14.TabIndex = 64;
+            this.label14.Text = "День:";
             // 
-            // t7
+            // cm2
             // 
-            this.t7.FormattingEnabled = true;
-            this.t7.Location = new System.Drawing.Point(69, 231);
-            this.t7.Name = "t7";
-            this.t7.Size = new System.Drawing.Size(167, 21);
-            this.t7.TabIndex = 54;
-            // 
-            // t4
-            // 
-            this.t4.FormattingEnabled = true;
-            this.t4.Location = new System.Drawing.Point(68, 153);
-            this.t4.Name = "t4";
-            this.t4.Size = new System.Drawing.Size(168, 21);
-            this.t4.TabIndex = 55;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(327, 73);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 13);
-            this.label10.TabIndex = 56;
-            this.label10.Text = "День";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(327, 108);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
-            this.label11.TabIndex = 57;
-            this.label11.Text = "Класс";
-            // 
-            // t8
-            // 
-            this.t8.FormattingEnabled = true;
-            this.t8.Items.AddRange(new object[] {
+            this.cm2.FormattingEnabled = true;
+            this.cm2.Items.AddRange(new object[] {
+            "",
             "пн",
             "вт",
             "ср",
             "чт",
             "пт",
             "сб"});
-            this.t8.Location = new System.Drawing.Point(371, 70);
-            this.t8.Name = "t8";
-            this.t8.Size = new System.Drawing.Size(167, 21);
-            this.t8.TabIndex = 58;
-            // 
-            // t9
-            // 
-            this.t9.FormattingEnabled = true;
-            this.t9.Location = new System.Drawing.Point(371, 105);
-            this.t9.Name = "t9";
-            this.t9.Size = new System.Drawing.Size(167, 21);
-            this.t9.TabIndex = 59;
+            this.cm2.Location = new System.Drawing.Point(1109, 73);
+            this.cm2.Name = "cm2";
+            this.cm2.Size = new System.Drawing.Size(253, 21);
+            this.cm2.TabIndex = 65;
             // 
             // adminSub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.ClientSize = new System.Drawing.Size(1403, 861);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pan1);
@@ -336,5 +411,11 @@
         private System.Windows.Forms.ComboBox t3;
         private System.Windows.Forms.ComboBox t2;
         private System.Windows.Forms.ComboBox t1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cm1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button butt;
+        private System.Windows.Forms.ComboBox cm2;
+        private System.Windows.Forms.Label label14;
     }
 }
