@@ -7,22 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Data.Common;
 
 namespace FoxManPr
 {
     public partial class UserMarks : Form
     {
         int y = 10;
+        List<string> subject = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE surn = '" + NetCityTeachrers.UserData + "'");
+
         public UserMarks()
         {
-            InitializeComponent();
-            List<string> subject = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE surn = '" + NetCityTeachrers.UserData + "'");
-
+            InitializeComponent();  
+            label1.Text = "Поставить оценку ученику ";
+            label2.Text = subject[0] + " " + subject[1];
+            
             Data.Text = "Оценки пользователя " + subject[0] + " " + subject[1] + " " + subject[5];
             Type.Text = subject[2];
 
 
-            List<string> us = NetCity.MySelect("SELECT mark, date FROM marks WHERE userid = '" + subject[6] + "' AND subid = '" + login.subidForm + "'"); // добавь вхере сабайди = subidForm
+            List<string> us = NetCity.MySelect("SELECT mark, date FROM marks WHERE userid = '" + subject[6] + "' AND subid = '" + login.subidForm + "'");
 
             for (int i = 0; i < us.Count; i+=2)
             {
@@ -40,15 +45,50 @@ namespace FoxManPr
                 lbl1.Text = us[i+1];
                 panel.Controls.Add(lbl1);
 
-
                 y = y + 40;
-
             }
-
         }
 
         private void UserMarks_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+            if (marke.Text == "" || dat.Text == "" || day.Text == "" || numb.Text == "") { MessageBox.Show("Fuck you", "System"); }
+            else 
+            {
+                List<string> list = NetCity.MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects WHERE clas = '"+ subject[5] +"' AND day = '"+ day.Text +"'");
+                List<string> list2 = NetCity.MySelect("SELECT name FROM sub WHERE id = '"+ login.subidForm +"'");
+                List<string> update = NetCity.MySelect("SELECT mark, date, col FROM marks WHERE userid = '" + subject[6] + "' AND subid = '" + login.subidForm + "' AND col = '"+ numb.Text +"' And date = '"+ dat.Text +"'");
+
+              /*  if(numb.Text == update[2] && dat.Text == update[1]) !!!! Доделать проверку на наличие оценки и в соответствии её обновление
+                {
+
+                }*/ 
+                if(list[Convert.ToInt32(numb.Text) - 1] == list2[0])
+                {
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO marks(mark, date, col, userid, subid)" + "VALUES('" + marke.Text + "', '" + dat.Text + "', '" + numb.Text + "', '" + subject[6] + "', '" + login.subidForm +"')", Program.con);
+                    DbDataReader read = cmd.ExecuteReader();
+                    read.Close();
+                    MessageBox.Show("YUP");
+                    return;
+                }
+                
+            }
 
         }
     }

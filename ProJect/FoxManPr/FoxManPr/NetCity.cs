@@ -70,21 +70,43 @@ namespace FoxManPr
             return list;
         }
 
+        private void makeMeSick(List<string> subject, int i, TableLayoutPanel tbl)
+        {
+            
+                Label lbl = new Label();
+                lbl.Dock = DockStyle.Fill;
+                lbl.Location = new Point(3, 0);
+                lbl.Size = new Size(32, 32);
+                lbl.Text = subject[i];
+                tbl.Controls.Add(lbl, 1, i);
+
+                Label lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = Convert.ToString(i + 1);
+                tbl.Controls.Add(lbl1, 0, i);
+        }
+        private void giveMeAReason(List<string> mark, int i, TableLayoutPanel tbl, Label date)
+        {
+            if (mark[i + 1] == date.Text)
+            {
+                lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(32, 32);
+                lbl1.Text = mark[i];
+                tbl.Controls.Add(lbl1, 3, Convert.ToInt32(mark[i + 2]) - 1);
+            }
+        }
         public NetCity()
         {
             InitializeComponent();
             user.Text = login.nameForm + " " + login.surnForm;
             number.Controls.Clear();
-
             //  List<string> subject = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");
-
-
             //    List<string> date = MySelect("SELECT date, day");
-
-           
-         //   List<string> sub = MySelect("SELECT name FROM sub WHERE id = '"+ mark[2] +"'");
-
-
+            //   List<string> sub = MySelect("SELECT name FROM sub WHERE id = '"+ mark[2] +"'");
             number.Text = dayS  + "." + monS + "." + yeaS + " - " + dayE + "." + monE + "." + yeaE;
             date1.Text = dayS  + "." + monS + "." + yeaS;
             date2.Text = dayS + 1 + "." + monS + "." + yeaS;
@@ -95,129 +117,68 @@ namespace FoxManPr
 
             for (int i = 0; i < subject.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject[i];
-                tbl1.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl1.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject, i, tbl1);
             }
             for (int i = 0; i < mark.Count; i+=4)
             {
-                if (mark[i+1] == date1.Text)
-                {
-                    lbl1 = new Label();
-                    lbl1.Dock = DockStyle.Fill;
-                    lbl1.Location = new Point(3, 0);
-                    lbl1.Size = new Size(32, 32);
-                    lbl1.Text = mark[i];
-                    tbl1.Controls.Add(lbl1, 3, Convert.ToInt32(mark[i+2]) - 1);
-                   
-                }
+                giveMeAReason(mark, i, tbl1, date1);
             }
+
             for (int i = 0; i < subject2.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject2[i];
-                tbl2.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl2.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject2, i, tbl2);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl2, date2);
+            }
+
             for (int i = 0; i < subject3.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject3[i];
-                tbl3.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl3.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject3, i, tbl3);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl3, date3);
+            }
+
             for (int i = 0; i < subject4.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject4[i];
-                tbl4.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl4.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject4, i, tbl4);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl4, date4);
+            }
+
             for (int i = 0; i < subject5.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject5[i];
-                tbl5.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl5.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject5, i, tbl5);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl5, date5);
+            }
+
             for (int i = 0; i < subject6.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject6[i];
-                tb6.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tb6.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject6, i, tb6);
             }
-
-
-
-       /*     for (int i = 0; i < subject.Count; i++)
+            for (int i = 0; i < mark.Count; i += 4)
             {
-                Button lbl = new Button();
-                lbl.Location = new Point(150, 10);
-                lbl.Font = new Font("Comic Sans MS", 13);
-                lbl.Size = new Size(100, 30);
-                lbl.Text = subject[i];
-                panel2.Controls.Add(lbl);
+                giveMeAReason(mark, i, tb6, date6);
+            }
+            /* for (int i = 0; i < subject.Count; i++)
+                 {
+                     Button lbl = new Button();
+                     lbl.Location = new Point(150, 10);
+                     lbl.Font = new Font("Comic Sans MS", 13);
+                     lbl.Size = new Size(100, 30);
+                     lbl.Text = subject[i];
+                     panel2.Controls.Add(lbl);
 
-            }*/
-
-
-            /*   for (int i = 7; i < subject.Count; i++)
+                 }
+              for (int i = 7; i < subject.Count; i++)
                {
                    Label lbl1 = new Label();
                    lbl1.Dock = DockStyle.Fill;
@@ -262,7 +223,6 @@ namespace FoxManPr
                    lbl1.Text = subject[i];
                    tbl2.Controls.Add(lbl1, 1, i - 35);
                }*/
-
         }
         private void NetCity_Load(object sender, EventArgs e)
         {
@@ -405,112 +365,56 @@ namespace FoxManPr
 
             for (int i = 0; i < subject.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject[i];
-                tbl1.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl1.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject, i, tbl1);
             }
             for (int i = 0; i < mark.Count; i += 4)
             {
-                if (mark[i + 1] == date1.Text)
-                {
-                    lbl1 = new Label();
-                    lbl1.Dock = DockStyle.Fill;
-                    lbl1.Location = new Point(3, 0);
-                    lbl1.Size = new Size(32, 32);
-                    lbl1.Text = mark[i];
-                    tbl1.Controls.Add(lbl1, 3, Convert.ToInt32(mark[i + 2]) - 1);
-
-                }
+                giveMeAReason(mark, i, tbl1, date1);
             }
+
             for (int i = 0; i < subject2.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject2[i];
-                tbl2.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl2.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject2, i, tbl2);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl2, date2);
+            }
+
             for (int i = 0; i < subject3.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject3[i];
-                tbl3.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl3.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject3, i, tbl3);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl3, date3);
+            }
+
             for (int i = 0; i < subject4.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject4[i];
-                tbl4.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl4.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject4, i, tbl4);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl4, date4);
+            }
+
             for (int i = 0; i < subject5.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject5[i];
-                tbl5.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl5.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject5, i, tbl5);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl5, date5);
+            }
+
             for (int i = 0; i < subject6.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject6[i];
-                tb6.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tb6.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject6, i, tb6);
+            }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tb6, date6);
             }
         }
 
@@ -618,112 +522,56 @@ namespace FoxManPr
 
             for (int i = 0; i < subject.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject[i];
-                tbl1.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl1.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject, i, tbl1);
             }
             for (int i = 0; i < mark.Count; i += 4)
             {
-                if (mark[i + 1] == date1.Text)
-                {
-                    lbl1 = new Label();
-                    lbl1.Dock = DockStyle.Fill;
-                    lbl1.Location = new Point(3, 0);
-                    lbl1.Size = new Size(32, 32);
-                    lbl1.Text = mark[i];
-                    tbl1.Controls.Add(lbl1, 3, Convert.ToInt32(mark[i + 2]) - 1);
-
-                }
+                giveMeAReason(mark, i, tbl1, date1);
             }
+
             for (int i = 0; i < subject2.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject2[i];
-                tbl2.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl2.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject2, i, tbl2);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl2, date2);
+            }
+
             for (int i = 0; i < subject3.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject3[i];
-                tbl3.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl3.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject3, i, tbl3);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl3, date3);
+            }
+
             for (int i = 0; i < subject4.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject4[i];
-                tbl4.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl4.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject4, i, tbl4);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl4, date4);
+            }
+
             for (int i = 0; i < subject5.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject5[i];
-                tbl5.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl5.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject5, i, tbl5);
             }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tbl5, date5);
+            }
+
             for (int i = 0; i < subject6.Count; i++)
             {
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject6[i];
-                tb6.Controls.Add(lbl, 1, i);
-
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tb6.Controls.Add(lbl1, 0, i);
+                makeMeSick(subject6, i, tb6);
+            }
+            for (int i = 0; i < mark.Count; i += 4)
+            {
+                giveMeAReason(mark, i, tb6, date6);
             }
         }
     }
