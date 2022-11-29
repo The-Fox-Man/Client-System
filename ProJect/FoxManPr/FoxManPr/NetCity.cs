@@ -69,7 +69,12 @@ namespace FoxManPr
 
             return list;
         }
-
+        public static void MyUpdate(string cmdText)
+        {
+            MySqlCommand cmd = new MySqlCommand(cmdText, Program.con);
+            DbDataReader read = cmd.ExecuteReader();
+            read.Close();
+        }
         private void makeMeSick(List<string> subject, int i, TableLayoutPanel tbl)
         {
             
