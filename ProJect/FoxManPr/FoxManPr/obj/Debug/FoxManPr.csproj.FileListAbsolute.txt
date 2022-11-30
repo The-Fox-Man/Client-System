@@ -141,3 +141,7 @@ C:\Users\user\Desktop\I walk alonely road\ProJect\FoxManPr\FoxManPr\obj\Debug\Fo
 C:\Users\user\Desktop\I walk alonely road\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.CopyComplete
 C:\Users\user\Desktop\I walk alonely road\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
 C:\Users\user\Desktop\I walk alonely road\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Admin.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.adminSub.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.TeachersForm.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.UserMarks.resources

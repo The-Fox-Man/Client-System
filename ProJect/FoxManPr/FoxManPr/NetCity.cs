@@ -112,7 +112,8 @@ namespace FoxManPr
 
         private void StopIt(int i, int k, Label one)
         {
-
+            mon = monS;
+            year = yeaS;
             if (monS == 9 && i > 30) { mon = 10; one.Text = i - 30 + "." + mon + "." + year; }
             else if (monS == 10 && i > 31) { mon = 11; one.Text = i - 31 + "." + mon + "." + year; }
             else if (monS == 11 && i > 30) { mon = 12; one.Text = i - 30 + "." + mon + "." + year; }
@@ -120,7 +121,10 @@ namespace FoxManPr
             else if (monS == 1 && i > 31) { mon = 2; one.Text = i - 31 + "." + mon + "." + year; }
             else if (monS == 2 && i > 28)
             {
-                if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
+                if(yeaE == 2020 && i == 29 || yeaE == 2024 && i == 29 || yeaE == 2028 && i == 29 || yeaE == 2032 && i == 29 || yeaE == 2036 && i == 29
+                    || yeaE == 2040 && i == 29 || yeaE == 2044 && i == 29 || yeaE == 2048 && i == 29 || yeaE == 2052 && i == 29 || yeaE == 2056 && i == 29 || yeaE == 2060 && i == 29)
+                { mon = 3; one.Text = 29 + "." + mon + "." + year; }
+                else if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
                 { mon = 3; one.Text = i - 29 + "." + mon + "." + year; }
                 else
                 { mon = 3; one.Text = i - 28 + "." + mon + "." + year; }

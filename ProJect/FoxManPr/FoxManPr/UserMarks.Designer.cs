@@ -33,17 +33,19 @@
             this.Data = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.marke = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.day = new System.Windows.Forms.ComboBox();
-            this.numb = new System.Windows.Forms.ComboBox();
-            this.yup = new System.Windows.Forms.Button();
             this.dat = new System.Windows.Forms.TextBox();
+            this.yup = new System.Windows.Forms.Button();
+            this.numb = new System.Windows.Forms.ComboBox();
+            this.day = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.marke = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cm = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +88,8 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.cm);
             this.panel2.Controls.Add(this.dat);
             this.panel2.Controls.Add(this.yup);
             this.panel2.Controls.Add(this.numb);
@@ -102,88 +106,22 @@
             this.panel2.Size = new System.Drawing.Size(176, 501);
             this.panel2.TabIndex = 2;
             // 
-            // label1
+            // dat
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Поставить оценку";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.dat.Location = new System.Drawing.Point(6, 123);
+            this.dat.Name = "dat";
+            this.dat.Size = new System.Drawing.Size(158, 20);
+            this.dat.TabIndex = 13;
             // 
-            // label2
+            // yup
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Имя Фамилия";
-            // 
-            // marke
-            // 
-            this.marke.FormattingEnabled = true;
-            this.marke.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2"});
-            this.marke.Location = new System.Drawing.Point(6, 74);
-            this.marke.Name = "marke";
-            this.marke.Size = new System.Drawing.Size(158, 21);
-            this.marke.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Оценка";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 104);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Число";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 208);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Номер предмета";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 154);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "День недели";
-            // 
-            // day
-            // 
-            this.day.FormattingEnabled = true;
-            this.day.Items.AddRange(new object[] {
-            "пн",
-            "вт",
-            "ср",
-            "чт",
-            "пт",
-            "сб"});
-            this.day.Location = new System.Drawing.Point(6, 177);
-            this.day.Name = "day";
-            this.day.Size = new System.Drawing.Size(158, 21);
-            this.day.TabIndex = 8;
+            this.yup.Location = new System.Drawing.Point(3, 269);
+            this.yup.Name = "yup";
+            this.yup.Size = new System.Drawing.Size(170, 23);
+            this.yup.TabIndex = 12;
+            this.yup.Text = "Выставить";
+            this.yup.UseVisualStyleBackColor = true;
+            this.yup.Click += new System.EventHandler(this.button1_Click);
             // 
             // numb
             // 
@@ -201,22 +139,110 @@
             this.numb.Size = new System.Drawing.Size(158, 21);
             this.numb.TabIndex = 9;
             // 
-            // yup
+            // day
             // 
-            this.yup.Location = new System.Drawing.Point(3, 269);
-            this.yup.Name = "yup";
-            this.yup.Size = new System.Drawing.Size(170, 23);
-            this.yup.TabIndex = 12;
-            this.yup.Text = "Выставить";
-            this.yup.UseVisualStyleBackColor = true;
-            this.yup.Click += new System.EventHandler(this.button1_Click);
+            this.day.FormattingEnabled = true;
+            this.day.Items.AddRange(new object[] {
+            "пн",
+            "вт",
+            "ср",
+            "чт",
+            "пт",
+            "сб"});
+            this.day.Location = new System.Drawing.Point(6, 177);
+            this.day.Name = "day";
+            this.day.Size = new System.Drawing.Size(158, 21);
+            this.day.TabIndex = 8;
             // 
-            // dat
+            // label6
             // 
-            this.dat.Location = new System.Drawing.Point(6, 123);
-            this.dat.Name = "dat";
-            this.dat.Size = new System.Drawing.Size(158, 20);
-            this.dat.TabIndex = 13;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(5, 154);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 13);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "День недели";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 208);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Номер предмета";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 104);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Число";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Оценка";
+            // 
+            // marke
+            // 
+            this.marke.FormattingEnabled = true;
+            this.marke.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2"});
+            this.marke.Location = new System.Drawing.Point(6, 74);
+            this.marke.Name = "marke";
+            this.marke.Size = new System.Drawing.Size(158, 21);
+            this.marke.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Имя Фамилия";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Поставить оценку";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // cm
+            // 
+            this.cm.FormattingEnabled = true;
+            this.cm.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2"});
+            this.cm.Location = new System.Drawing.Point(8, 401);
+            this.cm.Name = "cm";
+            this.cm.Size = new System.Drawing.Size(158, 21);
+            this.cm.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 382);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Изменить оценку";
             // 
             // UserMarks
             // 
@@ -256,5 +282,7 @@
         private System.Windows.Forms.ComboBox marke;
         private System.Windows.Forms.Button yup;
         private System.Windows.Forms.TextBox dat;
+        private System.Windows.Forms.ComboBox cm;
+        private System.Windows.Forms.Label label7;
     }
 }
