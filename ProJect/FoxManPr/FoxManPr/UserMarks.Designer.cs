@@ -33,6 +33,8 @@
             this.Data = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cm = new System.Windows.Forms.ComboBox();
             this.dat = new System.Windows.Forms.TextBox();
             this.yup = new System.Windows.Forms.Button();
             this.numb = new System.Windows.Forms.ComboBox();
@@ -44,8 +46,9 @@
             this.marke = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cm = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +91,9 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.cm);
             this.panel2.Controls.Add(this.dat);
@@ -105,6 +111,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(176, 501);
             this.panel2.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 382);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Изменить оценку";
+            // 
+            // cm
+            // 
+            this.cm.FormattingEnabled = true;
+            this.cm.Items.AddRange(new object[] {
+            "5",
+            "4",
+            "3",
+            "2"});
+            this.cm.Location = new System.Drawing.Point(3, 401);
+            this.cm.Name = "cm";
+            this.cm.Size = new System.Drawing.Size(170, 21);
+            this.cm.TabIndex = 14;
             // 
             // dat
             // 
@@ -222,27 +250,30 @@
             this.label1.Text = "Поставить оценку";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // cm
+            // button1
             // 
-            this.cm.FormattingEnabled = true;
-            this.cm.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2"});
-            this.cm.Location = new System.Drawing.Point(8, 401);
-            this.cm.Name = "cm";
-            this.cm.Size = new System.Drawing.Size(158, 21);
-            this.cm.TabIndex = 14;
+            this.button1.Location = new System.Drawing.Point(3, 360);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 1);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // dateTimePicker1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 382);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Изменить оценку";
+            this.dateTimePicker1.Location = new System.Drawing.Point(4, 334);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker1.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(4, 306);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "label8";
             // 
             // UserMarks
             // 
@@ -284,5 +315,8 @@
         private System.Windows.Forms.TextBox dat;
         private System.Windows.Forms.ComboBox cm;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

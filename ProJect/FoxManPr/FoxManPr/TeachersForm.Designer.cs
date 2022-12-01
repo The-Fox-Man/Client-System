@@ -43,6 +43,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.cm = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmn = new System.Windows.Forms.ComboBox();
             this.pan2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +58,8 @@
             // 
             // pan2
             // 
+            this.pan2.Controls.Add(this.cmn);
+            this.pan2.Controls.Add(this.label8);
             this.pan2.Controls.Add(this.textBox4);
             this.pan2.Controls.Add(this.label7);
             this.pan2.Controls.Add(this.textBox3);
@@ -110,7 +114,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 99);
+            this.label5.Location = new System.Drawing.Point(66, 100);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 13);
@@ -185,6 +189,23 @@
             this.cm.Size = new System.Drawing.Size(277, 21);
             this.cm.TabIndex = 49;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(5, 204);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Предмет";
+            // 
+            // cmn
+            // 
+            this.cmn.FormattingEnabled = true;
+            this.cmn.Location = new System.Drawing.Point(68, 199);
+            this.cmn.Name = "cmn";
+            this.cmn.Size = new System.Drawing.Size(138, 21);
+            this.cmn.TabIndex = 14;
+            // 
             // TeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,5 +241,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cm;
+        private System.Windows.Forms.ComboBox cmn;
+        private System.Windows.Forms.Label label8;
     }
 }

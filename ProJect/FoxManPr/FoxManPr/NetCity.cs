@@ -51,7 +51,7 @@ namespace FoxManPr
 
       //  int d = 0;
 
-        const string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
+        //nst string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
 
         public static List<string> MySelect(string cmd)
         {
@@ -210,61 +210,6 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tb6, date6);
             }
-            /* for (int i = 0; i < subject.Count; i++)
-                 {
-                     Button lbl = new Button();
-                     lbl.Location = new Point(150, 10);
-                     lbl.Font = new Font("Comic Sans MS", 13);
-                     lbl.Size = new Size(100, 30);
-                     lbl.Text = subject[i];
-                     panel2.Controls.Add(lbl);
-
-                 }
-              for (int i = 7; i < subject.Count; i++)
-               {
-                   Label lbl1 = new Label();
-                   lbl1.Dock = DockStyle.Fill;
-                   lbl1.Location = new Point(3, 0);
-                   lbl1.Size = new Size(32, 32);
-                   lbl1.Text = subject[i];
-                   tbl2.Controls.Add(lbl1, 1, i - 7);
-               }
-              for (int i = 14; i < subject.Count; i++)
-               {
-                   Label lbl1 = new Label();
-                   lbl1.Dock = DockStyle.Fill;
-                   lbl1.Location = new Point(3, 0);
-                   lbl1.Size = new Size(32, 32);
-                   lbl1.Text = subject[i];
-                   tbl2.Controls.Add(lbl1, 1, i - 14);
-               }
-               for (int i = 21; i < subject.Count; i++)
-               {
-                   Label lbl1 = new Label();
-                   lbl1.Dock = DockStyle.Fill;
-                   lbl1.Location = new Point(3, 0);
-                   lbl1.Size = new Size(32, 32);
-                   lbl1.Text = subject[i];
-                   tbl2.Controls.Add(lbl1, 1, i - 21);
-               }
-               for (int i = 28; i < subject.Count; i++)
-               {
-                   Label lbl1 = new Label();
-                   lbl1.Dock = DockStyle.Fill;
-                   lbl1.Location = new Point(3, 0);
-                   lbl1.Size = new Size(32, 32);
-                   lbl1.Text = subject[i];
-                   tbl2.Controls.Add(lbl1, 1, i - 28);
-               }
-               for (int i = 35; i < subject.Count; i++)
-               {
-                   Label lbl1 = new Label();
-                   lbl1.Dock = DockStyle.Fill;
-                   lbl1.Location = new Point(3, 0);
-                   lbl1.Size = new Size(32, 32);
-                   lbl1.Text = subject[i];
-                   tbl2.Controls.Add(lbl1, 1, i - 35);
-               }*/
         }
         private void NetCity_Load(object sender, EventArgs e)
         {

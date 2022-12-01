@@ -21,8 +21,6 @@ namespace FoxManPr
         public UserMarks()
         {
             InitializeComponent();
-
-
         }
 
         private void UserMarks_Load(object sender, EventArgs e)
@@ -94,7 +92,7 @@ namespace FoxManPr
                         MySqlCommand cmd = new MySqlCommand("DELETE FROM marks WHERE date = '" + control.Text + "' AND col= '" + control2.Text + "'AND userid='" + subject[6] + "' AND subid='" + login.subidForm + "'", Program.con);
                         DbDataReader read = cmd.ExecuteReader();
                         read.Close();
-                        MessageBox.Show("YAY");
+                        MessageBox.Show("Оценка удалена.", "System");
                         UserMarks_Load(sender, e);
                         return;
                     }
@@ -113,7 +111,7 @@ namespace FoxManPr
                     if (control.Location == new Point(20, y + AutoScrollPosition.Y) && control2.Location == new Point(200, y + AutoScrollPosition.Y))
                     {
                         NetCity.MyUpdate("UPDATE marks SET mark='" + cm.Text + "' WHERE date='" + control.Text + "' AND col='" + control2.Text + "' AND userid='" + subject[6] + "' AND subid='" + login.subidForm + "'");
-                        MessageBox.Show("KO");
+                        MessageBox.Show("Оценнка изменена.", "System");
                         UserMarks_Load(sender, e);
                     }
 
@@ -136,7 +134,7 @@ namespace FoxManPr
             List<string> list2 = NetCity.MySelect("SELECT name FROM sub WHERE id = '" + login.subidForm + "'");
             List<string> update = NetCity.MySelect("SELECT mark, date, col FROM marks WHERE userid = '" + subject[6] + "' AND subid = '" + login.subidForm + "' AND col = '" + numb.Text + "' AND date = '" + dat.Text + "'");
 
-            if (marke.Text == "" || dat.Text == "" || day.Text == "" || numb.Text == "") { MessageBox.Show("Fuck you", "System"); }
+            if (marke.Text == "" || dat.Text == "" || day.Text == "" || numb.Text == "") { MessageBox.Show("Заполните все поля.", "System"); }
             else
             {
                 /*      if (update.Count > 0)
@@ -152,11 +150,11 @@ namespace FoxManPr
                     MySqlCommand cmd = new MySqlCommand("INSERT INTO marks(mark, date, col, userid, subid)" + "VALUES('" + marke.Text + "', '" + dat.Text + "', '" + numb.Text + "', '" + subject[6] + "', '" + login.subidForm + "')", Program.con);
                     DbDataReader read = cmd.ExecuteReader();
                     read.Close();
-                    MessageBox.Show("YUP");
+                    MessageBox.Show("Оценка поставлена.", "System");
                     UserMarks_Load(sender, e);
                     return;
                 }
-                else { MessageBox.Show("Fuck you", "System"); }
+                else { MessageBox.Show("Извините, вы поставили оценку либо не в ту строку(а может не в правильный день недели), либо на это число, на этот день, в эту строку, где уже есть оценка.", "System"); }
             }
 
         }

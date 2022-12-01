@@ -17,35 +17,30 @@ namespace FoxManPr
 {
     public partial class TeachersForm : Form
     {
+        List<string> lis = NetCity.MySelect("SELECT name, id FROM sub");
         public TeachersForm()
         {
             InitializeComponent();
-
-          /*  List<string> list = NetCity.MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th, id FROM subjects");
-            cm.Items.Clear();
-            for (int i = 0; i < list.Count; i+=7)
+            for (int i = 0; i < lis.Count; i += 2)
             {
-                cm.Items.Add(list[i] + "," + list[i + 1] + "," + list[i+2] + ","
-                             + list[i + 3] + "," + list[i + 4] + list[i + 5] + ","
-                             + list[i + 6] + "," + list[i + 7]);
-
-            }*/
-
+                cmn.Items.Add(lis[i]);
+            }
         }
-        string yep = "Учитель";
         private void button1_Click(object sender, EventArgs e)
         {
+            List<string> li = NetCity.MySelect("SELECT id FROM sub WHERE name = '"+ cmn.Text +"'");
+
             List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
             string[] parts = cm.Text.Split(new char[] { ',' });
             MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + label5.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + "" + "')", Program.con);
             DbDataReader read = cmd.ExecuteReader();
             read.Close();
             List<string> list1 = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE post = '" + textBox4.Text + "' AND pass = '" + textBox3.Text + "'");
-            MySqlCommand cmdn = new MySqlCommand("INSERT INTO teachers(name, surn, idtag) VALUES('" + textBox1.Text + "', '" + textBox2.Text  + "', '" + list1[6] + "')", Program.con);
+            MySqlCommand cmdn = new MySqlCommand("INSERT INTO teachers(name, surn, idtag, idsub) VALUES('" + textBox1.Text + "', '" + textBox2.Text  + "', '" + list1[6] + "', '" + li[0] +"')", Program.con);
             DbDataReader rea = cmdn.ExecuteReader();
             rea.Close();
             
-            MessageBox.Show("YUP");
+            MessageBox.Show("Учитель добавлен в список.", "System");
             TeachersForm_Load(sender, e);
             return;
         }
@@ -104,7 +99,7 @@ namespace FoxManPr
                         MySqlCommand cm = new MySqlCommand("DELETE FROM teachers WHERE idtag = '" + control.Tag + "'", Program.con);
                         DbDataReader rea = cm.ExecuteReader();
                         rea.Close();
-                        MessageBox.Show("YUP");
+                        MessageBox.Show("Учитель удвлён из списка.", "System");
                         TeachersForm_Load(sender, e);
                         return;
                     }

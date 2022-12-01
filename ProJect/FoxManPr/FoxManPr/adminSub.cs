@@ -31,13 +31,11 @@ namespace FoxManPr
                 t6.Items.Add(list[i]);
                 t7.Items.Add(list[i]);
             }
-            for (int i = 0; i < list2.Count; i += 2)
-            {
-                t9.Items.Add(list2[i]);
-                cm1.Items.Add(list2[i]);
-            }
-
-
+                for (int i = 0; i < list2.Count; i += 2)
+                {
+                    t9.Items.Add(list2[i]);
+                    cm1.Items.Add(list2[i]);
+                }
             }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,7 +48,7 @@ namespace FoxManPr
                                                 + t7.Text + "', '" + t8.Text + "', '" + t9.Text + "')", Program.con);
             DbDataReader read = cmd.ExecuteReader();
             read.Close();
-            MessageBox.Show("YUP");
+            MessageBox.Show("Расписание на один день добавлен.", "System");
             adminSub_Load(sender, e);
             return;
            
@@ -81,7 +79,7 @@ namespace FoxManPr
                     MySqlCommand cmd = new MySqlCommand("DELETE FROM subjects WHERE id = '" + control.Tag + "'", Program.con);
                     DbDataReader read = cmd.ExecuteReader();
                     read.Close();
-                    MessageBox.Show("YUP");
+                    MessageBox.Show("Расписание на один день удалено", "System");
                     adminSub_Load(sender, e);
                     return;
                 }
