@@ -33,5 +33,17 @@ namespace FoxManPr
             TeachersForm h = new TeachersForm();
             h.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddClassesAndSub h = new AddClassesAndSub();
+            h.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Base t = new Base();
+            t.ShowDialog();
+        }
     }
 }

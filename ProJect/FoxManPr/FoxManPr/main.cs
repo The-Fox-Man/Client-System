@@ -117,8 +117,7 @@ namespace FoxManPr
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Base t = new Base();
-            t.ShowDialog();
+
         }
 
         private void filtr_Click(object sender, EventArgs e)
@@ -176,8 +175,11 @@ namespace FoxManPr
 
         private void admin_Click(object sender, EventArgs e)
         {
-            Admin u = new Admin();
-            u.ShowDialog();
+//            if ()
+  //          {
+                Admin u = new Admin();
+                u.ShowDialog();
+    //        }
         }
     }
 }
