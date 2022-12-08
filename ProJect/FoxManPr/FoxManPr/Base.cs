@@ -20,7 +20,12 @@ namespace FoxManPr
             int y = 50;
             for (int i = 0; i < list.Count; i += 7)
             {
-                LetsDance(i, y, 10, list, 0, 1, panel1, 100, 50);
+                LetsDance(i, y, 10, list, 0, 6, panel1, 100, 50);
+                LetsDance(i, y, 120, list, 1, 6, panel1, 100, 50);
+                LetsDance(i, y, 230, list, 2, 6, panel1, 100, 50);
+                LetsDance(i, y, 340, list, 3, 6, panel1, 100, 50);
+                LetsDance(i, y, 450, list, 4, 6, panel1, 100, 50);
+                LetsDance(i, y, 560, list, 5, 6, panel1, 100, 50);
 
                 y += 70;
             }

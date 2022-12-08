@@ -45,14 +45,14 @@ namespace FoxManPr
         {
             InitializeComponent();
 
-           // string[] lines = File.ReadAllLines("../../txt/subjects.txt");
+            // string[] lines = File.ReadAllLines("../../txt/subjects.txt");
 
-           /*  foreach (string line in lines)
-            {
-               string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
-                people peopl = new people(parts[0], parts[1], parts[2]);
-                human.Add(peopl)
-            };*/
+            /*  foreach (string line in lines)
+             {
+                string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
+                 people peopl = new people(parts[0], parts[1], parts[2]);
+                 human.Add(peopl)
+             };*/
             //        foreach (people p in human)
             //      {
             //        p.lbl.Location = new Point();
@@ -145,6 +145,11 @@ namespace FoxManPr
             {
                 MessageBox.Show("Сначала войдите.", "Программа");
             }
+            else if (login.typeForm == "Администратор")
+            {
+                MessageBox.Show("ВЫ администратор, вам сюда не нужно.", "Программа");
+                main_Load(sender, e);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -165,7 +170,12 @@ namespace FoxManPr
 
         private void main_Load(object sender, EventArgs e)
         {
-
+            if (login.typeForm == "Администратор")//доделать кнопку, систему рангов, добавление админов и дз
+            {
+                admin.Enabled = true;
+                admin.Visible = true;
+            }
+            else { admin.Enabled = false; admin.Visible = false; }
         }
 
         private void label2_Click(object sender, EventArgs e)
