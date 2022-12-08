@@ -41,10 +41,16 @@ namespace FoxManPr
     public partial class main : Form
     {
         public static List<people> human = new List<people>();
+        public static bool lol = false;
         public main()
         {
             InitializeComponent();
-
+            if (lol)//кнопку, систему рангов, добавление админов и дз
+            {
+                admin.Enabled = true;
+                admin.Visible = true;
+            }
+            else { admin.Enabled = false; admin.Visible = false; }
             // string[] lines = File.ReadAllLines("../../txt/subjects.txt");
 
             /*  foreach (string line in lines)
@@ -106,6 +112,12 @@ namespace FoxManPr
                 button5.Text = "Войти";
             }
             else { loginlbl.Text = login.nameForm + " " + login.surnForm;   button5.Text = "Выйти";}
+            if (login.typeForm == "Администратор")//систему рангов, добавление админов и дз
+            {
+                admin.Enabled = true;
+                admin.Visible = true;
+            }
+            else { admin.Enabled = false;  admin.Visible = false;}
           
         }
 
@@ -148,7 +160,6 @@ namespace FoxManPr
             else if (login.typeForm == "Администратор")
             {
                 MessageBox.Show("ВЫ администратор, вам сюда не нужно.", "Программа");
-                main_Load(sender, e);
             }
         }
 
@@ -170,12 +181,7 @@ namespace FoxManPr
 
         private void main_Load(object sender, EventArgs e)
         {
-            if (login.typeForm == "Администратор")//доделать кнопку, систему рангов, добавление админов и дз
-            {
-                admin.Enabled = true;
-                admin.Visible = true;
-            }
-            else { admin.Enabled = false; admin.Visible = false; }
+
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -1,6 +1,7 @@
-﻿namespace FoxManPr
+﻿
+namespace FoxManPr
 {
-    partial class TeachersForm
+    partial class AdminAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pan1 = new System.Windows.Forms.Panel();
+            this.cm = new System.Windows.Forms.ComboBox();
             this.pan2 = new System.Windows.Forms.Panel();
             this.cmn = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,20 +45,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.cm = new System.Windows.Forms.ComboBox();
+            this.pan1 = new System.Windows.Forms.Panel();
             this.pan2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pan1
+            // cm
             // 
-            this.pan1.AutoScroll = true;
-            this.pan1.Location = new System.Drawing.Point(12, 12);
-            this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(785, 280);
-            this.pan1.TabIndex = 0;
+            this.cm.FormattingEnabled = true;
+            this.cm.Location = new System.Drawing.Point(487, 26);
+            this.cm.Name = "cm";
+            this.cm.Size = new System.Drawing.Size(277, 21);
+            this.cm.TabIndex = 52;
+            this.cm.Visible = false;
             // 
             // pan2
             // 
+            this.pan2.Controls.Add(this.cm);
             this.pan2.Controls.Add(this.cmn);
             this.pan2.Controls.Add(this.label8);
             this.pan2.Controls.Add(this.textBox4);
@@ -72,14 +75,24 @@
             this.pan2.Controls.Add(this.label3);
             this.pan2.Controls.Add(this.label2);
             this.pan2.Controls.Add(this.button1);
-            this.pan2.Location = new System.Drawing.Point(12, 311);
+            this.pan2.Location = new System.Drawing.Point(12, 424);
             this.pan2.Name = "pan2";
-            this.pan2.Size = new System.Drawing.Size(785, 377);
-            this.pan2.TabIndex = 1;
+            this.pan2.Size = new System.Drawing.Size(785, 264);
+            this.pan2.TabIndex = 51;
             // 
             // cmn
             // 
             this.cmn.FormattingEnabled = true;
+            this.cmn.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
             this.cmn.Location = new System.Drawing.Point(68, 199);
             this.cmn.Name = "cmn";
             this.cmn.Size = new System.Drawing.Size(138, 21);
@@ -90,9 +103,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(5, 204);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Предмет";
+            this.label8.Text = "Ранг";
             // 
             // textBox4
             // 
@@ -116,7 +129,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(138, 20);
             this.textBox3.TabIndex = 10;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label6
             // 
@@ -126,7 +138,6 @@
             this.label6.Size = new System.Drawing.Size(48, 13);
             this.label6.TabIndex = 9;
             this.label6.Text = "Пароль:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -134,9 +145,9 @@
             this.label5.Location = new System.Drawing.Point(66, 100);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(86, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Учитель";
+            this.label5.Text = "Администратор";
             // 
             // label1
             // 
@@ -184,13 +195,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 13);
+            this.label2.Size = new System.Drawing.Size(144, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Добавить учителя";
+            this.label2.Text = "Добавить администратора";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 351);
+            this.button1.Location = new System.Drawing.Point(9, 235);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(776, 23);
             this.button1.TabIndex = 6;
@@ -198,27 +209,25 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cm
+            // pan1
             // 
-            this.cm.FormattingEnabled = true;
-            this.cm.Location = new System.Drawing.Point(266, 340);
-            this.cm.Name = "cm";
-            this.cm.Size = new System.Drawing.Size(277, 21);
-            this.cm.TabIndex = 49;
-            this.cm.Visible = false;
+            this.pan1.AutoScroll = true;
+            this.pan1.Location = new System.Drawing.Point(12, 12);
+            this.pan1.Name = "pan1";
+            this.pan1.Size = new System.Drawing.Size(785, 406);
+            this.pan1.TabIndex = 50;
             // 
-            // TeachersForm
+            // AdminAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 700);
-            this.Controls.Add(this.cm);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.pan1);
-            this.Name = "TeachersForm";
+            this.Name = "AdminAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TeachersForm";
-            this.Load += new System.EventHandler(this.TeachersForm_Load);
+            this.Text = "AdminAdd";
+            this.Load += new System.EventHandler(this.AdminAdd_Load);
             this.pan2.ResumeLayout(false);
             this.pan2.PerformLayout();
             this.ResumeLayout(false);
@@ -227,22 +236,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pan1;
+        private System.Windows.Forms.ComboBox cm;
         private System.Windows.Forms.Panel pan2;
+        private System.Windows.Forms.ComboBox cmn;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cm;
-        private System.Windows.Forms.ComboBox cmn;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel pan1;
     }
 }

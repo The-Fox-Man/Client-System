@@ -31,6 +31,7 @@ namespace FoxManPr
         public static string clasForm = "";
         public static string subidForm= "";
         public static string idForm   = "";
+        public static string status   = "";
 
         const string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
         public login()
@@ -52,7 +53,7 @@ namespace FoxManPr
         private void button2_Click(object sender, EventArgs e)
         {
             List<string> list =  NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
-            List<string> list2 = NetCity.MySelect("SELECT idsub FROM teachers WHERE idtag = '" + list[6] + "'");
+
             /*string[] li = File.ReadAllLines("../../txt/users.txt");
              foreach (string objects in li)
              {
@@ -73,10 +74,21 @@ namespace FoxManPr
                     typeForm = list[i+2];
                     clasForm = list[i+5];
                     idForm   = list[i+6];
-                     if (typeForm == "Учитель")
-                     {
-                        subidForm = list2[0];
-                     }
+                    List<string> list2 = NetCity.MySelect("SELECT idsub FROM teachers WHERE idtag = '" + idForm + "'");
+
+                        if (typeForm == "Учитель")
+                        {
+                            subidForm = list2[0];
+                        }
+                    
+                    List<string> list3 = NetCity.MySelect("SELECT status FROM admins WHERE tagid = '" + idForm + "'");
+
+                        if (typeForm == "Администратор")
+                        {
+                            status = list3[0];
+                            main.lol = true;
+                        }
+                    
                 }
             }
 

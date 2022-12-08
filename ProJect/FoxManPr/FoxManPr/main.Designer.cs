@@ -216,9 +216,9 @@
         private System.Windows.Forms.Button sgo;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button admin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel menu;
+        private System.Windows.Forms.Button admin;
     }
 }
 

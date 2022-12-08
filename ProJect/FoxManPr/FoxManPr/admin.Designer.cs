@@ -32,6 +32,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.secret = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -46,7 +47,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 56);
+            this.button2.Location = new System.Drawing.Point(13, 102);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(211, 37);
             this.button2.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(13, 100);
+            this.button3.Location = new System.Drawing.Point(13, 56);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(210, 40);
             this.button3.TabIndex = 2;
@@ -74,11 +75,22 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // secret
+            // 
+            this.secret.Location = new System.Drawing.Point(13, 190);
+            this.secret.Name = "secret";
+            this.secret.Size = new System.Drawing.Size(210, 36);
+            this.secret.TabIndex = 4;
+            this.secret.Text = "Добавить администратора";
+            this.secret.UseVisualStyleBackColor = true;
+            this.secret.Click += new System.EventHandler(this.secret_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(235, 238);
+            this.Controls.Add(this.secret);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -97,5 +109,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button secret;
     }
 }

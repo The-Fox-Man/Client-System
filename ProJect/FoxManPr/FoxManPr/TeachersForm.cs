@@ -30,11 +30,12 @@ namespace FoxManPr
         {
             List<string> li = NetCity.MySelect("SELECT id FROM sub WHERE name = '"+ cmn.Text +"'");
 
-            List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
-            string[] parts = cm.Text.Split(new char[] { ',' });
+           // List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
+         //   string[] parts = cm.Text.Split(new char[] { ',' });
             MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + label5.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + "" + "')", Program.con);
             DbDataReader read = cmd.ExecuteReader();
             read.Close();
+
             List<string> list1 = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE post = '" + textBox4.Text + "' AND pass = '" + textBox3.Text + "'");
             MySqlCommand cmdn = new MySqlCommand("INSERT INTO teachers(name, surn, idtag, idsub) VALUES('" + textBox1.Text + "', '" + textBox2.Text  + "', '" + list1[6] + "', '" + li[0] +"')", Program.con);
             DbDataReader rea = cmdn.ExecuteReader();
@@ -47,21 +48,20 @@ namespace FoxManPr
 
         private void TeachersForm_Load(object sender, EventArgs e)
         {
-            List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
-
+          //  List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
+            List<string> list = NetCity.MySelect("SELECT name, surn, idtag, idsub FROM teachers");
+            
             pan1.Controls.Clear();
             int y = 50;
             int x = 50;
             
-            for (int i = 0; i < list.Count; i += 7)
+            for (int i = 0; i < list.Count; i += 4)
             {
-                if (list[i + 2] == "Учитель")
-                {
                     Label lbl = new Label();
                     lbl.Location = new Point(10, y);
                     lbl.Size = new Size(145, 65);
                     lbl.Text = list[i];
-                    lbl.Tag = list[i + 6];
+                    lbl.Tag = list[i + 2];
                     pan1.Controls.Add(lbl);
 
                     Label lbl1 = new Label();
@@ -70,8 +70,17 @@ namespace FoxManPr
                     lbl1.Text = list[i + 1];
                     pan1.Controls.Add(lbl1);
 
+                    List<string> li = NetCity.MySelect("SELECT name FROM sub WHERE id = '" + list[i+3] + "'");
+                    for (int o = 0; o < li.Count; o++)
+                    {
+                        Label lbl2 = new Label();
+                        lbl2.Location = new Point(320, y);
+                        lbl2.Size = new Size(145, 65);
+                        lbl2.Text = li[o];
+                        pan1.Controls.Add(lbl2);
+                    }
                     Button btn = new Button();
-                    btn.Location = new Point(310, y);
+                    btn.Location = new Point(470, y);
                     btn.Size = new Size(109, 30);
                     btn.TabIndex = 0;
                     btn.Text = "Удалить";
@@ -79,9 +88,9 @@ namespace FoxManPr
                     btn.Click += new EventHandler(delete);
                     pan1.Controls.Add(btn);
 
-                    y += 70;
-                }
+                    y += 70;        
             }
+            
         }
             private void delete(object sender, EventArgs e)
             {

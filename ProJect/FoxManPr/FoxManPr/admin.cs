@@ -16,34 +16,52 @@ namespace FoxManPr
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            adminSub m = new adminSub();
-            m.ShowDialog();
-        }
-
         private void admin_Load(object sender, EventArgs e)
         {
        
         }
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(login.status) >= 1)
+            {
+                adminSub m = new adminSub();
+                m.ShowDialog();
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
-            TeachersForm h = new TeachersForm();
-            h.ShowDialog();
+            if (Convert.ToInt32(login.status) >= 3) //баг починить!!!
+            {
+                TeachersForm u = new TeachersForm();
+                u.ShowDialog();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AddClassesAndSub h = new AddClassesAndSub();
-            h.ShowDialog();
+            if (Convert.ToInt32(login.status) >= 2)
+            {
+                AddClassesAndSub h = new AddClassesAndSub();
+                h.ShowDialog();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Base t = new Base();
-            t.ShowDialog();
+            if (Convert.ToInt32(login.status) >= 99)
+            {
+                Base t = new Base();
+                t.ShowDialog();
+            }
+        }
+
+        private void secret_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(login.status) >= 99)
+            {
+                AdminAdd t = new AdminAdd();
+                t.ShowDialog();
+            }
         }
     }
 }
