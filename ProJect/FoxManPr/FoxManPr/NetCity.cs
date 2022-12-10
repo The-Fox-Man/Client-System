@@ -26,6 +26,7 @@ namespace FoxManPr
 
 
         List<string> mark = MySelect("SELECT mark, date, col, subid FROM marks WHERE userid = '" + login.idForm + "'");
+        List<string> ht = MySelect("SELECT text, date, col, subid FROM hometask WHERE class = '" + login.clasForm + "'");
 
         public static string clase;
         public static string date;
@@ -104,7 +105,18 @@ namespace FoxManPr
                 tbl.Controls.Add(lbl1, 3, Convert.ToInt32(mark[i + 2]) - 1);
             }
         }
-
+        private void CruelWorld(List<string> ht, int i, TableLayoutPanel tbl, Label date)
+        {
+            if (ht[i + 1] == date.Text)
+            {
+                lbl1 = new Label();
+                lbl1.Dock = DockStyle.Fill;
+                lbl1.Location = new Point(3, 0);
+                lbl1.Size = new Size(200, 32);
+                lbl1.Text = ht[i];
+                tbl.Controls.Add(lbl1, 2, Convert.ToInt32(ht[i + 2]) - 1);
+            }
+        }
 
 
         int mon = 8;
@@ -165,7 +177,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl1, date1);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl1, date1);
+            }
+            //----------------------------------------------------
             for (int i = 0; i < subject2.Count; i++)
             {
                 makeMeSick(subject2, i, tbl2);
@@ -174,7 +190,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl2, date2);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl2, date2);
+            }
+            //---------------------------------------------------
             for (int i = 0; i < subject3.Count; i++)
             {
                 makeMeSick(subject3, i, tbl3);
@@ -183,7 +203,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl3, date3);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl3, date3);
+            }
+            //---------------------------------------------------
             for (int i = 0; i < subject4.Count; i++)
             {
                 makeMeSick(subject4, i, tbl4);
@@ -192,7 +216,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl4, date4);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl4, date4);
+            }
+            //--------------------------------------------------
             for (int i = 0; i < subject5.Count; i++)
             {
                 makeMeSick(subject5, i, tbl5);
@@ -201,7 +229,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl5, date5);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl5, date5);
+            }
+            //-------------------------------------------------
             for (int i = 0; i < subject6.Count; i++)
             {
                 makeMeSick(subject6, i, tb6);
@@ -209,6 +241,10 @@ namespace FoxManPr
             for (int i = 0; i < mark.Count; i += 4)
             {
                 giveMeAReason(mark, i, tb6, date6);
+            }
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tb6, date6);
             }
         }
         private void NetCity_Load(object sender, EventArgs e)
@@ -363,7 +399,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl1, date1);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl1, date1);
+            }
+            //----------------------------------------------------
             for (int i = 0; i < subject2.Count; i++)
             {
                 makeMeSick(subject2, i, tbl2);
@@ -372,7 +412,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl2, date2);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl2, date2);
+            }
+            //---------------------------------------------------
             for (int i = 0; i < subject3.Count; i++)
             {
                 makeMeSick(subject3, i, tbl3);
@@ -381,7 +425,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl3, date3);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl3, date3);
+            }
+            //---------------------------------------------------
             for (int i = 0; i < subject4.Count; i++)
             {
                 makeMeSick(subject4, i, tbl4);
@@ -390,7 +438,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl4, date4);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl4, date4);
+            }
+            //--------------------------------------------------
             for (int i = 0; i < subject5.Count; i++)
             {
                 makeMeSick(subject5, i, tbl5);
@@ -399,7 +451,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl5, date5);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl5, date5);
+            }
+            //-------------------------------------------------
             for (int i = 0; i < subject6.Count; i++)
             {
                 makeMeSick(subject6, i, tb6);
@@ -407,6 +463,10 @@ namespace FoxManPr
             for (int i = 0; i < mark.Count; i += 4)
             {
                 giveMeAReason(mark, i, tb6, date6);
+            }
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tb6, date6);
             }
         }
 
@@ -525,7 +585,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl1, date1);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl1, date1);
+            }
+            //----------------------------------------------------
             for (int i = 0; i < subject2.Count; i++)
             {
                 makeMeSick(subject2, i, tbl2);
@@ -534,7 +598,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl2, date2);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl2, date2);
+            }
+            //---------------------------------------------------
             for (int i = 0; i < subject3.Count; i++)
             {
                 makeMeSick(subject3, i, tbl3);
@@ -543,7 +611,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl3, date3);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl3, date3);
+            }
+            //---------------------------------------------------
             for (int i = 0; i < subject4.Count; i++)
             {
                 makeMeSick(subject4, i, tbl4);
@@ -552,7 +624,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl4, date4);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl4, date4);
+            }
+            //--------------------------------------------------
             for (int i = 0; i < subject5.Count; i++)
             {
                 makeMeSick(subject5, i, tbl5);
@@ -561,7 +637,11 @@ namespace FoxManPr
             {
                 giveMeAReason(mark, i, tbl5, date5);
             }
-
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tbl5, date5);
+            }
+            //-------------------------------------------------
             for (int i = 0; i < subject6.Count; i++)
             {
                 makeMeSick(subject6, i, tb6);
@@ -569,6 +649,10 @@ namespace FoxManPr
             for (int i = 0; i < mark.Count; i += 4)
             {
                 giveMeAReason(mark, i, tb6, date6);
+            }
+            for (int i = 0; i < ht.Count; i += 4)
+            {
+                CruelWorld(ht, i, tb6, date6);
             }
         }
     }

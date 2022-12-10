@@ -145,7 +145,7 @@ namespace FoxManPr
                               MessageBox.Show("go show");
                           }
                       }*/
-                if (update.Count < 1 && list[Convert.ToInt32(numb.Text) - 1] == list2[0])
+                if (list.Count > 0 && update.Count < 1 && list[Convert.ToInt32(numb.Text) - 1] == list2[0])
                 {
                     MySqlCommand cmd = new MySqlCommand("INSERT INTO marks(mark, date, col, userid, subid)" + "VALUES('" + marke.Text + "', '" + dat.Text + "', '" + numb.Text + "', '" + subject[6] + "', '" + login.subidForm + "')", Program.con);
                     DbDataReader read = cmd.ExecuteReader();

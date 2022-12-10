@@ -13,10 +13,22 @@ namespace FoxManPr
     public partial class NetCityTeachrers : Form
     {
         int y = 10;
+        public static string clasTeach; 
         public static string UserData;
         public NetCityTeachrers()
         {
             InitializeComponent();
+            List<string> list = NetCity.MySelect("SELECT class, id FROM classes");
+
+            /*  for (int i = 1; i < list.Count; i+=2)
+              {
+                  txt2.Items.Add(list[i]);   
+              }*/
+            for (int i = 0; i < list.Count; i += 2)
+            {
+                cm.Items.Add(list[i]);
+            }
+
             user.Text = login.nameForm + " " + login.surnForm;
             List<string> subject = NetCity.MySelect("SELECT surn FROM users WHERE type = '" + "Ученик" + "'");
 
@@ -53,6 +65,17 @@ namespace FoxManPr
         private void NetCityTeachrers_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void add_Click(object sender, EventArgs e)
+        {
+            if (cm.Text != "")
+            {
+                clasTeach = cm.Text;
+                AddHomeTask g = new AddHomeTask();
+                g.ShowDialog();
+            }
+            else { MessageBox.Show("Выбирете класс.", "System"); }
         }
     }
 }

@@ -81,6 +81,12 @@
       <DependentUpon>Base.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassSql.cs" />
+    <Compile Include="AddHomeTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHomeTask.Designer.cs">
+      <DependentUpon>AddHomeTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </Compile>
     <EmbeddedResource Include="AddClassesAndSub.resx">
       <DependentUpon>AddClassesAndSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddHomeTask.resx">
+      <DependentUpon>AddHomeTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>

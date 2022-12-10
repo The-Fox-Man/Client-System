@@ -112,7 +112,7 @@ namespace FoxManPr
                 button5.Text = "Войти";
             }
             else { loginlbl.Text = login.nameForm + " " + login.surnForm;   button5.Text = "Выйти";}
-            if (login.typeForm == "Администратор")//систему рангов, добавление админов и дз
+            if (login.typeForm == "Администратор")//систему рангов и дз
             {
                 admin.Enabled = true;
                 admin.Visible = true;

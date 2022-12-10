@@ -193,3 +193,4 @@ d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\Fo
 d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
 d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
 d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AdminAdd.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddHomeTask.resources
