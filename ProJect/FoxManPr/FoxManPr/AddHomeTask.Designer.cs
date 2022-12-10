@@ -30,10 +30,9 @@ namespace FoxManPr
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.hmtsk = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.dat = new System.Windows.Forms.TextBox();
             this.yup = new System.Windows.Forms.Button();
@@ -49,7 +48,10 @@ namespace FoxManPr
             this.panel1 = new System.Windows.Forms.Panel();
             this.Type = new System.Windows.Forms.Label();
             this.Data = new System.Windows.Forms.Label();
-            this.hmtsk = new System.Windows.Forms.TextBox();
+            this.check = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -57,11 +59,13 @@ namespace FoxManPr
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.check);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.hmtsk);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.dat);
             this.panel2.Controls.Add(this.yup);
@@ -78,9 +82,16 @@ namespace FoxManPr
             this.panel2.Size = new System.Drawing.Size(176, 501);
             this.panel2.TabIndex = 5;
             // 
+            // hmtsk
+            // 
+            this.hmtsk.Location = new System.Drawing.Point(7, 85);
+            this.hmtsk.Name = "hmtsk";
+            this.hmtsk.Size = new System.Drawing.Size(157, 20);
+            this.hmtsk.TabIndex = 21;
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(3, 361);
+            this.button2.Location = new System.Drawing.Point(1, 313);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 1);
             this.button2.TabIndex = 20;
@@ -96,22 +107,6 @@ namespace FoxManPr
             this.label9.TabIndex = 19;
             this.label9.Text = "классу";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 380);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(114, 13);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Календарь в помошь";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(4, 397);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
-            this.dateTimePicker1.TabIndex = 17;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(3, 490);
@@ -123,14 +118,14 @@ namespace FoxManPr
             // 
             // dat
             // 
-            this.dat.Location = new System.Drawing.Point(6, 186);
+            this.dat.Location = new System.Drawing.Point(9, 138);
             this.dat.Name = "dat";
             this.dat.Size = new System.Drawing.Size(158, 20);
             this.dat.TabIndex = 13;
             // 
             // yup
             // 
-            this.yup.Location = new System.Drawing.Point(3, 332);
+            this.yup.Location = new System.Drawing.Point(6, 284);
             this.yup.Name = "yup";
             this.yup.Size = new System.Drawing.Size(170, 23);
             this.yup.TabIndex = 12;
@@ -149,7 +144,7 @@ namespace FoxManPr
             "5",
             "6",
             "7"});
-            this.numb.Location = new System.Drawing.Point(6, 291);
+            this.numb.Location = new System.Drawing.Point(9, 243);
             this.numb.Name = "numb";
             this.numb.Size = new System.Drawing.Size(158, 21);
             this.numb.TabIndex = 9;
@@ -164,7 +159,7 @@ namespace FoxManPr
             "чт",
             "пт",
             "сб"});
-            this.day.Location = new System.Drawing.Point(6, 240);
+            this.day.Location = new System.Drawing.Point(9, 192);
             this.day.Name = "day";
             this.day.Size = new System.Drawing.Size(158, 21);
             this.day.TabIndex = 8;
@@ -172,7 +167,7 @@ namespace FoxManPr
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 217);
+            this.label6.Location = new System.Drawing.Point(8, 169);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 13);
             this.label6.TabIndex = 6;
@@ -181,7 +176,7 @@ namespace FoxManPr
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 271);
+            this.label5.Location = new System.Drawing.Point(10, 223);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 13);
             this.label5.TabIndex = 5;
@@ -190,7 +185,7 @@ namespace FoxManPr
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 167);
+            this.label4.Location = new System.Drawing.Point(9, 119);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 4;
@@ -258,12 +253,42 @@ namespace FoxManPr
             this.Data.TabIndex = 0;
             this.Data.Text = "label1";
             // 
-            // hmtsk
+            // check
             // 
-            this.hmtsk.Location = new System.Drawing.Point(7, 85);
-            this.hmtsk.Name = "hmtsk";
-            this.hmtsk.Size = new System.Drawing.Size(157, 20);
-            this.hmtsk.TabIndex = 21;
+            this.check.Location = new System.Drawing.Point(4, 391);
+            this.check.Name = "check";
+            this.check.Size = new System.Drawing.Size(168, 23);
+            this.check.TabIndex = 24;
+            this.check.Text = "Посмотреть расписание";
+            this.check.UseVisualStyleBackColor = true;
+            this.check.Click += new System.EventHandler(this.check_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 326);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 13);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Воспользуйтесть этим\r\n";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 354);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker1.TabIndex = 22;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 420);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(170, 1);
+            this.button3.TabIndex = 25;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // AddHomeTask
             // 
@@ -274,6 +299,7 @@ namespace FoxManPr
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
             this.Name = "AddHomeTask";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DA";
             this.Load += new System.EventHandler(this.AddHomeTask_Load);
             this.panel2.ResumeLayout(false);
@@ -289,8 +315,6 @@ namespace FoxManPr
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox dat;
         private System.Windows.Forms.Button yup;
@@ -307,5 +331,9 @@ namespace FoxManPr
         private System.Windows.Forms.Label Type;
         private System.Windows.Forms.Label Data;
         private System.Windows.Forms.TextBox hmtsk;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button check;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

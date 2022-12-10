@@ -80,6 +80,12 @@
     <Compile Include="Base.Designer.cs">
       <DependentUpon>Base.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckTimeSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckTimeSheet.Designer.cs">
+      <DependentUpon>CheckTimeSheet.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassSql.cs" />
     <Compile Include="AddHomeTask.cs">
       <SubType>Form</SubType>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Base.resx">
       <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckTimeSheet.resx">
+      <DependentUpon>CheckTimeSheet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>

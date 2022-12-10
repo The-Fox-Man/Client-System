@@ -157,5 +157,12 @@ namespace FoxManPr
                 }
             }
         }
+
+        private void check_Click(object sender, EventArgs e)
+        {
+            UserMarks.currentclas = NetCityTeachrers.clasTeach;
+            CheckTimeSheet j = new CheckTimeSheet();
+            j.ShowDialog();
+        }
     }
 }

@@ -15,9 +15,8 @@ namespace FoxManPr
     public partial class UserMarks : Form
     {
 
-        List<string> subject = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE surn = '" + NetCityTeachrers.UserData + "'");
-
-
+        List<string> subject = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE id = '" + NetCityTeachrers.UserData + "'");
+        public static string currentclas;
         public UserMarks()
         {
             InitializeComponent();
@@ -157,6 +156,13 @@ namespace FoxManPr
                 else { MessageBox.Show("Извините, вы поставили оценку либо не в ту строку(а может не в правильный день недели), либо на это число, на этот день, в эту строку, где уже есть оценка.", "System"); }
             }
 
+        }
+
+        private void check_Click(object sender, EventArgs e)
+        {
+            currentclas = subject[5];
+            CheckTimeSheet j = new CheckTimeSheet();
+            j.ShowDialog();
         }
     }
 }

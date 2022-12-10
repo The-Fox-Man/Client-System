@@ -33,6 +33,12 @@
             this.Data = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.check = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.cm = new System.Windows.Forms.ComboBox();
             this.dat = new System.Windows.Forms.TextBox();
@@ -46,9 +52,6 @@
             this.marke = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -91,8 +94,11 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.check);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.cm);
@@ -112,10 +118,65 @@
             this.panel2.Size = new System.Drawing.Size(176, 501);
             this.panel2.TabIndex = 2;
             // 
+            // check
+            // 
+            this.check.Location = new System.Drawing.Point(3, 421);
+            this.check.Name = "check";
+            this.check.Size = new System.Drawing.Size(168, 23);
+            this.check.TabIndex = 19;
+            this.check.Text = "Посмотреть расписание";
+            this.check.UseVisualStyleBackColor = true;
+            this.check.Click += new System.EventHandler(this.check_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 356);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Воспользуйтесть этим\r\n";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 384);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker1.TabIndex = 17;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 298);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(170, 1);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "button1";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(3, 352);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(170, 1);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "button1";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(2, 451);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 1);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 382);
+            this.label7.Location = new System.Drawing.Point(8, 304);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(96, 13);
             this.label7.TabIndex = 15;
@@ -129,7 +190,7 @@
             "4",
             "3",
             "2"});
-            this.cm.Location = new System.Drawing.Point(3, 401);
+            this.cm.Location = new System.Drawing.Point(4, 323);
             this.cm.Name = "cm";
             this.cm.Size = new System.Drawing.Size(170, 21);
             this.cm.TabIndex = 14;
@@ -250,31 +311,6 @@
             this.label1.Text = "Поставить оценку";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 360);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 1);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(4, 334);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
-            this.dateTimePicker1.TabIndex = 17;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 306);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "label8";
-            // 
             // UserMarks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,5 +354,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button check;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }

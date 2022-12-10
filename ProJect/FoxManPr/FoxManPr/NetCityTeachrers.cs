@@ -20,25 +20,21 @@ namespace FoxManPr
             InitializeComponent();
             List<string> list = NetCity.MySelect("SELECT class, id FROM classes");
 
-            /*  for (int i = 1; i < list.Count; i+=2)
-              {
-                  txt2.Items.Add(list[i]);   
-              }*/
             for (int i = 0; i < list.Count; i += 2)
             {
                 cm.Items.Add(list[i]);
             }
 
             user.Text = login.nameForm + " " + login.surnForm;
-            List<string> subject = NetCity.MySelect("SELECT surn FROM users WHERE type = '" + "Ученик" + "'");
-
-            for (int i = 0; i < subject.Count; i++)
+            List<string> subject = NetCity.MySelect("SELECT surn, id FROM users WHERE type = '" + "Ученик" + "'");
+            for (int i = 0; i < subject.Count; i+=2)
             {
                 Button lbl = new Button();
                 lbl.Location = new Point(50, y);
                 lbl.Font = new Font("Comic Sans MS", 13);
                 lbl.Size = new Size(100, 30);
                 lbl.Text = subject[i];
+                lbl.Tag = subject[i+1];
                 lbl.UseVisualStyleBackColor = true;
                 lbl.Click += new EventHandler(open);
                 panel.Controls.Add(lbl);
@@ -51,7 +47,7 @@ namespace FoxManPr
         private void open(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            UserData = btn.Text;
+            UserData = Convert.ToString(btn.Tag);
 
 
             UserMarks lal = new UserMarks();
