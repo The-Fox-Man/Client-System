@@ -13,66 +13,56 @@ using System.Windows.Forms;
 
 namespace FoxManPr
 {
-    public partial class adminSub : Form
+    public partial class AddSubWeek : Form
     {
-       
-        public adminSub()
+        public AddSubWeek()
         {
             InitializeComponent();
             List<string> list = NetCity.MySelect("SELECT name, id FROM sub");
             List<string> list2 = NetCity.MySelect("SELECT class, id FROM classes");
             for (int i = 0; i < list.Count; i += 2)
             {
-                t1.Items.Add(list[i]);
-                t2.Items.Add(list[i]);
-                t3.Items.Add(list[i]);
-                t4.Items.Add(list[i]);
-                t5.Items.Add(list[i]);
-                t6.Items.Add(list[i]);
-                t7.Items.Add(list[i]);
-            }
-                for (int i = 0; i < list2.Count; i += 2)
+                foreach (ComboBox cm in pan2.Controls)
                 {
-                    t9.Items.Add(list2[i]);
-                    cm1.Items.Add(list2[i]);
+                     cm.Items.Add(list[i]);                        
                 }
+
             }
+            for (int i = 0; i < list2.Count; i += 2)
+            {
+                aa.Items.Add(list2[i]);
+                cm1.Items.Add(list2[i]);
+            }
+        }
+    
+
+        private void comboBox23_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            adminSub j = new adminSub();
+            j.ShowDialog();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] parts = cm.Text.Split(new char[] {','});
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas)" 
-                                                + "VALUES('"+ t1.Text + "', '"+ t2.Text + "', " +
-                                                "'"+ t3.Text + "', '"+ t4.Text + "'," +
-                                                " '"+ t5.Text + "', '"+ t6.Text + "', '" 
-                                                + t7.Text + "', '" + t8.Text + "', '" + t9.Text + "')", Program.con);
-            DbDataReader read = cmd.ExecuteReader();
-            read.Close();
-            MessageBox.Show("Расписание на один день добавлен.", "System");
-            adminSub_Load(sender, e);
-            return;
-           
-        }
-
-        private void adminSub_Load(object sender, EventArgs e)
-        {
-                List<string> list = NetCity.MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas, id FROM subjects");
-
-                pan1.Controls.Clear();
-                int y = 50;
-                int x = 50;
-                for (int i = 0; i < list.Count; i += 10)
-                {
-                     a(list, i, y);
-                     y += 70;
-                }
+            kek("пн", sender, e, t1, t2, t3, t4, t5, t6, t7);
+            kek("вт", sender, e, tb8, t9, t10, t11, t12, t13, t14);
+            kek("ср", sender, e, t15, t16, t17, t18, t19, t20, t21);
+            kek("чт", sender, e, t22, t23, t24, t25, t26, t27, t28);
+            kek("пт", sender, e, t29, t30, t31, t32, t33, t34, t35);
+            kek("сб", sender, e, t36, t37, t38, t39, t40, t41, t42);
+            MessageBox.Show("Расписание добавлено на одну неделю для класса "+ aa.Text +".", "System");
         }
         private void delete(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             int y = btn.Location.Y;
 
-            foreach(Control control in pan1.Controls)
+            foreach (Control control in pan1.Controls)
             {
                 if (control.Location == new Point(10, y + AutoScrollPosition.Y))
                 {
@@ -80,17 +70,11 @@ namespace FoxManPr
                     DbDataReader read = cmd.ExecuteReader();
                     read.Close();
                     MessageBox.Show("Расписание на один день удалено.", "System");
-                    butt_Click(sender, e);
+                    AddSubWeek_Load(sender, e);
                     return;
                 }
             }
         }
-
-        private void pan1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void butt_Click(object sender, EventArgs e)
         {
             if (cm1.Text == "" && cm2.Text == "")
@@ -138,7 +122,6 @@ namespace FoxManPr
                     y += 70;
                 }
             }
-
         }
         private void a(List<string> list, int i, int y)
         {
@@ -208,10 +191,31 @@ namespace FoxManPr
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void kek(string b, object sender, EventArgs e, ComboBox t1, ComboBox t2, ComboBox t3, ComboBox t4, ComboBox t5, ComboBox t6, ComboBox t7)
         {
-            AddSubWeek g = new AddSubWeek();
-            g.ShowDialog();
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas)"
+                                                + "VALUES('" + t1.Text + "', '" + t2.Text + "', " +
+                                                "'" + t3.Text + "', '" + t4.Text + "'," +
+                                                " '" + t5.Text + "', '" + t6.Text + "', '"
+                                                + t7.Text + "', '" + b + "', '" + aa.Text + "')", Program.con);
+            DbDataReader read = cmd.ExecuteReader();
+            read.Close();
+            AddSubWeek_Load(sender, e);
+            return;
+
+        }
+        private void AddSubWeek_Load(object sender, EventArgs e)
+        {
+            List<string> list = NetCity.MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas, id FROM subjects");
+
+            pan1.Controls.Clear();
+            int y = 50;
+            int x = 50;
+            for (int i = 0; i < list.Count; i += 10)
+            {
+                a(list, i, y);
+                y += 70;
+            }
         }
     }
 }

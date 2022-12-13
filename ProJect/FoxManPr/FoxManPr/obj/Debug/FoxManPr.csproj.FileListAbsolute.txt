@@ -195,3 +195,4 @@ d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\Fo
 d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AdminAdd.resources
 d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddHomeTask.resources
 D:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.CheckTimeSheet.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddSubWeek.resources
