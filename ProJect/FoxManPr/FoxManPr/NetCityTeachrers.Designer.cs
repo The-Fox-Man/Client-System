@@ -30,12 +30,12 @@ namespace FoxManPr
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cm = new System.Windows.Forms.ComboBox();
+            this.add = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.user = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
-            this.add = new System.Windows.Forms.Button();
-            this.cm = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,33 @@ namespace FoxManPr
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(706, 58);
             this.panel1.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(199, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Класс";
+            // 
+            // cm
+            // 
+            this.cm.FormattingEnabled = true;
+            this.cm.Location = new System.Drawing.Point(243, 31);
+            this.cm.Name = "cm";
+            this.cm.Size = new System.Drawing.Size(74, 21);
+            this.cm.TabIndex = 4;
+            // 
+            // add
+            // 
+            this.add.Location = new System.Drawing.Point(5, 29);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(175, 23);
+            this.add.TabIndex = 3;
+            this.add.Text = "Добавить домашнее задание";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // label1
             // 
@@ -81,33 +108,6 @@ namespace FoxManPr
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(718, 473);
             this.panel.TabIndex = 4;
-            // 
-            // add
-            // 
-            this.add.Location = new System.Drawing.Point(5, 29);
-            this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(175, 23);
-            this.add.TabIndex = 3;
-            this.add.Text = "Добавить домашнее задание";
-            this.add.UseVisualStyleBackColor = true;
-            this.add.Click += new System.EventHandler(this.add_Click);
-            // 
-            // cm
-            // 
-            this.cm.FormattingEnabled = true;
-            this.cm.Location = new System.Drawing.Point(243, 31);
-            this.cm.Name = "cm";
-            this.cm.Size = new System.Drawing.Size(74, 21);
-            this.cm.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(199, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Класс";
             // 
             // NetCityTeachrers
             // 

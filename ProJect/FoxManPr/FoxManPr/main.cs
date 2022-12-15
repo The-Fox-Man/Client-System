@@ -155,11 +155,11 @@ namespace FoxManPr
             }
             else if(login.typeForm == "")
             {
-                MessageBox.Show("Сначала войдите.", "Программа");
+                MessageBox.Show("Сначала войдите.", "System");
             }
             else if (login.typeForm == "Администратор")
             {
-                MessageBox.Show("ВЫ администратор, вам сюда не нужно.", "Программа");
+                MessageBox.Show("ВЫ администратор, вам сюда не нужно.", "System");
             }
         }
 
@@ -196,6 +196,17 @@ namespace FoxManPr
                 Admin u = new Admin();
                 u.ShowDialog();
     //        }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if (login.nameForm == "") { MessageBox.Show("Сначала войдите.", "System"); }
+            else { UserCabin n = new UserCabin(); n.ShowDialog(); }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

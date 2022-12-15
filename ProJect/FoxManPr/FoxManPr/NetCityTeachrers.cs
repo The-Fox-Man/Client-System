@@ -73,5 +73,7 @@ namespace FoxManPr
             }
             else { MessageBox.Show("Выбирете класс.", "System"); }
         }
+
+
     }
 }

@@ -45,6 +45,7 @@
             this.menu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.pan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.menu.SuspendLayout();
@@ -66,6 +67,7 @@
             resources.ApplyResources(this.richTextBox1, "richTextBox1");
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // label1
             // 
@@ -158,6 +160,7 @@
             // menu
             // 
             this.menu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menu.Controls.Add(this.button2);
             this.menu.Controls.Add(this.admin);
             this.menu.Controls.Add(this.teachers);
             this.menu.Controls.Add(this.sgo);
@@ -180,6 +183,13 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // main
             // 
@@ -219,6 +229,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel menu;
         private System.Windows.Forms.Button admin;
+        private System.Windows.Forms.Button button2;
     }
 }
 

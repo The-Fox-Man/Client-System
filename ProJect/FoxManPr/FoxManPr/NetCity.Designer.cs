@@ -35,12 +35,16 @@
             this.tbl3 = new System.Windows.Forms.TableLayoutPanel();
             this.tbl2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.date6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.date5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.date4 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.date3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.date2 = new System.Windows.Forms.Label();
@@ -51,14 +55,10 @@
             this.tbl1 = new System.Windows.Forms.TableLayoutPanel();
             this.user = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.next = new System.Windows.Forms.Button();
             this.number = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.date3 = new System.Windows.Forms.Label();
-            this.date4 = new System.Windows.Forms.Label();
-            this.date5 = new System.Windows.Forms.Label();
-            this.date6 = new System.Windows.Forms.Label();
             this.panel.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -97,7 +97,7 @@
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
             this.tb6.Location = new System.Drawing.Point(391, 569);
             this.tb6.Margin = new System.Windows.Forms.Padding(2);
             this.tb6.Name = "tb6";
@@ -120,7 +120,7 @@
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
             this.tbl5.Location = new System.Drawing.Point(11, 570);
             this.tbl5.Margin = new System.Windows.Forms.Padding(2);
             this.tbl5.Name = "tbl5";
@@ -143,7 +143,7 @@
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
             this.tbl4.Location = new System.Drawing.Point(390, 307);
             this.tbl4.Margin = new System.Windows.Forms.Padding(2);
             this.tbl4.Name = "tbl4";
@@ -166,7 +166,7 @@
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
             this.tbl3.Location = new System.Drawing.Point(11, 307);
             this.tbl3.Margin = new System.Windows.Forms.Padding(2);
             this.tbl3.Name = "tbl3";
@@ -189,7 +189,7 @@
             this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.tbl2.Location = new System.Drawing.Point(390, 45);
             this.tbl2.Margin = new System.Windows.Forms.Padding(2);
             this.tbl2.Name = "tbl2";
@@ -217,6 +217,16 @@
             this.panel7.Size = new System.Drawing.Size(310, 29);
             this.panel7.TabIndex = 17;
             // 
+            // date6
+            // 
+            this.date6.AutoSize = true;
+            this.date6.Location = new System.Drawing.Point(37, 8);
+            this.date6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date6.Name = "date6";
+            this.date6.Size = new System.Drawing.Size(61, 13);
+            this.date6.TabIndex = 16;
+            this.date6.Text = "06.09.2022";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -238,6 +248,16 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(310, 29);
             this.panel6.TabIndex = 16;
+            // 
+            // date5
+            // 
+            this.date5.AutoSize = true;
+            this.date5.Location = new System.Drawing.Point(38, 9);
+            this.date5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date5.Name = "date5";
+            this.date5.Size = new System.Drawing.Size(61, 13);
+            this.date5.TabIndex = 15;
+            this.date5.Text = "05.09.2022";
             // 
             // label2
             // 
@@ -262,6 +282,16 @@
             this.panel5.Size = new System.Drawing.Size(310, 29);
             this.panel5.TabIndex = 15;
             // 
+            // date4
+            // 
+            this.date4.AutoSize = true;
+            this.date4.Location = new System.Drawing.Point(37, 9);
+            this.date4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date4.Name = "date4";
+            this.date4.Size = new System.Drawing.Size(61, 13);
+            this.date4.TabIndex = 14;
+            this.date4.Text = "04.09.2022";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -283,6 +313,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(310, 29);
             this.panel4.TabIndex = 14;
+            // 
+            // date3
+            // 
+            this.date3.AutoSize = true;
+            this.date3.Location = new System.Drawing.Point(37, 10);
+            this.date3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date3.Name = "date3";
+            this.date3.Size = new System.Drawing.Size(61, 13);
+            this.date3.TabIndex = 13;
+            this.date3.Text = "03.09.2022";
             // 
             // label5
             // 
@@ -367,7 +407,7 @@
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.tbl1.Location = new System.Drawing.Point(11, 45);
             this.tbl1.Margin = new System.Windows.Forms.Padding(2);
             this.tbl1.Name = "tbl1";
@@ -411,6 +451,16 @@
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(223, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Назад";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // next
             // 
             this.next.Location = new System.Drawing.Point(447, 28);
@@ -438,56 +488,6 @@
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ученик";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(223, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // date3
-            // 
-            this.date3.AutoSize = true;
-            this.date3.Location = new System.Drawing.Point(37, 10);
-            this.date3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.date3.Name = "date3";
-            this.date3.Size = new System.Drawing.Size(61, 13);
-            this.date3.TabIndex = 13;
-            this.date3.Text = "03.09.2022";
-            // 
-            // date4
-            // 
-            this.date4.AutoSize = true;
-            this.date4.Location = new System.Drawing.Point(37, 9);
-            this.date4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.date4.Name = "date4";
-            this.date4.Size = new System.Drawing.Size(61, 13);
-            this.date4.TabIndex = 14;
-            this.date4.Text = "04.09.2022";
-            // 
-            // date5
-            // 
-            this.date5.AutoSize = true;
-            this.date5.Location = new System.Drawing.Point(38, 9);
-            this.date5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.date5.Name = "date5";
-            this.date5.Size = new System.Drawing.Size(61, 13);
-            this.date5.TabIndex = 15;
-            this.date5.Text = "05.09.2022";
-            // 
-            // date6
-            // 
-            this.date6.AutoSize = true;
-            this.date6.Location = new System.Drawing.Point(37, 8);
-            this.date6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.date6.Name = "date6";
-            this.date6.Size = new System.Drawing.Size(61, 13);
-            this.date6.TabIndex = 16;
-            this.date6.Text = "06.09.2022";
             // 
             // NetCity
             // 

@@ -27,6 +27,7 @@ namespace FoxManPr
         public static string nameForm = "";
         public static string surnForm = "";
         public static string postForm = "";
+        public static string passForm = "";
         public static string typeForm = "";
         public static string clasForm = "";
         public static string subidForm= "";
@@ -74,6 +75,7 @@ namespace FoxManPr
                     typeForm = list[i+2];
                     clasForm = list[i+5];
                     idForm   = list[i+6];
+                    passForm = list[i+3];
                     List<string> list2 = NetCity.MySelect("SELECT idsub FROM teachers WHERE idtag = '" + idForm + "'");
 
                         if (typeForm == "Учитель")
