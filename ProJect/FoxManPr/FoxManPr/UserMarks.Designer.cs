@@ -52,6 +52,9 @@
             this.marke = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -86,9 +89,9 @@
             // 
             // panel
             // 
-            this.panel.Location = new System.Drawing.Point(0, 60);
+            this.panel.Location = new System.Drawing.Point(0, 91);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(641, 501);
+            this.panel.Size = new System.Drawing.Size(641, 470);
             this.panel.TabIndex = 1;
             // 
             // panel2
@@ -311,11 +314,41 @@
             this.label1.Text = "Поставить оценку";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(128, 69);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 13);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Оценка";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(20, 70);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(33, 13);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Дата";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(201, 70);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 13);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Но. пред.";
+            // 
             // UserMarks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 561);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
@@ -328,6 +361,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -357,5 +391,8 @@
         private System.Windows.Forms.Button check;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

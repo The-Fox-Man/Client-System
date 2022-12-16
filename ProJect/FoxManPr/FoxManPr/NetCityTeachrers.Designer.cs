@@ -36,7 +36,16 @@ namespace FoxManPr
             this.label1 = new System.Windows.Forms.Label();
             this.user = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Filtr = new System.Windows.Forms.Button();
+            this.SetNull = new System.Windows.Forms.Button();
+            this.cmb = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -103,17 +112,98 @@ namespace FoxManPr
             // panel
             // 
             this.panel.AutoScroll = true;
-            this.panel.Location = new System.Drawing.Point(-6, 64);
+            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel.Location = new System.Drawing.Point(-6, 86);
             this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(718, 473);
+            this.panel.Size = new System.Drawing.Size(430, 451);
             this.panel.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(50, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Ученики";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(270, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Класс";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.Filtr);
+            this.panel2.Controls.Add(this.SetNull);
+            this.panel2.Controls.Add(this.cmb);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Location = new System.Drawing.Point(429, 86);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(265, 100);
+            this.panel2.TabIndex = 7;
+            // 
+            // Filtr
+            // 
+            this.Filtr.Location = new System.Drawing.Point(147, 58);
+            this.Filtr.Name = "Filtr";
+            this.Filtr.Size = new System.Drawing.Size(106, 23);
+            this.Filtr.TabIndex = 4;
+            this.Filtr.Text = "Отфильтровать";
+            this.Filtr.UseVisualStyleBackColor = true;
+            this.Filtr.Click += new System.EventHandler(this.Filtr_Click);
+            // 
+            // SetNull
+            // 
+            this.SetNull.Location = new System.Drawing.Point(6, 58);
+            this.SetNull.Name = "SetNull";
+            this.SetNull.Size = new System.Drawing.Size(119, 23);
+            this.SetNull.TabIndex = 3;
+            this.SetNull.Text = "Сбросить фильтр";
+            this.SetNull.UseVisualStyleBackColor = true;
+            this.SetNull.Click += new System.EventHandler(this.SetNull_Click);
+            // 
+            // cmb
+            // 
+            this.cmb.FormattingEnabled = true;
+            this.cmb.Location = new System.Drawing.Point(102, 17);
+            this.cmb.Name = "cmb";
+            this.cmb.Size = new System.Drawing.Size(151, 21);
+            this.cmb.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Выбирете класс";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(432, 68);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Фильтр";
             // 
             // NetCityTeachrers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 531);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
             this.Name = "NetCityTeachrers";
@@ -122,7 +212,10 @@ namespace FoxManPr
             this.Load += new System.EventHandler(this.NetCityTeachrers_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -135,5 +228,13 @@ namespace FoxManPr
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.ComboBox cm;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button Filtr;
+        private System.Windows.Forms.Button SetNull;
+        private System.Windows.Forms.ComboBox cmb;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }

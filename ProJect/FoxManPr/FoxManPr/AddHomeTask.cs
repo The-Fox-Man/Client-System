@@ -164,5 +164,10 @@ namespace FoxManPr
             CheckTimeSheet j = new CheckTimeSheet();
             j.ShowDialog();
         }
+
+        private void panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

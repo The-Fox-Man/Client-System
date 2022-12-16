@@ -145,6 +145,7 @@ namespace FoxManPr
             this.Controls.Add(this.t2);
             this.Controls.Add(this.t1);
             this.Name = "UserCabin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserCabin";
             this.Load += new System.EventHandler(this.UserCabin_Load);
             this.ResumeLayout(false);

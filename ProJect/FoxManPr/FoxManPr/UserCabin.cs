@@ -41,7 +41,7 @@ namespace FoxManPr
             else if(button1.Text == "Сохранить")
             {
                 NetCity.MyUpdate("UPDATE users SET name ='" + t1.Text + "', surn ='" + t2.Text + "', post ='" + t3.Text + "', pass ='" + t4.Text + "' WHERE id ='" + login.idForm + "'");
-                MessageBox.Show(" изменено.", "System");
+                MessageBox.Show("Ваш профиль изменён.", "System");
                 button1.Text = "Изменить";
                 t1.Enabled = false;
                 t2.Enabled = false;

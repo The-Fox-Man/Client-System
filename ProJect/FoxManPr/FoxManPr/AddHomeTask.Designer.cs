@@ -30,6 +30,10 @@ namespace FoxManPr
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.check = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.hmtsk = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -48,10 +52,9 @@ namespace FoxManPr
             this.panel1 = new System.Windows.Forms.Panel();
             this.Type = new System.Windows.Forms.Label();
             this.Data = new System.Windows.Forms.Label();
-            this.check = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +84,43 @@ namespace FoxManPr
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(176, 501);
             this.panel2.TabIndex = 5;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(3, 420);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(170, 1);
+            this.button3.TabIndex = 25;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // check
+            // 
+            this.check.Location = new System.Drawing.Point(4, 391);
+            this.check.Name = "check";
+            this.check.Size = new System.Drawing.Size(168, 23);
+            this.check.TabIndex = 24;
+            this.check.Text = "Посмотреть расписание";
+            this.check.UseVisualStyleBackColor = true;
+            this.check.Click += new System.EventHandler(this.check_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 326);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(123, 13);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Воспользуйтесть этим\r\n";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 354);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker1.TabIndex = 22;
             // 
             // hmtsk
             // 
@@ -220,10 +260,11 @@ namespace FoxManPr
             // 
             // panel
             // 
-            this.panel.Location = new System.Drawing.Point(0, 60);
+            this.panel.Location = new System.Drawing.Point(0, 82);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(641, 501);
+            this.panel.Size = new System.Drawing.Size(641, 479);
             this.panel.TabIndex = 4;
+            this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
             // 
             // panel1
             // 
@@ -253,48 +294,41 @@ namespace FoxManPr
             this.Data.TabIndex = 0;
             this.Data.Text = "label1";
             // 
-            // check
+            // label7
             // 
-            this.check.Location = new System.Drawing.Point(4, 391);
-            this.check.Name = "check";
-            this.check.Size = new System.Drawing.Size(168, 23);
-            this.check.TabIndex = 24;
-            this.check.Text = "Посмотреть расписание";
-            this.check.UseVisualStyleBackColor = true;
-            this.check.Click += new System.EventHandler(this.check_Click);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(20, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Дата";
             // 
-            // label8
+            // label10
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 326);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 13);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Воспользуйтесть этим\r\n";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(140, 62);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 13);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Задание";
             // 
-            // dateTimePicker1
+            // label11
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(3, 354);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
-            this.dateTimePicker1.TabIndex = 22;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(3, 420);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 1);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(343, 62);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 13);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Но. пред.";
             // 
             // AddHomeTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 561);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
@@ -307,6 +341,7 @@ namespace FoxManPr
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -335,5 +370,8 @@ namespace FoxManPr
         private System.Windows.Forms.Button check;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

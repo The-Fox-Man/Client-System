@@ -12,7 +12,7 @@ namespace FoxManPr
 {
     public partial class NetCityTeachrers : Form
     {
-        int y = 10;
+
         public static string clasTeach; 
         public static string UserData;
         public NetCityTeachrers()
@@ -23,25 +23,11 @@ namespace FoxManPr
             for (int i = 0; i < list.Count; i += 2)
             {
                 cm.Items.Add(list[i]);
+                cmb.Items.Add(list[i]);
             }
 
             user.Text = login.nameForm + " " + login.surnForm;
-            List<string> subject = NetCity.MySelect("SELECT surn, id FROM users WHERE type = '" + "Ученик" + "'");
-            for (int i = 0; i < subject.Count; i+=2)
-            {
-                Button lbl = new Button();
-                lbl.Location = new Point(50, y);
-                lbl.Font = new Font("Comic Sans MS", 13);
-                lbl.Size = new Size(100, 30);
-                lbl.Text = subject[i];
-                lbl.Tag = subject[i+1];
-                lbl.UseVisualStyleBackColor = true;
-                lbl.Click += new EventHandler(open);
-                panel.Controls.Add(lbl);
-                
-                y = y + 40;
 
-            }
           
         }
         private void open(object sender, EventArgs e)
@@ -60,7 +46,30 @@ namespace FoxManPr
 
         private void NetCityTeachrers_Load(object sender, EventArgs e)
         {
+            int y = 10;
+            List<string> subject = NetCity.MySelect("SELECT surn, id, clas FROM users WHERE type = '" + "Ученик" + "'");
+            panel.Controls.Clear();
+            for (int i = 0; i < subject.Count; i += 3)
+            {
+                Button lbl = new Button();
+                lbl.Location = new Point(50, y);
+                lbl.Font = new Font("Comic Sans MS", 13);
+                lbl.Size = new Size(200, 50);
+                lbl.Text = subject[i];
+                lbl.Tag = subject[i + 1];
+                lbl.UseVisualStyleBackColor = true;
+                lbl.Click += new EventHandler(open);
+                panel.Controls.Add(lbl);
 
+                Label lbl1 = new Label();
+                lbl1.Location = new Point(270, y + 10);
+                lbl1.Font = new Font("Comic Sans MS", 11);
+                lbl1.Size = new Size(100, 50);
+                lbl1.Text = subject[i + 2];
+                panel.Controls.Add(lbl1);
+                y = y + 60;
+
+            }
         }
 
         private void add_Click(object sender, EventArgs e)
@@ -74,6 +83,45 @@ namespace FoxManPr
             else { MessageBox.Show("Выбирете класс.", "System"); }
         }
 
+        private void Filtr_Click(object sender, EventArgs e)
+        {
+            if (cmb.Text == "")
+            {
+                NetCityTeachrers_Load(sender, e);
+            }
+            else
+            {
+                panel.Controls.Clear();
+                int y = 10;
+                List<string> subject = NetCity.MySelect("SELECT surn, id, clas FROM users WHERE type = '" + "Ученик" + "' AND clas = '" + cmb.Text + "'");
+                for (int i = 0; i < subject.Count; i += 3)
+                {
+                    Button lbl = new Button();
+                    lbl.Location = new Point(50, y);
+                    lbl.Font = new Font("Comic Sans MS", 13);
+                    lbl.Size = new Size(200, 50);
+                    lbl.Text = subject[i];
+                    lbl.Tag = subject[i + 1];
+                    lbl.UseVisualStyleBackColor = true;
+                    lbl.Click += new EventHandler(open);
+                    panel.Controls.Add(lbl);
 
+                    Label lbl1 = new Label();
+                    lbl1.Location = new Point(270, y + 10);
+                    lbl1.Font = new Font("Comic Sans MS", 11);
+                    lbl1.Size = new Size(100, 50);
+                    lbl1.Text = subject[i + 2];
+                    panel.Controls.Add(lbl1);
+                    y = y + 60;
+                }
+            }
+            
+        }
+
+        private void SetNull_Click(object sender, EventArgs e)
+        {
+            cmb.Text = "";
+            NetCityTeachrers_Load(sender, e);
+        }
     }
 }
