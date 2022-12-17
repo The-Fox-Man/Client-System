@@ -45,19 +45,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.cm = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.pan2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pan1
             // 
             this.pan1.AutoScroll = true;
-            this.pan1.Location = new System.Drawing.Point(12, 12);
+            this.pan1.Location = new System.Drawing.Point(12, 33);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(785, 280);
+            this.pan1.Size = new System.Drawing.Size(785, 370);
             this.pan1.TabIndex = 0;
             // 
             // pan2
             // 
+            this.pan2.Controls.Add(this.cm);
             this.pan2.Controls.Add(this.cmn);
             this.pan2.Controls.Add(this.label8);
             this.pan2.Controls.Add(this.textBox4);
@@ -71,10 +75,9 @@
             this.pan2.Controls.Add(this.textBox1);
             this.pan2.Controls.Add(this.label3);
             this.pan2.Controls.Add(this.label2);
-            this.pan2.Controls.Add(this.button1);
-            this.pan2.Location = new System.Drawing.Point(12, 311);
+            this.pan2.Location = new System.Drawing.Point(12, 409);
             this.pan2.Name = "pan2";
-            this.pan2.Size = new System.Drawing.Size(785, 377);
+            this.pan2.Size = new System.Drawing.Size(785, 242);
             this.pan2.TabIndex = 1;
             // 
             // cmn
@@ -190,9 +193,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 351);
+            this.button1.Location = new System.Drawing.Point(12, 657);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(776, 23);
+            this.button1.Size = new System.Drawing.Size(785, 31);
             this.button1.TabIndex = 6;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -201,20 +204,50 @@
             // cm
             // 
             this.cm.FormattingEnabled = true;
-            this.cm.Location = new System.Drawing.Point(266, 340);
+            this.cm.Location = new System.Drawing.Point(271, 34);
             this.cm.Name = "cm";
             this.cm.Size = new System.Drawing.Size(277, 21);
             this.cm.TabIndex = 49;
             this.cm.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(22, 17);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 13);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Имя";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(172, 17);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 13);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "Фамилия";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(332, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 13);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Предмет";
             // 
             // TeachersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 700);
-            this.Controls.Add(this.cm);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.pan1);
+            this.Controls.Add(this.button1);
             this.Name = "TeachersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeachersForm";
@@ -222,6 +255,7 @@
             this.pan2.ResumeLayout(false);
             this.pan2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -244,5 +278,8 @@
         private System.Windows.Forms.ComboBox cm;
         private System.Windows.Forms.ComboBox cmn;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

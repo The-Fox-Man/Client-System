@@ -46,6 +46,9 @@ namespace FoxManPr
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pan1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.pan2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -212,16 +215,46 @@ namespace FoxManPr
             // pan1
             // 
             this.pan1.AutoScroll = true;
-            this.pan1.Location = new System.Drawing.Point(12, 12);
+            this.pan1.Location = new System.Drawing.Point(12, 33);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(785, 406);
+            this.pan1.Size = new System.Drawing.Size(785, 385);
             this.pan1.TabIndex = 50;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(332, 17);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 13);
+            this.label11.TabIndex = 52;
+            this.label11.Text = "Предмет";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(172, 17);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(56, 13);
+            this.label10.TabIndex = 53;
+            this.label10.Text = "Фамилия";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(22, 17);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 13);
+            this.label9.TabIndex = 54;
+            this.label9.Text = "Имя";
             // 
             // AdminAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(809, 700);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.pan1);
             this.Name = "AdminAdd";
@@ -231,6 +264,7 @@ namespace FoxManPr
             this.pan2.ResumeLayout(false);
             this.pan2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -253,5 +287,8 @@ namespace FoxManPr
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel pan1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
     }
 }

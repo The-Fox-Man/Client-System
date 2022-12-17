@@ -41,6 +41,7 @@
             // pan1
             // 
             this.pan1.AutoScroll = true;
+            this.pan1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pan1.Location = new System.Drawing.Point(12, 49);
             this.pan1.Name = "pan1";
             this.pan1.Size = new System.Drawing.Size(428, 499);
@@ -49,6 +50,7 @@
             // pan2
             // 
             this.pan2.AutoScroll = true;
+            this.pan2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pan2.Location = new System.Drawing.Point(446, 49);
             this.pan2.Name = "pan2";
             this.pan2.Size = new System.Drawing.Size(413, 499);

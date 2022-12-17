@@ -43,9 +43,10 @@
             this.spravk = new System.Windows.Forms.Button();
             this.sgo = new System.Windows.Forms.Button();
             this.menu = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.pan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.menu.SuspendLayout();
@@ -55,6 +56,7 @@
             // pan
             // 
             resources.ApplyResources(this.pan, "pan");
+            this.pan.Controls.Add(this.richTextBox2);
             this.pan.Controls.Add(this.richTextBox1);
             this.pan.Controls.Add(this.label1);
             this.pan.Controls.Add(this.pic);
@@ -63,6 +65,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.richTextBox1, "richTextBox1");
             this.richTextBox1.Name = "richTextBox1";
@@ -173,23 +176,34 @@
             resources.ApplyResources(this.menu, "menu");
             this.menu.Name = "menu";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label2);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
             // button2
             // 
             resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label2);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Name = "panel1";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.Color.White;
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.richTextBox2, "richTextBox2");
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
             // 
             // main
             // 
@@ -230,6 +244,7 @@
         private System.Windows.Forms.Panel menu;
         private System.Windows.Forms.Button admin;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 

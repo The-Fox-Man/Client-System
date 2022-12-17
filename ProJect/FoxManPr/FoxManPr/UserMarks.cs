@@ -144,14 +144,26 @@ namespace FoxManPr
                               MessageBox.Show("go show");
                           }
                       }*/
+                string[] parts = dat.Text.Split(new char[] { '.' });
+
                 if (list.Count > 0 && update.Count < 1 && list[Convert.ToInt32(numb.Text) - 1] == list2[0])
                 {
-                    MySqlCommand cmd = new MySqlCommand("INSERT INTO marks(mark, date, col, userid, subid)" + "VALUES('" + marke.Text + "', '" + dat.Text + "', '" + numb.Text + "', '" + subject[6] + "', '" + login.subidForm + "')", Program.con);
-                    DbDataReader read = cmd.ExecuteReader();
-                    read.Close();
-                    MessageBox.Show("Оценка поставлена.", "System");
-                    UserMarks_Load(sender, e);
-                    return;
+                    if (parts[0] != "01" && parts[0] != "02" && parts[0] != "03" && parts[0] != "04" && parts[0] != "05" && parts[0] != "06" && parts[0] != "07" && parts[0] != "08"
+                        && parts[0] != "09")
+                    {
+                        if (parts[1] != "01" && parts[1] != "02" && parts[1] != "03" && parts[1] != "04" && parts[1] != "05" && parts[1] != "06" && parts[1] != "07" && parts[1] != "08"
+                            && parts[1] != "09")
+                        {
+                            MySqlCommand cmd = new MySqlCommand("INSERT INTO marks(mark, date, col, userid, subid)" + "VALUES('" + marke.Text + "', '" + dat.Text + "', '" + numb.Text + "', '" + subject[6] + "', '" + login.subidForm + "')", Program.con);
+                            DbDataReader read = cmd.ExecuteReader();
+                            read.Close();
+                            MessageBox.Show("Оценка поставлена.", "System");
+                            UserMarks_Load(sender, e);
+                            return;
+                        }
+                        else { MessageBox.Show("Число должно быть без нулей, например, 5.9.2022, а не 05.09.2022", "System"); }
+                    }
+                    else { MessageBox.Show("Число должно быть без нулей, например, 5.9.2022, а не 05.09.2022", "System"); }
                 }
                 else { MessageBox.Show("Извините, вы поставили оценку либо не в ту строку(а может не в правильный день недели), либо на это число, на этот день, в эту строку, где уже есть оценка.", "System"); }
             }

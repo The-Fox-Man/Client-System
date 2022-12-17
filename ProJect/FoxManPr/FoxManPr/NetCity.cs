@@ -16,8 +16,8 @@ namespace FoxManPr
 {
     public partial class NetCity : Form
     {
-        
-        List<string>  subject = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects WHERE clas = '" + login.clasForm + "' AND day = '" + "пн" + "'");
+
+        List<string> subject = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects WHERE clas = '" + login.clasForm + "' AND day = '" + "пн" + "'");
         List<string> subject2 = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects WHERE clas = '" + login.clasForm + "' AND day = '" + "вт" + "'");
         List<string> subject3 = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects WHERE clas = '" + login.clasForm + "' AND day = '" + "ср" + "'");
         List<string> subject4 = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects WHERE clas = '" + login.clasForm + "' AND day = '" + "чт" + "'");
@@ -50,7 +50,7 @@ namespace FoxManPr
         int monE = 09;
         int yeaE = 2022;
 
-      //  int d = 0;
+        //  int d = 0;
 
         //nst string connect = "SslMode=none;Server=localhost;Database=sgosit;port=3306;Uid=root";
 
@@ -59,9 +59,9 @@ namespace FoxManPr
             List<string> list = new List<string>();
             MySqlCommand cm = new MySqlCommand(cmd, Program.con);
             DbDataReader reader = cm.ExecuteReader();
-            while(reader.Read())
+            while (reader.Read())
             {
-                for(int i = 0; i<reader.FieldCount;i++)
+                for (int i = 0; i < reader.FieldCount; i++)
                 {
                     list.Add(reader.GetValue(i).ToString());
                 }
@@ -78,20 +78,20 @@ namespace FoxManPr
         }
         private void makeMeSick(List<string> subject, int i, TableLayoutPanel tbl)
         {
-            
-                Label lbl = new Label();
-                lbl.Dock = DockStyle.Fill;
-                lbl.Location = new Point(3, 0);
-                lbl.Size = new Size(32, 32);
-                lbl.Text = subject[i];
-                tbl.Controls.Add(lbl, 1, i);
 
-                Label lbl1 = new Label();
-                lbl1.Dock = DockStyle.Fill;
-                lbl1.Location = new Point(3, 0);
-                lbl1.Size = new Size(32, 32);
-                lbl1.Text = Convert.ToString(i + 1);
-                tbl.Controls.Add(lbl1, 0, i);
+            Label lbl = new Label();
+            lbl.Dock = DockStyle.Fill;
+            lbl.Location = new Point(3, 0);
+            lbl.Size = new Size(32, 32);
+            lbl.Text = subject[i];
+            tbl.Controls.Add(lbl, 1, i);
+
+            Label lbl1 = new Label();
+            lbl1.Dock = DockStyle.Fill;
+            lbl1.Location = new Point(3, 0);
+            lbl1.Size = new Size(32, 32);
+            lbl1.Text = Convert.ToString(i + 1);
+            tbl.Controls.Add(lbl1, 0, i);
         }
         private void giveMeAReason(List<string> mark, int i, TableLayoutPanel tbl, Label date)
         {
@@ -99,9 +99,12 @@ namespace FoxManPr
             {
                 lbl1 = new Label();
                 lbl1.Dock = DockStyle.Fill;
+                lbl1.Font = new Font("Segoe Print", 13);
                 lbl1.Location = new Point(3, 0);
                 lbl1.Size = new Size(32, 32);
                 lbl1.Text = mark[i];
+                if (lbl1.Text == "3" || lbl1.Text == "4" || lbl1.Text == "5") { lbl1.ForeColor = Color.Blue; }
+                else if (lbl1.Text == "2") { lbl1.ForeColor = Color.Red; }
                 tbl.Controls.Add(lbl1, 3, Convert.ToInt32(mark[i + 2]) - 1);
             }
         }
@@ -117,8 +120,6 @@ namespace FoxManPr
                 tbl.Controls.Add(lbl1, 2, Convert.ToInt32(ht[i + 2]) - 1);
             }
         }
-
-
         int mon = 8;
         int year = 2022;
 
@@ -156,6 +157,7 @@ namespace FoxManPr
             InitializeComponent();
             user.Text = login.nameForm + " " + login.surnForm;
             number.Controls.Clear();
+
             //  List<string> subject = MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th FROM subjects");
             //  List<string> date = MySelect("SELECT date, day");
             //  List<string> sub = MySelect("SELECT name FROM sub WHERE id = '"+ mark[2] +"'");
@@ -168,7 +170,6 @@ namespace FoxManPr
             StopIt(ant3, 3, date4);
             StopIt(ant4, 4, date5);
             date6.Text = dayE + "." + monE + "." + yeaE;
-
             for (int i = 0; i < subject.Count; i++)
             {
                 makeMeSick(subject, i, tbl1);
@@ -390,7 +391,6 @@ namespace FoxManPr
             StopIt(ant4, 4, date5);
             date6.Text = dayE + "." + monE + "." + yeaE;
             number.Controls.Clear();
-
             for (int i = 0; i < subject.Count; i++)
             {
                 makeMeSick(subject, i, tbl1);

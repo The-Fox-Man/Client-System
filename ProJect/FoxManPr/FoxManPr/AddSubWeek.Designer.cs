@@ -82,7 +82,6 @@ namespace FoxManPr
             this.cm = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pan1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.aa = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -100,9 +99,18 @@ namespace FoxManPr
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pan2.SuspendLayout();
-            this.pan1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -592,20 +600,10 @@ namespace FoxManPr
             // 
             this.pan1.AutoScroll = true;
             this.pan1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pan1.Controls.Add(this.label9);
-            this.pan1.Location = new System.Drawing.Point(12, 10);
+            this.pan1.Location = new System.Drawing.Point(12, 46);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(1414, 465);
+            this.pan1.Size = new System.Drawing.Size(1414, 429);
             this.pan1.TabIndex = 17;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(182, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Удалить расписание на один день";
             // 
             // aa
             // 
@@ -759,11 +757,111 @@ namespace FoxManPr
             this.label2.TabIndex = 149;
             this.label2.Text = "1 предмет";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(1122, 30);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(38, 13);
+            this.label16.TabIndex = 160;
+            this.label16.Text = "Класс";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(1072, 30);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(34, 13);
+            this.label22.TabIndex = 161;
+            this.label22.Text = "День";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(922, 30);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(59, 13);
+            this.label21.TabIndex = 162;
+            this.label21.Text = "7 предмет";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(772, 30);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(59, 13);
+            this.label20.TabIndex = 163;
+            this.label20.Text = "6 предмет";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(622, 30);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(59, 13);
+            this.label19.TabIndex = 164;
+            this.label19.Text = "5 предмет";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(472, 30);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(59, 13);
+            this.label18.TabIndex = 165;
+            this.label18.Text = "4 предмет";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(322, 30);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(59, 13);
+            this.label17.TabIndex = 157;
+            this.label17.Text = "3 предмет";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(172, 30);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(59, 13);
+            this.label24.TabIndex = 158;
+            this.label24.Text = "2 предмет";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(22, 30);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(59, 13);
+            this.label25.TabIndex = 159;
+            this.label25.Text = "1 предмет";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(13, 9);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(182, 13);
+            this.label26.TabIndex = 156;
+            this.label26.Text = "Удалить расписание на один день";
+            // 
             // AddSubWeek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1434, 861);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -793,8 +891,6 @@ namespace FoxManPr
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.pan2.ResumeLayout(false);
-            this.pan1.ResumeLayout(false);
-            this.pan1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -820,7 +916,6 @@ namespace FoxManPr
         private System.Windows.Forms.ComboBox cm;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel pan1;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox t39;
         private System.Windows.Forms.ComboBox t42;
         private System.Windows.Forms.ComboBox t41;
@@ -873,5 +968,15 @@ namespace FoxManPr
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }
