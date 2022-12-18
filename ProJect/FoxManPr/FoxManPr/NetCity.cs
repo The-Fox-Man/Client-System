@@ -299,6 +299,15 @@ namespace FoxManPr
         }
         private void next_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void towards_Click(object sender, EventArgs e)
+        {
             tbl1.Controls.Clear();
             tbl2.Controls.Clear();
             tbl3.Controls.Clear();
@@ -342,7 +351,7 @@ namespace FoxManPr
                 { dayE = 1; }
             }
             if (monS == 2 && dayS > 28)
-            { 
+            {
                 if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
                 { dayS = dayS - 29; monS = 3; }
                 else
@@ -470,7 +479,7 @@ namespace FoxManPr
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void back_Click(object sender, EventArgs e)
         {
             tbl1.Controls.Clear();
             tbl2.Controls.Clear();
@@ -481,7 +490,7 @@ namespace FoxManPr
 
             dayS = dayS - 7;
             dayE = dayE - 7;
-            
+
 
             if (monE == 10 && dayE < 0) { dayE = dayE + 30; monE = 9; }
             if (monE == 10 && dayE == 0) { dayE = 30; monE = monE - 1; }
@@ -519,7 +528,7 @@ namespace FoxManPr
                 if (yeaE == 2020 || yeaE == 2024 || yeaE == 2028 || yeaE == 2032 || yeaE == 2036 || yeaE == 2040 || yeaE == 2044 || yeaE == 2048 || yeaE == 2052 || yeaE == 2056 || yeaE == 2060)
                 { dayE = 29; monE = monE - 1; }
                 else
-                { dayE = 28; monE = monE - 1; } 
+                { dayE = 28; monE = monE - 1; }
             }
             if (monS == 3 && dayS < 0)
             {
@@ -530,7 +539,7 @@ namespace FoxManPr
             }
             if (monS == 2 && dayS == 23)
             {
-                 dayS = dayS - 1; 
+                dayS = dayS - 1;
             }
 
             if (monE == 4 && dayE < 0) { dayE = dayE + 31; monE = 3; }
@@ -654,6 +663,12 @@ namespace FoxManPr
             {
                 CruelWorld(ht, i, tb6, date6);
             }
+        
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

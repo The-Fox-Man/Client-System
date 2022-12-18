@@ -53,7 +53,7 @@ namespace FoxManPr
         {
             if(one.Text == "" || two.Text == "" || five.Text == "" || four.Text == "" || threee.Text == "" || six.Text == "" && threee.Text != "Учитель")
             {
-                MessageBox.Show("Fuck you");
+                MessageBox.Show("Поля не заполнены. Пожалуйста, завполните их все.", "System");
             }
             else
             {
@@ -62,7 +62,7 @@ namespace FoxManPr
                     MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + one.Text + "', '" + two.Text + "', '" + threee.Text + "', '" + four.Text + "', '" + five.Text + "', '" + six.Text + "')", Program.con);
                     DbDataReader read = cmd.ExecuteReader();
                     read.Close();
-                    MessageBox.Show("Yeeeз");   
+                    MessageBox.Show("ВЫ успешно зарегистрировались как ученик.", "System");   
                     Close();
                 }
                 if (threee.Text == "Учитель" && boob && txt.Text == "9910801" && txt2.Text != "")
@@ -79,7 +79,7 @@ namespace FoxManPr
                     rea.Close();
                     
                     
-                    MessageBox.Show("Yeee");
+                    MessageBox.Show("ВЫ учпешно зарегистрировались как учитель", "System");
                     Close();
                 }
 

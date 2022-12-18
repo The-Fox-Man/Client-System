@@ -80,10 +80,6 @@ namespace FoxManPr
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -198,13 +194,23 @@ namespace FoxManPr
     //        }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void change_Click(object sender, EventArgs e)
         {
             if (login.nameForm == "") { MessageBox.Show("Сначала войдите.", "System"); }
             else { UserCabin n = new UserCabin(); n.ShowDialog(); }
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

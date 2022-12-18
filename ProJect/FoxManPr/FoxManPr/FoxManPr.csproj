@@ -232,5 +232,32 @@
   <ItemGroup>
     <None Include="Pic\gymn13.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\Header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\Line.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\gradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pic\Square.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

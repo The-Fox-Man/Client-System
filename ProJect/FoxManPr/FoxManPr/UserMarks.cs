@@ -20,6 +20,7 @@ namespace FoxManPr
         public UserMarks()
         {
             InitializeComponent();
+            Text = "Выставить оценку ученику " + subject[0] + " " + subject[1] + " " + subject[5];
         }
 
         private void UserMarks_Load(object sender, EventArgs e)
@@ -33,13 +34,19 @@ namespace FoxManPr
 
 
             List<string> us = NetCity.MySelect("SELECT mark, date, col FROM marks WHERE userid = '" + subject[6] + "' AND subid = '" + login.subidForm + "'");
+            List<string> sad = new List<string>() { "5", "4", "3", "2"}; 
             int y = 10;
             for (int i = 0; i < us.Count; i += 3)
             {
-                Label lbl = new Label();
+                ComboBox lbl = new ComboBox();
                 lbl.Location = new Point(140, y);
+                for (int o = 0; o < sad.Count; o++)
+                {
+                    lbl.Items.Add(sad[o]);
+                }
                 lbl.Font = new Font("Comic Sans MS", 13);
                 lbl.Size = new Size(50, 30);
+                lbl.Enabled = false;
                 lbl.Text = us[i];
                 panel.Controls.Add(lbl);
 
@@ -99,7 +106,7 @@ namespace FoxManPr
                 }
             }
         }
-        private void change(object sender, EventArgs e)
+       /* private void change(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             int y = btn.Location.Y;
@@ -116,7 +123,7 @@ namespace FoxManPr
 
                 }
             }
-        }
+        }*/
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -169,12 +176,58 @@ namespace FoxManPr
             }
 
         }
+        private void change(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            int y = btn.Location.Y;
 
+            foreach (Control control10 in panel.Controls)
+            {
+                if (control10.Location == new Point(370, y + AutoScrollPosition.Y) && control10.Text == "Изменить")
+                {
+                    foreach (Control control88 in panel.Controls)
+                    {
+                        if (control88.Location == new Point(140, y + AutoScrollPosition.Y))
+                        {
+                            control88.Enabled = true;
+                        }
+                    }
+                    control10.Text = "Сохранить";
+                }
+                else if (control10.Location == new Point(370, y + AutoScrollPosition.Y) && control10.Text == "Сохранить")
+                {
+                    foreach (Control control in panel.Controls)
+                    {
+                        foreach (Control control2 in panel.Controls)
+                        {
+                            if (control.Location == new Point(20, y + AutoScrollPosition.Y) && control2.Location == new Point(200, y + AutoScrollPosition.Y))
+                            {
+                                control10.Text = "Изменить";
+                                foreach (Control control88 in panel.Controls)
+                                {
+                                    if (control88.Location == new Point(140, y + AutoScrollPosition.Y))
+                                    {
+                                        control88.Enabled = false;
+                                        NetCity.MyUpdate("UPDATE marks SET mark='" + control88.Text + "' WHERE date='" + control.Text + "' AND col='" + control2.Text + "' AND userid='" + subject[6] + "' AND subid='" + login.subidForm + "'");
+                                        MessageBox.Show("Оценка изменена.", "System");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         private void check_Click(object sender, EventArgs e)
         {
             currentclas = subject[5];
             CheckTimeSheet j = new CheckTimeSheet();
             j.ShowDialog();
+        }
+
+        private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)
+        {
+            dat.Text = dateTimePicker1.Text;
         }
     }
 }

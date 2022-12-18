@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddClassesAndSub));
             this.pan1 = new System.Windows.Forms.Panel();
             this.pan2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             // pan1
             // 
             this.pan1.AutoScroll = true;
+            this.pan1.BackgroundImage = global::FoxManPr.Properties.Resources.Line;
             this.pan1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pan1.Location = new System.Drawing.Point(12, 49);
             this.pan1.Name = "pan1";
@@ -50,6 +52,7 @@
             // pan2
             // 
             this.pan2.AutoScroll = true;
+            this.pan2.BackgroundImage = global::FoxManPr.Properties.Resources.Line;
             this.pan2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pan2.Location = new System.Drawing.Point(446, 49);
             this.pan2.Name = "pan2";
@@ -59,6 +62,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(12, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);
@@ -68,6 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(446, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 13);
@@ -112,6 +117,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(871, 560);
             this.Controls.Add(this.bt2);
             this.Controls.Add(this.bt1);
@@ -121,9 +128,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.pan1);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddClassesAndSub";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddClassesAndSub";
+            this.Text = "Добавить класс или предмет";
             this.Load += new System.EventHandler(this.AddClassesAndSub_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -18,8 +18,8 @@ namespace FoxManPr
         public AddHomeTask()
         {
             InitializeComponent();
-
             label2.Text = NetCityTeachrers.clasTeach;
+            Text = "Выставить домашнее задание классу " + NetCityTeachrers.clasTeach;
         }
 
         private void yup_Click(object sender, EventArgs e)
@@ -179,6 +179,11 @@ namespace FoxManPr
         private void panel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            dat.Text = dateTimePicker1.Text;
         }
     }
 }

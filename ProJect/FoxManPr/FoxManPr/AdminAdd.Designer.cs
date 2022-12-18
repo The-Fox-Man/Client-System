@@ -29,6 +29,7 @@ namespace FoxManPr
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminAdd));
             this.cm = new System.Windows.Forms.ComboBox();
             this.pan2 = new System.Windows.Forms.Panel();
             this.cmn = new System.Windows.Forms.ComboBox();
@@ -223,6 +224,7 @@ namespace FoxManPr
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Location = new System.Drawing.Point(332, 17);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 13);
@@ -232,6 +234,7 @@ namespace FoxManPr
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Location = new System.Drawing.Point(172, 17);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 13);
@@ -241,6 +244,7 @@ namespace FoxManPr
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Location = new System.Drawing.Point(22, 17);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 13);
@@ -251,15 +255,17 @@ namespace FoxManPr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(809, 700);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.pan1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AdminAdd";
+            this.Text = "Добавить администратора";
             this.Load += new System.EventHandler(this.AdminAdd_Load);
             this.pan2.ResumeLayout(false);
             this.pan2.PerformLayout();

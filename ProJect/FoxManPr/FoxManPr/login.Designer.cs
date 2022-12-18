@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.t1 = new System.Windows.Forms.TextBox();
@@ -59,7 +60,7 @@
             // t1
             // 
             this.t1.Location = new System.Drawing.Point(68, 27);
-            this.t1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.t1.Margin = new System.Windows.Forms.Padding(2);
             this.t1.Name = "t1";
             this.t1.Size = new System.Drawing.Size(137, 20);
             this.t1.TabIndex = 2;
@@ -68,7 +69,7 @@
             // t2
             // 
             this.t2.Location = new System.Drawing.Point(68, 53);
-            this.t2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.t2.Margin = new System.Windows.Forms.Padding(2);
             this.t2.Name = "t2";
             this.t2.Size = new System.Drawing.Size(137, 20);
             this.t2.TabIndex = 3;
@@ -76,7 +77,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(122, 92);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 19);
             this.button1.TabIndex = 4;
@@ -105,10 +106,11 @@
             this.Controls.Add(this.t1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "login";
+            this.Text = "Войти";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -21,6 +21,8 @@ namespace FoxManPr
         public CheckTimeSheet()
         {
             InitializeComponent();
+            Text = "Посмотреть расписание предметов ученика из класса " + UserMarks.currentclas;
+            user.Text = "Расписание ученика из класса " + UserMarks.currentclas;
             for (int i = 0; i < subject.Count; i++)
             {
                 makeMeSick(subject, i, tbl1);

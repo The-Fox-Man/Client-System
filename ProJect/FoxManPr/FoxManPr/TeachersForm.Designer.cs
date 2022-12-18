@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeachersForm));
             this.pan1 = new System.Windows.Forms.Panel();
             this.pan2 = new System.Windows.Forms.Panel();
+            this.cm = new System.Windows.Forms.ComboBox();
             this.cmn = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -44,7 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.cm = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -79,6 +80,15 @@
             this.pan2.Name = "pan2";
             this.pan2.Size = new System.Drawing.Size(785, 242);
             this.pan2.TabIndex = 1;
+            // 
+            // cm
+            // 
+            this.cm.FormattingEnabled = true;
+            this.cm.Location = new System.Drawing.Point(271, 34);
+            this.cm.Name = "cm";
+            this.cm.Size = new System.Drawing.Size(277, 21);
+            this.cm.TabIndex = 49;
+            this.cm.Visible = false;
             // 
             // cmn
             // 
@@ -201,18 +211,10 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cm
-            // 
-            this.cm.FormattingEnabled = true;
-            this.cm.Location = new System.Drawing.Point(271, 34);
-            this.cm.Name = "cm";
-            this.cm.Size = new System.Drawing.Size(277, 21);
-            this.cm.TabIndex = 49;
-            this.cm.Visible = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Location = new System.Drawing.Point(22, 17);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 13);
@@ -222,6 +224,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Location = new System.Drawing.Point(172, 17);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(56, 13);
@@ -231,6 +234,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Location = new System.Drawing.Point(332, 17);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 13);
@@ -241,6 +245,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(809, 700);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -248,9 +254,11 @@
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.pan1);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TeachersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TeachersForm";
+            this.Text = "Добавить учителей";
             this.Load += new System.EventHandler(this.TeachersForm_Load);
             this.pan2.ResumeLayout(false);
             this.pan2.PerformLayout();

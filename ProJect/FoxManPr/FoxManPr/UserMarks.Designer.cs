@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserMarks));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Type = new System.Windows.Forms.Label();
             this.Data = new System.Windows.Forms.Label();
@@ -37,10 +38,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cm = new System.Windows.Forms.ComboBox();
             this.dat = new System.Windows.Forms.TextBox();
             this.yup = new System.Windows.Forms.Button();
             this.numb = new System.Windows.Forms.ComboBox();
@@ -62,6 +60,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel1.BackgroundImage = global::FoxManPr.Properties.Resources.gradient;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.Type);
             this.panel1.Controls.Add(this.Data);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -72,6 +72,7 @@
             // Type
             // 
             this.Type.AutoSize = true;
+            this.Type.BackColor = System.Drawing.Color.Transparent;
             this.Type.Location = new System.Drawing.Point(13, 26);
             this.Type.Name = "Type";
             this.Type.Size = new System.Drawing.Size(35, 13);
@@ -81,6 +82,7 @@
             // Data
             // 
             this.Data.AutoSize = true;
+            this.Data.BackColor = System.Drawing.Color.Transparent;
             this.Data.Location = new System.Drawing.Point(13, 13);
             this.Data.Name = "Data";
             this.Data.Size = new System.Drawing.Size(35, 13);
@@ -101,10 +103,7 @@
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.cm);
             this.panel2.Controls.Add(this.dat);
             this.panel2.Controls.Add(this.yup);
             this.panel2.Controls.Add(this.numb);
@@ -123,7 +122,7 @@
             // 
             // check
             // 
-            this.check.Location = new System.Drawing.Point(3, 421);
+            this.check.Location = new System.Drawing.Point(3, 371);
             this.check.Name = "check";
             this.check.Size = new System.Drawing.Size(168, 23);
             this.check.TabIndex = 19;
@@ -134,7 +133,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 356);
+            this.label8.Location = new System.Drawing.Point(3, 306);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 13);
             this.label8.TabIndex = 18;
@@ -144,10 +143,11 @@
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(3, 384);
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 334);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
             this.dateTimePicker1.TabIndex = 17;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged_1);
             // 
             // button3
             // 
@@ -158,45 +158,14 @@
             this.button3.Text = "button1";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(3, 352);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 1);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(2, 451);
+            this.button1.Location = new System.Drawing.Point(2, 401);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 1);
             this.button1.TabIndex = 16;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 304);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Изменить оценку";
-            // 
-            // cm
-            // 
-            this.cm.FormattingEnabled = true;
-            this.cm.Items.AddRange(new object[] {
-            "5",
-            "4",
-            "3",
-            "2"});
-            this.cm.Location = new System.Drawing.Point(4, 323);
-            this.cm.Name = "cm";
-            this.cm.Size = new System.Drawing.Size(170, 21);
-            this.cm.TabIndex = 14;
             // 
             // dat
             // 
@@ -352,6 +321,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserMarks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserMarks";
@@ -383,14 +353,11 @@
         private System.Windows.Forms.ComboBox marke;
         private System.Windows.Forms.Button yup;
         private System.Windows.Forms.TextBox dat;
-        private System.Windows.Forms.ComboBox cm;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button check;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;

@@ -29,6 +29,7 @@ namespace FoxManPr
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NetCityTeachrers));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.cm = new System.Windows.Forms.ComboBox();
@@ -51,6 +52,8 @@ namespace FoxManPr
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackgroundImage = global::FoxManPr.Properties.Resources.Header;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.cm);
             this.panel1.Controls.Add(this.add);
@@ -60,69 +63,85 @@ namespace FoxManPr
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(706, 58);
+            this.panel1.Size = new System.Drawing.Size(706, 83);
             this.panel1.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(199, 34);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(571, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(43, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "Класс";
             // 
             // cm
             // 
+            this.cm.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.cm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cm.FormattingEnabled = true;
-            this.cm.Location = new System.Drawing.Point(243, 31);
+            this.cm.Location = new System.Drawing.Point(620, 52);
             this.cm.Name = "cm";
             this.cm.Size = new System.Drawing.Size(74, 21);
             this.cm.TabIndex = 4;
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(5, 29);
+            this.add.BackColor = System.Drawing.Color.Transparent;
+            this.add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add.ForeColor = System.Drawing.Color.White;
+            this.add.Location = new System.Drawing.Point(519, 12);
             this.add.Name = "add";
-            this.add.Size = new System.Drawing.Size(175, 23);
+            this.add.Size = new System.Drawing.Size(175, 29);
             this.add.TabIndex = 3;
             this.add.Text = "Добавить домашнее задание";
-            this.add.UseVisualStyleBackColor = true;
+            this.add.UseVisualStyleBackColor = false;
             this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 13);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(2, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(60, 18);
             this.label1.TabIndex = 2;
             this.label1.Text = "Учитель";
             // 
             // user
             // 
             this.user.AutoSize = true;
+            this.user.BackColor = System.Drawing.Color.Transparent;
+            this.user.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.user.ForeColor = System.Drawing.Color.White;
             this.user.Location = new System.Drawing.Point(2, 0);
             this.user.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(80, 13);
+            this.user.Size = new System.Drawing.Size(97, 18);
             this.user.TabIndex = 1;
             this.user.Text = "Пользователь";
             // 
             // panel
             // 
             this.panel.AutoScroll = true;
+            this.panel.BackColor = System.Drawing.Color.Transparent;
             this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel.Location = new System.Drawing.Point(-6, 86);
+            this.panel.Location = new System.Drawing.Point(11, 107);
             this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(430, 451);
+            this.panel.Size = new System.Drawing.Size(413, 413);
             this.panel.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(50, 68);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(67, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 5;
@@ -131,7 +150,8 @@ namespace FoxManPr
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(270, 68);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(282, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 6;
@@ -144,7 +164,7 @@ namespace FoxManPr
             this.panel2.Controls.Add(this.SetNull);
             this.panel2.Controls.Add(this.cmb);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(429, 86);
+            this.panel2.Location = new System.Drawing.Point(429, 107);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(265, 100);
             this.panel2.TabIndex = 7;
@@ -189,7 +209,8 @@ namespace FoxManPr
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(432, 68);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(432, 88);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 8;
@@ -199,6 +220,8 @@ namespace FoxManPr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(706, 531);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel2);
@@ -206,9 +229,11 @@ namespace FoxManPr
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NetCityTeachrers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NetCityTeachrers";
+            this.Text = "Сетевой город";
             this.Load += new System.EventHandler(this.NetCityTeachrers_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

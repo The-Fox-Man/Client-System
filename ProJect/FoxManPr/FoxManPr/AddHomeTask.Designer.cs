@@ -29,6 +29,7 @@ namespace FoxManPr
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddHomeTask));
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.check = new System.Windows.Forms.Button();
@@ -49,14 +50,11 @@ namespace FoxManPr
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Type = new System.Windows.Forms.Label();
-            this.Data = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -121,6 +119,7 @@ namespace FoxManPr
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(169, 20);
             this.dateTimePicker1.TabIndex = 22;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // hmtsk
             // 
@@ -266,34 +265,6 @@ namespace FoxManPr
             this.panel.TabIndex = 4;
             this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel1.Controls.Add(this.Type);
-            this.panel1.Controls.Add(this.Data);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(823, 54);
-            this.panel1.TabIndex = 3;
-            // 
-            // Type
-            // 
-            this.Type.AutoSize = true;
-            this.Type.Location = new System.Drawing.Point(13, 26);
-            this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(35, 13);
-            this.Type.TabIndex = 1;
-            this.Type.Text = "label1";
-            // 
-            // Data
-            // 
-            this.Data.AutoSize = true;
-            this.Data.Location = new System.Drawing.Point(13, 13);
-            this.Data.Name = "Data";
-            this.Data.Size = new System.Drawing.Size(35, 13);
-            this.Data.TabIndex = 0;
-            this.Data.Text = "label1";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -321,6 +292,16 @@ namespace FoxManPr
             this.label11.TabIndex = 8;
             this.label11.Text = "Но. пред.";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel1.BackgroundImage = global::FoxManPr.Properties.Resources.gradient;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(823, 54);
+            this.panel1.TabIndex = 3;
+            // 
             // AddHomeTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -332,14 +313,13 @@ namespace FoxManPr
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddHomeTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DA";
+            this.Text = "Выставить домашнее задание ";
             this.Load += new System.EventHandler(this.AddHomeTask_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,8 +343,6 @@ namespace FoxManPr
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Type;
-        private System.Windows.Forms.Label Data;
         private System.Windows.Forms.TextBox hmtsk;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button check;

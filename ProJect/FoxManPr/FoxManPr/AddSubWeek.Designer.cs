@@ -29,6 +29,7 @@ namespace FoxManPr
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSubWeek));
             this.panel1 = new System.Windows.Forms.Panel();
             this.cm1 = new System.Windows.Forms.ComboBox();
             this.butt = new System.Windows.Forms.Button();
@@ -590,7 +591,7 @@ namespace FoxManPr
             // 
             this.button1.Location = new System.Drawing.Point(16, 828);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1375, 23);
+            this.button1.Size = new System.Drawing.Size(233, 23);
             this.button1.TabIndex = 19;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -599,6 +600,8 @@ namespace FoxManPr
             // pan1
             // 
             this.pan1.AutoScroll = true;
+            this.pan1.BackgroundImage = global::FoxManPr.Properties.Resources.Line;
+            this.pan1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pan1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pan1.Location = new System.Drawing.Point(12, 46);
             this.pan1.Name = "pan1";
@@ -616,6 +619,7 @@ namespace FoxManPr
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Location = new System.Drawing.Point(16, 803);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(38, 13);
@@ -630,10 +634,12 @@ namespace FoxManPr
             this.button2.TabIndex = 68;
             this.button2.Text = "Или добавтье расписание на один день\r\n";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(17, 483);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 13);
@@ -643,6 +649,7 @@ namespace FoxManPr
             // label47
             // 
             this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.Location = new System.Drawing.Point(9, 747);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(19, 13);
@@ -652,6 +659,7 @@ namespace FoxManPr
             // label39
             // 
             this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Location = new System.Drawing.Point(9, 705);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(18, 13);
@@ -661,6 +669,7 @@ namespace FoxManPr
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Location = new System.Drawing.Point(9, 662);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(17, 13);
@@ -670,6 +679,7 @@ namespace FoxManPr
             // label23
             // 
             this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Location = new System.Drawing.Point(10, 621);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(19, 13);
@@ -679,6 +689,7 @@ namespace FoxManPr
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Location = new System.Drawing.Point(10, 580);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(18, 13);
@@ -688,6 +699,7 @@ namespace FoxManPr
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Location = new System.Drawing.Point(9, 535);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(19, 13);
@@ -697,6 +709,7 @@ namespace FoxManPr
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Location = new System.Drawing.Point(1111, 509);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 13);
@@ -706,6 +719,7 @@ namespace FoxManPr
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(941, 509);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 13);
@@ -715,6 +729,7 @@ namespace FoxManPr
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(765, 509);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(59, 13);
@@ -724,6 +739,7 @@ namespace FoxManPr
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(592, 509);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 13);
@@ -733,6 +749,7 @@ namespace FoxManPr
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(421, 509);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 13);
@@ -742,6 +759,7 @@ namespace FoxManPr
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(246, 509);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
@@ -751,6 +769,7 @@ namespace FoxManPr
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(74, 509);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
@@ -760,6 +779,7 @@ namespace FoxManPr
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Location = new System.Drawing.Point(1122, 30);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(38, 13);
@@ -769,6 +789,7 @@ namespace FoxManPr
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Location = new System.Drawing.Point(1072, 30);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(34, 13);
@@ -778,6 +799,7 @@ namespace FoxManPr
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Location = new System.Drawing.Point(922, 30);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(59, 13);
@@ -787,6 +809,7 @@ namespace FoxManPr
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Location = new System.Drawing.Point(772, 30);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(59, 13);
@@ -796,6 +819,7 @@ namespace FoxManPr
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Location = new System.Drawing.Point(622, 30);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(59, 13);
@@ -805,6 +829,7 @@ namespace FoxManPr
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Location = new System.Drawing.Point(472, 30);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(59, 13);
@@ -814,6 +839,7 @@ namespace FoxManPr
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Location = new System.Drawing.Point(322, 30);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(59, 13);
@@ -823,6 +849,7 @@ namespace FoxManPr
             // label24
             // 
             this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Location = new System.Drawing.Point(172, 30);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(59, 13);
@@ -832,6 +859,7 @@ namespace FoxManPr
             // label25
             // 
             this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Location = new System.Drawing.Point(22, 30);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(59, 13);
@@ -841,6 +869,7 @@ namespace FoxManPr
             // label26
             // 
             this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Location = new System.Drawing.Point(13, 9);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(182, 13);
@@ -851,6 +880,8 @@ namespace FoxManPr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1434, 861);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label22);
@@ -884,9 +915,11 @@ namespace FoxManPr
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pan1);
             this.Controls.Add(this.cm);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddSubWeek";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddSubWeek";
+            this.Text = "Добавить расписание на одну неелю";
             this.Load += new System.EventHandler(this.AddSubWeek_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

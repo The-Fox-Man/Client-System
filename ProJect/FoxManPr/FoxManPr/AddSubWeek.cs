@@ -130,58 +130,67 @@ namespace FoxManPr
             lbl.Size = new Size(145, 65);
             lbl.Text = list[i];
             lbl.Tag = list[i + 9];
+            lbl.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl);
 
             Label lbl1 = new Label();
             lbl1.Location = new Point(160, y);
             lbl1.Size = new Size(145, 65);
             lbl1.Text = list[i + 1];
+            lbl1.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl1);
 
             Label lbl2 = new Label();
             lbl2.Location = new Point(310, y);
             lbl2.Size = new Size(145, 65);
             lbl2.Text = list[i + 2];
+            lbl2.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl2);
 
             Label lbl3 = new Label();
             lbl3.Location = new Point(460, y);
             lbl3.Size = new Size(145, 65);
             lbl3.Text = list[i + 3];
+            lbl3.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl3);
 
             Label lbl4 = new Label();
             lbl4.Location = new Point(610, y);
             lbl4.Size = new Size(145, 65);
             lbl4.Text = list[i + 4];
+            lbl4.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl4);
 
             Label lbl5 = new Label();
             lbl5.Location = new Point(760, y);
             lbl5.Size = new Size(145, 65);
             lbl5.Text = list[i + 5];
+            lbl5.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl5);
 
             Label lbl6 = new Label();
             lbl6.Location = new Point(910, y);
             lbl6.Size = new Size(145, 65);
             lbl6.Text = list[i + 6];
+            lbl6.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl6);
 
             Label lbl7 = new Label();
             lbl7.Location = new Point(1060, y);
             lbl7.Size = new Size(50, 65);
             lbl7.Text = list[i + 7];
+            lbl7.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl7);
 
             Label lbl8 = new Label();
             lbl8.Location = new Point(1120, y);
             lbl8.Size = new Size(50, 65);
             lbl8.Text = list[i + 8];
+            lbl8.BackColor = Color.Transparent;
             pan1.Controls.Add(lbl8);
 
             Button btn = new Button();
-            btn.Location = new Point(1200, y);
+            btn.Location = new Point(1280, y);
             btn.Size = new Size(109, 30);
             btn.TabIndex = 0;
             btn.Text = "Удалить";
@@ -216,6 +225,12 @@ namespace FoxManPr
                 a(list, i, y);
                 y += 70;
             }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            adminSub n = new adminSub();
+            n.ShowDialog();
         }
     }
 }

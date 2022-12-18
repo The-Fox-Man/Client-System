@@ -28,6 +28,7 @@ namespace FoxManPr
                 lbl.Size = new Size(sX, sY);
                 lbl.Text = list[i + b];
                 lbl.Tag = list[i + c];
+                lbl.BackColor = Color.Transparent;
                 pan.Controls.Add(lbl);
             }
 
@@ -55,15 +56,15 @@ namespace FoxManPr
 
             for (int i = 0; i < list2.Count; i += 2)
             {
-                LetsDance(i, y2, 10, list2, 0, 1, pan1, 200, 50);
+                LetsDance(i, y2, 10, list2, 0, 1, pan1, 200, 30);
                 AmericanIdiot(delete2, y2, 230, pan1, 100, 30);
-                y2 += 70;
+                y2 += 47;
             }
             for (int i = 0; i < list.Count; i += 2)
             {
-                LetsDance(i, y, 10, list, 0, 1, pan2, 50, 50);
+                LetsDance(i, y, 10, list, 0, 1, pan2, 50, 30);
                 AmericanIdiot(delete, y, 70, pan2, 100, 30);
-                y += 70;
+                y += 47;
             }
         }
         private void delete(object sender, EventArgs e)

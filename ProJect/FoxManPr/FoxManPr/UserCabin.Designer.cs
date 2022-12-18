@@ -29,6 +29,7 @@ namespace FoxManPr
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserCabin));
             this.t1 = new System.Windows.Forms.TextBox();
             this.t2 = new System.Windows.Forms.TextBox();
             this.t3 = new System.Windows.Forms.TextBox();
@@ -144,9 +145,10 @@ namespace FoxManPr
             this.Controls.Add(this.t3);
             this.Controls.Add(this.t2);
             this.Controls.Add(this.t1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserCabin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserCabin";
+            this.Text = "Профиль";
             this.Load += new System.EventHandler(this.UserCabin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
