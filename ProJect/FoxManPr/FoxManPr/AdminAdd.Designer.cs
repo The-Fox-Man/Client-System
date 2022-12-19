@@ -56,7 +56,7 @@ namespace FoxManPr
             // cm
             // 
             this.cm.FormattingEnabled = true;
-            this.cm.Location = new System.Drawing.Point(487, 26);
+            this.cm.Location = new System.Drawing.Point(243, 34);
             this.cm.Name = "cm";
             this.cm.Size = new System.Drawing.Size(277, 21);
             this.cm.TabIndex = 52;
@@ -81,7 +81,7 @@ namespace FoxManPr
             this.pan2.Controls.Add(this.button1);
             this.pan2.Location = new System.Drawing.Point(12, 424);
             this.pan2.Name = "pan2";
-            this.pan2.Size = new System.Drawing.Size(785, 264);
+            this.pan2.Size = new System.Drawing.Size(644, 264);
             this.pan2.TabIndex = 51;
             // 
             // cmn
@@ -207,7 +207,7 @@ namespace FoxManPr
             // 
             this.button1.Location = new System.Drawing.Point(9, 235);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(776, 23);
+            this.button1.Size = new System.Drawing.Size(615, 23);
             this.button1.TabIndex = 6;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -218,7 +218,7 @@ namespace FoxManPr
             this.pan1.AutoScroll = true;
             this.pan1.Location = new System.Drawing.Point(12, 33);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(785, 385);
+            this.pan1.Size = new System.Drawing.Size(644, 385);
             this.pan1.TabIndex = 50;
             // 
             // label11
@@ -255,13 +255,15 @@ namespace FoxManPr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(809, 700);
+            this.BackgroundImage = global::FoxManPr.Properties.Resources.teachersbg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(668, 700);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.pan2);
             this.Controls.Add(this.pan1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AdminAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

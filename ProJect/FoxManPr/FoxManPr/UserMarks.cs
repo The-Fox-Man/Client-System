@@ -29,8 +29,8 @@ namespace FoxManPr
             label1.Text = "Поставить оценку ученику ";
             label2.Text = subject[0] + " " + subject[1];
 
-            Data.Text = "Оценки пользователя " + subject[0] + " " + subject[1] + " " + subject[5];
-            Type.Text = subject[2];
+            Data.Text = "Оценки ученика " + subject[0] + " " + subject[1] + " " + subject[5];
+//            Type.Text = subject[2];
 
 
             List<string> us = NetCity.MySelect("SELECT mark, date, col FROM marks WHERE userid = '" + subject[6] + "' AND subid = '" + login.subidForm + "'");
@@ -54,6 +54,8 @@ namespace FoxManPr
                 lbl1.Location = new Point(20, y);
                 lbl1.Font = new Font("Comic Sans MS", 13);
                 lbl1.Size = new Size(150, 30);
+                lbl1.BackColor = Color.Transparent;
+                lbl1.ForeColor = Color.Blue;
                 lbl1.Text = us[i + 1];
                 panel.Controls.Add(lbl1);
 
@@ -62,6 +64,8 @@ namespace FoxManPr
                 lbl2.Font = new Font("Comic Sans MS", 13);
                 lbl2.Size = new Size(50, 30);
                 lbl2.Text = us[i + 2];
+                lbl2.BackColor = Color.Transparent;
+                lbl2.ForeColor = Color.Blue;
                 panel.Controls.Add(lbl2);
 
                 Button btn = new Button();
@@ -125,11 +129,6 @@ namespace FoxManPr
             }
         }*/
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

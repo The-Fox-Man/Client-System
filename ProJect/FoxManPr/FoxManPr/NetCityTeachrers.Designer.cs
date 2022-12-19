@@ -130,7 +130,6 @@ namespace FoxManPr
             // 
             this.panel.AutoScroll = true;
             this.panel.BackColor = System.Drawing.Color.Transparent;
-            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel.Location = new System.Drawing.Point(11, 107);
             this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
@@ -141,9 +140,10 @@ namespace FoxManPr
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(67, 88);
+            this.label3.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(61, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(73, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Ученики";
             // 
@@ -151,29 +151,30 @@ namespace FoxManPr
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(282, 88);
+            this.label4.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(276, 84);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(50, 22);
             this.label4.TabIndex = 6;
             this.label4.Text = "Класс";
             // 
             // panel2
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.Filtr);
             this.panel2.Controls.Add(this.SetNull);
             this.panel2.Controls.Add(this.cmb);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(429, 107);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(265, 100);
+            this.panel2.Size = new System.Drawing.Size(265, 92);
             this.panel2.TabIndex = 7;
             // 
             // Filtr
             // 
-            this.Filtr.Location = new System.Drawing.Point(147, 58);
+            this.Filtr.Location = new System.Drawing.Point(134, 44);
             this.Filtr.Name = "Filtr";
-            this.Filtr.Size = new System.Drawing.Size(106, 23);
+            this.Filtr.Size = new System.Drawing.Size(119, 36);
             this.Filtr.TabIndex = 4;
             this.Filtr.Text = "Отфильтровать";
             this.Filtr.UseVisualStyleBackColor = true;
@@ -181,9 +182,9 @@ namespace FoxManPr
             // 
             // SetNull
             // 
-            this.SetNull.Location = new System.Drawing.Point(6, 58);
+            this.SetNull.Location = new System.Drawing.Point(6, 44);
             this.SetNull.Name = "SetNull";
-            this.SetNull.Size = new System.Drawing.Size(119, 23);
+            this.SetNull.Size = new System.Drawing.Size(119, 36);
             this.SetNull.TabIndex = 3;
             this.SetNull.Text = "Сбросить фильтр";
             this.SetNull.UseVisualStyleBackColor = true;
@@ -210,9 +211,10 @@ namespace FoxManPr
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(432, 88);
+            this.label5.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(426, 84);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.Size = new System.Drawing.Size(64, 22);
             this.label5.TabIndex = 8;
             this.label5.Text = "Фильтр";
             // 

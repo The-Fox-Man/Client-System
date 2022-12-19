@@ -77,6 +77,8 @@
             // panel
             // 
             this.panel.AutoScroll = true;
+            this.panel.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
+            this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel.Controls.Add(this.tb6);
             this.panel.Controls.Add(this.tbl5);
             this.panel.Controls.Add(this.tbl4);
@@ -92,7 +94,7 @@
             this.panel.Location = new System.Drawing.Point(0, 63);
             this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(718, 473);
+            this.panel.Size = new System.Drawing.Size(965, 473);
             this.panel.TabIndex = 0;
             // 
             // tb6
@@ -102,7 +104,7 @@
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             this.tb6.Location = new System.Drawing.Point(391, 569);
             this.tb6.Margin = new System.Windows.Forms.Padding(2);
             this.tb6.Name = "tb6";
@@ -125,7 +127,7 @@
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             this.tbl5.Location = new System.Drawing.Point(11, 570);
             this.tbl5.Margin = new System.Windows.Forms.Padding(2);
             this.tbl5.Name = "tbl5";
@@ -148,7 +150,7 @@
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             this.tbl4.Location = new System.Drawing.Point(390, 307);
             this.tbl4.Margin = new System.Windows.Forms.Padding(2);
             this.tbl4.Name = "tbl4";
@@ -171,7 +173,7 @@
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             this.tbl3.Location = new System.Drawing.Point(11, 307);
             this.tbl3.Margin = new System.Windows.Forms.Padding(2);
             this.tbl3.Name = "tbl3";
@@ -194,7 +196,7 @@
             this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tbl2.Location = new System.Drawing.Point(390, 45);
             this.tbl2.Margin = new System.Windows.Forms.Padding(2);
             this.tbl2.Name = "tbl2";
@@ -450,7 +452,7 @@
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tbl1.Location = new System.Drawing.Point(11, 45);
             this.tbl1.Margin = new System.Windows.Forms.Padding(2);
             this.tbl1.Name = "tbl1";

@@ -20,6 +20,7 @@ namespace FoxManPr
             InitializeComponent();
             label2.Text = NetCityTeachrers.clasTeach;
             Text = "Выставить домашнее задание классу " + NetCityTeachrers.clasTeach;
+            Data.Text = "Домашние задания класса " + NetCityTeachrers.clasTeach;
         }
 
         private void yup_Click(object sender, EventArgs e)
@@ -74,6 +75,8 @@ namespace FoxManPr
                 lbl1.Location = new Point(20, y);
                 lbl1.Font = new Font("Comic Sans MS", 13);
                 lbl1.Size = new Size(150, 30);
+                lbl1.BackColor = Color.Transparent;
+                lbl1.ForeColor = Color.Blue;
                 lbl1.Text = us[i + 1];
                 panel.Controls.Add(lbl1);
 
@@ -82,6 +85,8 @@ namespace FoxManPr
                 lbl2.Font = new Font("Comic Sans MS", 13);
                 lbl2.Size = new Size(50, 30);
                 lbl2.Text = us[i + 2];
+                lbl2.BackColor = Color.Transparent;
+                lbl2.ForeColor = Color.Blue;
                 panel.Controls.Add(lbl2);
 
                 Button btn = new Button();

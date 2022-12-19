@@ -57,7 +57,7 @@
             this.pan1.AutoScroll = true;
             this.pan1.Location = new System.Drawing.Point(12, 33);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(785, 370);
+            this.pan1.Size = new System.Drawing.Size(643, 370);
             this.pan1.TabIndex = 0;
             // 
             // pan2
@@ -78,7 +78,7 @@
             this.pan2.Controls.Add(this.label2);
             this.pan2.Location = new System.Drawing.Point(12, 409);
             this.pan2.Name = "pan2";
-            this.pan2.Size = new System.Drawing.Size(785, 242);
+            this.pan2.Size = new System.Drawing.Size(643, 242);
             this.pan2.TabIndex = 1;
             // 
             // cm
@@ -205,7 +205,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(12, 657);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(785, 31);
+            this.button1.Size = new System.Drawing.Size(643, 31);
             this.button1.TabIndex = 6;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -245,9 +245,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(809, 700);
+            this.BackgroundImage = global::FoxManPr.Properties.Resources.teachersbg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(668, 700);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);

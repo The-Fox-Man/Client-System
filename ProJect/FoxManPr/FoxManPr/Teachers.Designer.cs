@@ -41,7 +41,7 @@
             this.pan1.AutoScroll = true;
             this.pan1.Location = new System.Drawing.Point(12, 82);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(682, 422);
+            this.pan1.Size = new System.Drawing.Size(471, 522);
             this.pan1.TabIndex = 0;
             // 
             // label1
@@ -88,9 +88,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
+            this.BackgroundImage = global::FoxManPr.Properties.Resources.teachersbg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(706, 516);
+            this.ClientSize = new System.Drawing.Size(495, 631);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

@@ -232,5 +232,10 @@ namespace FoxManPr
             adminSub n = new adminSub();
             n.ShowDialog();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

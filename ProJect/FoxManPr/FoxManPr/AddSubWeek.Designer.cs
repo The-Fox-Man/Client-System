@@ -116,7 +116,8 @@ namespace FoxManPr
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.cm1);
             this.panel1.Controls.Add(this.butt);
             this.panel1.Controls.Add(this.cm2);
@@ -127,22 +128,24 @@ namespace FoxManPr
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(136, 265);
             this.panel1.TabIndex = 20;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cm1
             // 
             this.cm1.FormattingEnabled = true;
             this.cm1.Items.AddRange(new object[] {
             ""});
-            this.cm1.Location = new System.Drawing.Point(49, 28);
+            this.cm1.Location = new System.Drawing.Point(49, 35);
             this.cm1.Name = "cm1";
             this.cm1.Size = new System.Drawing.Size(81, 21);
             this.cm1.TabIndex = 62;
             // 
             // butt
             // 
-            this.butt.Location = new System.Drawing.Point(30, 237);
+            this.butt.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.butt.Location = new System.Drawing.Point(3, 217);
             this.butt.Name = "butt";
-            this.butt.Size = new System.Drawing.Size(101, 23);
+            this.butt.Size = new System.Drawing.Size(128, 43);
             this.butt.TabIndex = 63;
             this.butt.Text = "Отфильтровать";
             this.butt.UseVisualStyleBackColor = true;
@@ -159,7 +162,7 @@ namespace FoxManPr
             "чт",
             "пт",
             "сб"});
-            this.cm2.Location = new System.Drawing.Point(50, 58);
+            this.cm2.Location = new System.Drawing.Point(50, 65);
             this.cm2.Name = "cm2";
             this.cm2.Size = new System.Drawing.Size(80, 21);
             this.cm2.TabIndex = 65;
@@ -167,33 +170,37 @@ namespace FoxManPr
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 3);
+            this.label12.Font = new System.Drawing.Font("Minion Pro", 14F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(-3, 3);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 13);
+            this.label12.Size = new System.Drawing.Size(76, 26);
             this.label12.TabIndex = 60;
             this.label12.Text = "Фильтр";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(3, 63);
+            this.label14.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(-2, 65);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(37, 13);
+            this.label14.Size = new System.Drawing.Size(49, 22);
             this.label14.TabIndex = 64;
             this.label14.Text = "День:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(2, 31);
+            this.label13.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(-3, 35);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.Size = new System.Drawing.Size(54, 22);
             this.label13.TabIndex = 61;
             this.label13.Text = "Класс:";
             // 
             // pan2
             // 
             this.pan2.AutoScroll = true;
+            this.pan2.BackColor = System.Drawing.Color.Transparent;
             this.pan2.Controls.Add(this.t39);
             this.pan2.Controls.Add(this.t42);
             this.pan2.Controls.Add(this.t41);
@@ -589,9 +596,10 @@ namespace FoxManPr
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 828);
+            this.button1.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(16, 823);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(233, 23);
+            this.button1.Size = new System.Drawing.Size(233, 34);
             this.button1.TabIndex = 19;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
@@ -620,17 +628,19 @@ namespace FoxManPr
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(16, 803);
+            this.label11.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(16, 798);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
+            this.label11.Size = new System.Drawing.Size(50, 22);
             this.label11.TabIndex = 59;
             this.label11.Text = "Класс";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(223, 478);
+            this.button2.Font = new System.Drawing.Font("Minion Pro", 10F, System.Drawing.FontStyle.Bold);
+            this.button2.Location = new System.Drawing.Point(285, 477);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(264, 23);
+            this.button2.Size = new System.Drawing.Size(281, 25);
             this.button2.TabIndex = 68;
             this.button2.Text = "Или добавтье расписание на один день\r\n";
             this.button2.UseVisualStyleBackColor = true;
@@ -640,9 +650,10 @@ namespace FoxManPr
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(17, 483);
+            this.label1.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(17, 478);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 13);
+            this.label1.Size = new System.Drawing.Size(262, 22);
             this.label1.TabIndex = 67;
             this.label1.Text = "Добавить расписание на всю неделю";
             // 
@@ -650,9 +661,10 @@ namespace FoxManPr
             // 
             this.label47.AutoSize = true;
             this.label47.BackColor = System.Drawing.Color.Transparent;
-            this.label47.Location = new System.Drawing.Point(9, 747);
+            this.label47.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label47.Location = new System.Drawing.Point(3, 742);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(19, 13);
+            this.label47.Size = new System.Drawing.Size(25, 22);
             this.label47.TabIndex = 148;
             this.label47.Text = "сб";
             // 
@@ -660,9 +672,10 @@ namespace FoxManPr
             // 
             this.label39.AutoSize = true;
             this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Location = new System.Drawing.Point(9, 705);
+            this.label39.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label39.Location = new System.Drawing.Point(3, 700);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(18, 13);
+            this.label39.Size = new System.Drawing.Size(26, 22);
             this.label39.TabIndex = 147;
             this.label39.Text = "пт";
             // 
@@ -670,9 +683,10 @@ namespace FoxManPr
             // 
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Location = new System.Drawing.Point(9, 662);
+            this.label31.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label31.Location = new System.Drawing.Point(3, 657);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(17, 13);
+            this.label31.Size = new System.Drawing.Size(26, 22);
             this.label31.TabIndex = 146;
             this.label31.Text = "чт";
             // 
@@ -680,9 +694,10 @@ namespace FoxManPr
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Location = new System.Drawing.Point(10, 621);
+            this.label23.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label23.Location = new System.Drawing.Point(4, 616);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(19, 13);
+            this.label23.Size = new System.Drawing.Size(26, 22);
             this.label23.TabIndex = 145;
             this.label23.Text = "ср";
             // 
@@ -690,9 +705,10 @@ namespace FoxManPr
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Location = new System.Drawing.Point(10, 580);
+            this.label15.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(4, 575);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(18, 13);
+            this.label15.Size = new System.Drawing.Size(25, 22);
             this.label15.TabIndex = 144;
             this.label15.Text = "вт";
             // 
@@ -700,9 +716,10 @@ namespace FoxManPr
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(9, 535);
+            this.label10.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(3, 530);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 13);
+            this.label10.Size = new System.Drawing.Size(28, 22);
             this.label10.TabIndex = 143;
             this.label10.Text = "пн";
             // 
@@ -710,9 +727,10 @@ namespace FoxManPr
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(1111, 509);
+            this.label8.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(1111, 500);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 13);
+            this.label8.Size = new System.Drawing.Size(79, 22);
             this.label8.TabIndex = 155;
             this.label8.Text = "7 предмет";
             // 
@@ -720,9 +738,10 @@ namespace FoxManPr
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(941, 509);
+            this.label7.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(941, 500);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 13);
+            this.label7.Size = new System.Drawing.Size(79, 22);
             this.label7.TabIndex = 154;
             this.label7.Text = "6 предмет";
             // 
@@ -730,9 +749,10 @@ namespace FoxManPr
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(765, 509);
+            this.label6.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(765, 500);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.Size = new System.Drawing.Size(79, 22);
             this.label6.TabIndex = 153;
             this.label6.Text = "5 предмет";
             // 
@@ -740,9 +760,10 @@ namespace FoxManPr
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(592, 509);
+            this.label5.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(592, 500);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.Size = new System.Drawing.Size(79, 22);
             this.label5.TabIndex = 152;
             this.label5.Text = "4 предмет";
             // 
@@ -750,9 +771,10 @@ namespace FoxManPr
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(421, 509);
+            this.label4.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(421, 500);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.Size = new System.Drawing.Size(79, 22);
             this.label4.TabIndex = 151;
             this.label4.Text = "3 предмет";
             // 
@@ -760,9 +782,10 @@ namespace FoxManPr
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(246, 509);
+            this.label3.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(246, 500);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(79, 22);
             this.label3.TabIndex = 150;
             this.label3.Text = "2 предмет";
             // 
@@ -770,9 +793,10 @@ namespace FoxManPr
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(74, 509);
+            this.label2.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(74, 500);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(79, 22);
             this.label2.TabIndex = 149;
             this.label2.Text = "1 предмет";
             // 
@@ -780,9 +804,10 @@ namespace FoxManPr
             // 
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Location = new System.Drawing.Point(1122, 30);
+            this.label16.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label16.Location = new System.Drawing.Point(1120, 22);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(38, 13);
+            this.label16.Size = new System.Drawing.Size(50, 22);
             this.label16.TabIndex = 160;
             this.label16.Text = "Класс";
             // 
@@ -790,9 +815,10 @@ namespace FoxManPr
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Location = new System.Drawing.Point(1072, 30);
+            this.label22.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label22.Location = new System.Drawing.Point(1070, 22);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(34, 13);
+            this.label22.Size = new System.Drawing.Size(45, 22);
             this.label22.TabIndex = 161;
             this.label22.Text = "День";
             // 
@@ -800,9 +826,10 @@ namespace FoxManPr
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Location = new System.Drawing.Point(922, 30);
+            this.label21.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label21.Location = new System.Drawing.Point(920, 22);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(59, 13);
+            this.label21.Size = new System.Drawing.Size(79, 22);
             this.label21.TabIndex = 162;
             this.label21.Text = "7 предмет";
             // 
@@ -810,9 +837,10 @@ namespace FoxManPr
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Location = new System.Drawing.Point(772, 30);
+            this.label20.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label20.Location = new System.Drawing.Point(770, 22);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(59, 13);
+            this.label20.Size = new System.Drawing.Size(79, 22);
             this.label20.TabIndex = 163;
             this.label20.Text = "6 предмет";
             // 
@@ -820,9 +848,10 @@ namespace FoxManPr
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Location = new System.Drawing.Point(622, 30);
+            this.label19.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label19.Location = new System.Drawing.Point(620, 22);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 13);
+            this.label19.Size = new System.Drawing.Size(79, 22);
             this.label19.TabIndex = 164;
             this.label19.Text = "5 предмет";
             // 
@@ -830,9 +859,10 @@ namespace FoxManPr
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Location = new System.Drawing.Point(472, 30);
+            this.label18.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(470, 22);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(59, 13);
+            this.label18.Size = new System.Drawing.Size(79, 22);
             this.label18.TabIndex = 165;
             this.label18.Text = "4 предмет";
             // 
@@ -840,9 +870,10 @@ namespace FoxManPr
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Location = new System.Drawing.Point(322, 30);
+            this.label17.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label17.Location = new System.Drawing.Point(320, 22);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(59, 13);
+            this.label17.Size = new System.Drawing.Size(79, 22);
             this.label17.TabIndex = 157;
             this.label17.Text = "3 предмет";
             // 
@@ -850,9 +881,10 @@ namespace FoxManPr
             // 
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Location = new System.Drawing.Point(172, 30);
+            this.label24.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label24.Location = new System.Drawing.Point(170, 22);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(59, 13);
+            this.label24.Size = new System.Drawing.Size(79, 22);
             this.label24.TabIndex = 158;
             this.label24.Text = "2 предмет";
             // 
@@ -860,9 +892,10 @@ namespace FoxManPr
             // 
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Location = new System.Drawing.Point(22, 30);
+            this.label25.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label25.Location = new System.Drawing.Point(20, 22);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(59, 13);
+            this.label25.Size = new System.Drawing.Size(79, 22);
             this.label25.TabIndex = 159;
             this.label25.Text = "1 предмет";
             // 
@@ -870,9 +903,10 @@ namespace FoxManPr
             // 
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Location = new System.Drawing.Point(13, 9);
+            this.label26.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold);
+            this.label26.Location = new System.Drawing.Point(4, 2);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(182, 13);
+            this.label26.Size = new System.Drawing.Size(240, 22);
             this.label26.TabIndex = 156;
             this.label26.Text = "Удалить расписание на один день";
             // 

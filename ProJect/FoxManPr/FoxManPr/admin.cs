@@ -30,7 +30,7 @@ namespace FoxManPr
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(login.status) >= 3) //баг починить!!!
+            if (Convert.ToInt32(login.status) >= 3)
             {
                 TeachersForm u = new TeachersForm();
                 u.ShowDialog();
