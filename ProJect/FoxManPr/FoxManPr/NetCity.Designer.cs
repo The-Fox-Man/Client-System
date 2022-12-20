@@ -91,10 +91,10 @@
             this.panel.Controls.Add(this.panel3);
             this.panel.Controls.Add(this.panel2);
             this.panel.Controls.Add(this.tbl1);
-            this.panel.Location = new System.Drawing.Point(0, 63);
-            this.panel.Margin = new System.Windows.Forms.Padding(2);
+            this.panel.Location = new System.Drawing.Point(0, 78);
+            this.panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(965, 473);
+            this.panel.Size = new System.Drawing.Size(1287, 582);
             this.panel.TabIndex = 0;
             // 
             // tb6
@@ -103,21 +103,21 @@
             this.tb6.ColumnCount = 4;
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
-            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tb6.Location = new System.Drawing.Point(391, 569);
-            this.tb6.Margin = new System.Windows.Forms.Padding(2);
+            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tb6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tb6.Location = new System.Drawing.Point(521, 700);
+            this.tb6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb6.Name = "tb6";
             this.tb6.RowCount = 7;
-            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tb6.Size = new System.Drawing.Size(310, 228);
+            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tb6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tb6.Size = new System.Drawing.Size(413, 281);
             this.tb6.TabIndex = 22;
             // 
             // tbl5
@@ -126,21 +126,21 @@
             this.tbl5.ColumnCount = 4;
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
-            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tbl5.Location = new System.Drawing.Point(11, 570);
-            this.tbl5.Margin = new System.Windows.Forms.Padding(2);
+            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tbl5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tbl5.Location = new System.Drawing.Point(15, 702);
+            this.tbl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbl5.Name = "tbl5";
             this.tbl5.RowCount = 7;
-            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tbl5.Size = new System.Drawing.Size(310, 228);
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbl5.Size = new System.Drawing.Size(413, 281);
             this.tbl5.TabIndex = 21;
             // 
             // tbl4
@@ -149,21 +149,21 @@
             this.tbl4.ColumnCount = 4;
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
-            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tbl4.Location = new System.Drawing.Point(390, 307);
-            this.tbl4.Margin = new System.Windows.Forms.Padding(2);
+            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tbl4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tbl4.Location = new System.Drawing.Point(520, 378);
+            this.tbl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbl4.Name = "tbl4";
             this.tbl4.RowCount = 7;
-            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tbl4.Size = new System.Drawing.Size(310, 228);
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbl4.Size = new System.Drawing.Size(413, 281);
             this.tbl4.TabIndex = 20;
             // 
             // tbl3
@@ -172,21 +172,21 @@
             this.tbl3.ColumnCount = 4;
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
-            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tbl3.Location = new System.Drawing.Point(11, 307);
-            this.tbl3.Margin = new System.Windows.Forms.Padding(2);
+            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tbl3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tbl3.Location = new System.Drawing.Point(15, 378);
+            this.tbl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbl3.Name = "tbl3";
             this.tbl3.RowCount = 7;
-            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tbl3.Size = new System.Drawing.Size(310, 228);
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbl3.Size = new System.Drawing.Size(413, 281);
             this.tbl3.TabIndex = 19;
             // 
             // tbl2
@@ -195,21 +195,21 @@
             this.tbl2.ColumnCount = 4;
             this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
-            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tbl2.Location = new System.Drawing.Point(390, 45);
-            this.tbl2.Margin = new System.Windows.Forms.Padding(2);
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tbl2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
+            this.tbl2.Location = new System.Drawing.Point(520, 55);
+            this.tbl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbl2.Name = "tbl2";
             this.tbl2.RowCount = 7;
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tbl2.Size = new System.Drawing.Size(310, 228);
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbl2.Size = new System.Drawing.Size(413, 281);
             this.tbl2.TabIndex = 18;
             this.tbl2.Paint += new System.Windows.Forms.PaintEventHandler(this.tbl2_Paint);
             // 
@@ -220,10 +220,10 @@
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Controls.Add(this.date6);
             this.panel7.Controls.Add(this.label3);
-            this.panel7.Location = new System.Drawing.Point(390, 539);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(520, 663);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 29);
+            this.panel7.Size = new System.Drawing.Size(413, 36);
             this.panel7.TabIndex = 17;
             // 
             // date6
@@ -231,8 +231,7 @@
             this.date6.AutoSize = true;
             this.date6.BackColor = System.Drawing.Color.Transparent;
             this.date6.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.date6.Location = new System.Drawing.Point(38, 5);
-            this.date6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date6.Location = new System.Drawing.Point(51, 6);
             this.date6.Name = "date6";
             this.date6.Size = new System.Drawing.Size(72, 18);
             this.date6.TabIndex = 16;
@@ -243,8 +242,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(2, 2);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(3, 2);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 26);
             this.label3.TabIndex = 7;
@@ -257,10 +255,10 @@
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.Controls.Add(this.date5);
             this.panel6.Controls.Add(this.label2);
-            this.panel6.Location = new System.Drawing.Point(11, 537);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Location = new System.Drawing.Point(15, 661);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(310, 29);
+            this.panel6.Size = new System.Drawing.Size(413, 36);
             this.panel6.TabIndex = 16;
             // 
             // date5
@@ -268,8 +266,7 @@
             this.date5.AutoSize = true;
             this.date5.BackColor = System.Drawing.Color.Transparent;
             this.date5.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.date5.Location = new System.Drawing.Point(42, 7);
-            this.date5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date5.Location = new System.Drawing.Point(56, 9);
             this.date5.Name = "date5";
             this.date5.Size = new System.Drawing.Size(72, 18);
             this.date5.TabIndex = 15;
@@ -280,8 +277,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(4, 2);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(5, 2);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 26);
             this.label2.TabIndex = 6;
@@ -295,10 +291,10 @@
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel5.Controls.Add(this.date4);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(390, 275);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(520, 338);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 29);
+            this.panel5.Size = new System.Drawing.Size(413, 36);
             this.panel5.TabIndex = 15;
             // 
             // date4
@@ -307,8 +303,7 @@
             this.date4.BackColor = System.Drawing.Color.Transparent;
             this.date4.Font = new System.Drawing.Font("Calibri", 11.25F);
             this.date4.ForeColor = System.Drawing.Color.Black;
-            this.date4.Location = new System.Drawing.Point(38, 7);
-            this.date4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date4.Location = new System.Drawing.Point(51, 9);
             this.date4.Name = "date4";
             this.date4.Size = new System.Drawing.Size(72, 18);
             this.date4.TabIndex = 14;
@@ -320,8 +315,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(4, 2);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(5, 2);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 26);
             this.label4.TabIndex = 9;
@@ -334,10 +328,10 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.date3);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(11, 275);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(15, 338);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(310, 29);
+            this.panel4.Size = new System.Drawing.Size(413, 36);
             this.panel4.TabIndex = 14;
             // 
             // date3
@@ -346,8 +340,7 @@
             this.date3.BackColor = System.Drawing.Color.Transparent;
             this.date3.Font = new System.Drawing.Font("Calibri", 11.25F);
             this.date3.ForeColor = System.Drawing.Color.Black;
-            this.date3.Location = new System.Drawing.Point(42, 7);
-            this.date3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date3.Location = new System.Drawing.Point(56, 9);
             this.date3.Name = "date3";
             this.date3.Size = new System.Drawing.Size(72, 18);
             this.date3.TabIndex = 13;
@@ -359,8 +352,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(2, 2);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(3, 2);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(33, 26);
             this.label5.TabIndex = 8;
@@ -374,10 +366,10 @@
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.date2);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(389, 11);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(519, 14);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(310, 29);
+            this.panel3.Size = new System.Drawing.Size(413, 36);
             this.panel3.TabIndex = 13;
             // 
             // date2
@@ -386,8 +378,7 @@
             this.date2.BackColor = System.Drawing.Color.Transparent;
             this.date2.Font = new System.Drawing.Font("Calibri", 11.25F);
             this.date2.ForeColor = System.Drawing.Color.Black;
-            this.date2.Location = new System.Drawing.Point(39, 7);
-            this.date2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date2.Location = new System.Drawing.Point(52, 9);
             this.date2.Name = "date2";
             this.date2.Size = new System.Drawing.Size(72, 18);
             this.date2.TabIndex = 12;
@@ -399,8 +390,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(2, 2);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(3, 2);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 26);
             this.label6.TabIndex = 11;
@@ -413,10 +403,10 @@
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.date1);
             this.panel2.Controls.Add(this.day);
-            this.panel2.Location = new System.Drawing.Point(11, 11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(15, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(310, 29);
+            this.panel2.Size = new System.Drawing.Size(413, 36);
             this.panel2.TabIndex = 12;
             // 
             // date1
@@ -425,8 +415,7 @@
             this.date1.BackColor = System.Drawing.Color.Transparent;
             this.date1.Font = new System.Drawing.Font("Calibri", 11.25F);
             this.date1.ForeColor = System.Drawing.Color.Black;
-            this.date1.Location = new System.Drawing.Point(42, 7);
-            this.date1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.date1.Location = new System.Drawing.Point(56, 9);
             this.date1.Name = "date1";
             this.date1.Size = new System.Drawing.Size(72, 18);
             this.date1.TabIndex = 11;
@@ -438,8 +427,7 @@
             this.day.BackColor = System.Drawing.Color.Transparent;
             this.day.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.day.ForeColor = System.Drawing.Color.Black;
-            this.day.Location = new System.Drawing.Point(2, 2);
-            this.day.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.day.Location = new System.Drawing.Point(3, 2);
             this.day.Name = "day";
             this.day.Size = new System.Drawing.Size(40, 26);
             this.day.TabIndex = 10;
@@ -451,21 +439,21 @@
             this.tbl1.ColumnCount = 4;
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.4898F));
             this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.5102F));
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tbl1.Location = new System.Drawing.Point(11, 45);
-            this.tbl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tbl1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
+            this.tbl1.Location = new System.Drawing.Point(15, 55);
+            this.tbl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbl1.Name = "tbl1";
             this.tbl1.RowCount = 7;
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tbl1.Size = new System.Drawing.Size(310, 228);
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tbl1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tbl1.Size = new System.Drawing.Size(413, 281);
             this.tbl1.TabIndex = 0;
             this.tbl1.Paint += new System.Windows.Forms.PaintEventHandler(this.tbl1_Paint);
             // 
@@ -475,8 +463,7 @@
             this.user.BackColor = System.Drawing.Color.Transparent;
             this.user.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.user.ForeColor = System.Drawing.Color.White;
-            this.user.Location = new System.Drawing.Point(3, 0);
-            this.user.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.user.Location = new System.Drawing.Point(4, 0);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(136, 26);
             this.user.TabIndex = 1;
@@ -497,9 +484,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(706, 58);
+            this.panel1.Size = new System.Drawing.Size(941, 71);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -508,9 +495,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::FoxManPr.Properties.Resources.Exit;
-            this.pictureBox1.Location = new System.Drawing.Point(665, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(887, 9);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(47, 43);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -520,9 +508,10 @@
             // 
             this.towards.BackColor = System.Drawing.Color.Transparent;
             this.towards.Image = global::FoxManPr.Properties.Resources.Right;
-            this.towards.Location = new System.Drawing.Point(450, 12);
+            this.towards.Location = new System.Drawing.Point(600, 15);
+            this.towards.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.towards.Name = "towards";
-            this.towards.Size = new System.Drawing.Size(39, 39);
+            this.towards.Size = new System.Drawing.Size(52, 48);
             this.towards.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.towards.TabIndex = 7;
             this.towards.TabStop = false;
@@ -532,9 +521,10 @@
             // 
             this.back.BackColor = System.Drawing.Color.Transparent;
             this.back.Image = global::FoxManPr.Properties.Resources.Left;
-            this.back.Location = new System.Drawing.Point(238, 12);
+            this.back.Location = new System.Drawing.Point(317, 15);
+            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(39, 39);
+            this.back.Size = new System.Drawing.Size(52, 48);
             this.back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.back.TabIndex = 6;
             this.back.TabStop = false;
@@ -546,7 +536,8 @@
             this.number.BackColor = System.Drawing.Color.Transparent;
             this.number.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.number.ForeColor = System.Drawing.Color.White;
-            this.number.Location = new System.Drawing.Point(282, 26);
+            this.number.Location = new System.Drawing.Point(376, 32);
+            this.number.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.number.Name = "number";
             this.number.Size = new System.Drawing.Size(166, 19);
             this.number.TabIndex = 3;
@@ -558,7 +549,8 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(7, 24);
+            this.label1.Location = new System.Drawing.Point(9, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 18);
             this.label1.TabIndex = 2;
@@ -566,13 +558,14 @@
             // 
             // NetCity
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 531);
+            this.ClientSize = new System.Drawing.Size(941, 654);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximumSize = new System.Drawing.Size(957, 693);
             this.Name = "NetCity";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Сетевой город";

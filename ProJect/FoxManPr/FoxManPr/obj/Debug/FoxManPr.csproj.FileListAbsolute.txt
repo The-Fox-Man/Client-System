@@ -197,3 +197,33 @@ d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\Fo
 D:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.CheckTimeSheet.resources
 d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddSubWeek.resources
 d:\ПРОГРАММЫ  C++ и C#\YUP\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.UserCabin.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.exe.config
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.exe
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.pdb
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\bin\Debug\MySql.Data.dll
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddClassesAndSub.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddHomeTask.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddSubWeek.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Admin.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AdminAdd.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.adminSub.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Base.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.CheckTimeSheet.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.login.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.main.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.NetCityTeachrers.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Properties.Resources.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.NetCity.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Reg.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Teachers.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.TeachersForm.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.UserCabin.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.UserMarks.resources
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.GenerateResource.cache
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.CopyComplete
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
+C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Help.resources

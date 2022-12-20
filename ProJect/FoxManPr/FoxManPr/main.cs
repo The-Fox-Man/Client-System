@@ -45,7 +45,7 @@ namespace FoxManPr
         public main()
         {
             InitializeComponent();
-            if (lol)//кнопку, систему рангов, добавление админов и дз
+            if (lol)
             {
                 admin.Enabled = true;
                 admin.Visible = true;
@@ -166,7 +166,15 @@ namespace FoxManPr
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-           
+            if (login.typeForm != "")
+            {
+                Help a = new Help();
+                a.ShowDialog();
+            }
+            else if (login.typeForm == "")
+            {
+                MessageBox.Show("Сначала войдите.", "System");
+            }
         }
 
         private void teachers_Click(object sender, EventArgs e)

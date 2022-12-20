@@ -17,6 +17,7 @@ namespace FoxManPr
     public partial class Reg : Form
     {
         bool boob = false;
+        public static string reg = "";
         public Reg()
         {
             InitializeComponent();
@@ -116,6 +117,13 @@ namespace FoxManPr
             txt2.Visible = false;
             boob = false;
             six.Enabled = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            reg = "reg";
+            Help d = new Help();
+            d.ShowDialog();
         }
     }
 }

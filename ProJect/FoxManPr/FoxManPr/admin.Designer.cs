@@ -38,9 +38,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 13);
+            this.button1.Location = new System.Drawing.Point(17, 16);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(210, 37);
+            this.button1.Size = new System.Drawing.Size(280, 46);
             this.button1.TabIndex = 0;
             this.button1.Text = "Управление расписанием";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(13, 102);
+            this.button2.Location = new System.Drawing.Point(17, 126);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 37);
+            this.button2.Size = new System.Drawing.Size(281, 46);
             this.button2.TabIndex = 1;
             this.button2.Text = "Управление учителями";
             this.button2.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(13, 56);
+            this.button3.Location = new System.Drawing.Point(17, 69);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(210, 40);
+            this.button3.Size = new System.Drawing.Size(280, 49);
             this.button3.TabIndex = 2;
             this.button3.Text = "Добавить предмет или класс";
             this.button3.UseVisualStyleBackColor = true;
@@ -68,9 +71,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(13, 146);
+            this.button4.Location = new System.Drawing.Point(17, 180);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(210, 38);
+            this.button4.Size = new System.Drawing.Size(280, 47);
             this.button4.TabIndex = 3;
             this.button4.Text = "База данных пользователей";
             this.button4.UseVisualStyleBackColor = true;
@@ -78,9 +82,10 @@
             // 
             // secret
             // 
-            this.secret.Location = new System.Drawing.Point(13, 190);
+            this.secret.Location = new System.Drawing.Point(17, 234);
+            this.secret.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.secret.Name = "secret";
-            this.secret.Size = new System.Drawing.Size(210, 36);
+            this.secret.Size = new System.Drawing.Size(280, 44);
             this.secret.TabIndex = 4;
             this.secret.Text = "Добавить администратора";
             this.secret.UseVisualStyleBackColor = true;
@@ -88,15 +93,17 @@
             // 
             // Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 238);
+            this.ClientSize = new System.Drawing.Size(313, 293);
             this.Controls.Add(this.secret);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(329, 332);
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Панель управления";

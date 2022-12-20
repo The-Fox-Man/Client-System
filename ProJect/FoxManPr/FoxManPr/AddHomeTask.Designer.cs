@@ -61,10 +61,11 @@ namespace FoxManPr
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(20, 57);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(27, 70);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 22);
+            this.label7.Size = new System.Drawing.Size(52, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "Дата";
             // 
@@ -72,10 +73,11 @@ namespace FoxManPr
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(140, 57);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(187, 70);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 22);
+            this.label10.Size = new System.Drawing.Size(83, 20);
             this.label10.TabIndex = 7;
             this.label10.Text = "Задание";
             // 
@@ -83,10 +85,11 @@ namespace FoxManPr
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(343, 57);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(457, 70);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 22);
+            this.label11.Size = new System.Drawing.Size(89, 20);
             this.label11.TabIndex = 8;
             this.label11.Text = "Но. пред.";
             // 
@@ -112,17 +115,19 @@ namespace FoxManPr
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panel2.Location = new System.Drawing.Point(647, 60);
+            this.panel2.Location = new System.Drawing.Point(863, 74);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(176, 501);
+            this.panel2.Size = new System.Drawing.Size(235, 617);
             this.panel2.TabIndex = 5;
             // 
             // check
             // 
             this.check.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.check.Location = new System.Drawing.Point(4, 375);
+            this.check.Location = new System.Drawing.Point(5, 462);
+            this.check.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.check.Name = "check";
-            this.check.Size = new System.Drawing.Size(168, 34);
+            this.check.Size = new System.Drawing.Size(224, 42);
             this.check.TabIndex = 24;
             this.check.Text = "Посмотреть расписание";
             this.check.UseVisualStyleBackColor = true;
@@ -132,10 +137,11 @@ namespace FoxManPr
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Minion Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 303);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(8, 373);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(163, 22);
+            this.label8.Size = new System.Drawing.Size(204, 20);
             this.label8.TabIndex = 23;
             this.label8.Text = "Воспользуйтесть этим\r\n";
             // 
@@ -143,17 +149,19 @@ namespace FoxManPr
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(2, 342);
+            this.dateTimePicker1.Location = new System.Drawing.Point(3, 421);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(169, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(224, 23);
             this.dateTimePicker1.TabIndex = 22;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // hmtsk
             // 
-            this.hmtsk.Location = new System.Drawing.Point(5, 64);
+            this.hmtsk.Location = new System.Drawing.Point(7, 79);
+            this.hmtsk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hmtsk.Name = "hmtsk";
-            this.hmtsk.Size = new System.Drawing.Size(157, 23);
+            this.hmtsk.Size = new System.Drawing.Size(208, 23);
             this.hmtsk.TabIndex = 21;
             // 
             // label9
@@ -161,7 +169,8 @@ namespace FoxManPr
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(6, 26);
+            this.label9.Location = new System.Drawing.Point(8, 32);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(45, 15);
             this.label9.TabIndex = 19;
@@ -169,26 +178,29 @@ namespace FoxManPr
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(3, 490);
+            this.button1.Location = new System.Drawing.Point(4, 603);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 1);
+            this.button1.Size = new System.Drawing.Size(227, 1);
             this.button1.TabIndex = 16;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // dat
             // 
-            this.dat.Location = new System.Drawing.Point(4, 110);
+            this.dat.Location = new System.Drawing.Point(5, 135);
+            this.dat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dat.Name = "dat";
-            this.dat.Size = new System.Drawing.Size(158, 23);
+            this.dat.Size = new System.Drawing.Size(209, 23);
             this.dat.TabIndex = 13;
             // 
             // yup
             // 
             this.yup.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.yup.Location = new System.Drawing.Point(2, 235);
+            this.yup.Location = new System.Drawing.Point(3, 289);
+            this.yup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.yup.Name = "yup";
-            this.yup.Size = new System.Drawing.Size(170, 34);
+            this.yup.Size = new System.Drawing.Size(227, 42);
             this.yup.TabIndex = 12;
             this.yup.Text = "Добавить";
             this.yup.UseVisualStyleBackColor = true;
@@ -205,9 +217,10 @@ namespace FoxManPr
             "5",
             "6",
             "7"});
-            this.numb.Location = new System.Drawing.Point(4, 203);
+            this.numb.Location = new System.Drawing.Point(5, 250);
+            this.numb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numb.Name = "numb";
-            this.numb.Size = new System.Drawing.Size(158, 23);
+            this.numb.Size = new System.Drawing.Size(209, 23);
             this.numb.TabIndex = 9;
             // 
             // day
@@ -220,9 +233,10 @@ namespace FoxManPr
             "чт",
             "пт",
             "сб"});
-            this.day.Location = new System.Drawing.Point(4, 156);
+            this.day.Location = new System.Drawing.Point(5, 192);
+            this.day.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.day.Name = "day";
-            this.day.Size = new System.Drawing.Size(158, 23);
+            this.day.Size = new System.Drawing.Size(209, 23);
             this.day.TabIndex = 8;
             // 
             // label6
@@ -230,7 +244,8 @@ namespace FoxManPr
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(6, 140);
+            this.label6.Location = new System.Drawing.Point(8, 172);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 15);
             this.label6.TabIndex = 6;
@@ -241,7 +256,8 @@ namespace FoxManPr
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(6, 186);
+            this.label5.Location = new System.Drawing.Point(8, 229);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 15);
             this.label5.TabIndex = 5;
@@ -252,7 +268,8 @@ namespace FoxManPr
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(6, 94);
+            this.label4.Location = new System.Drawing.Point(8, 116);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 15);
             this.label4.TabIndex = 4;
@@ -263,7 +280,8 @@ namespace FoxManPr
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(4, 48);
+            this.label3.Location = new System.Drawing.Point(5, 59);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 15);
             this.label3.TabIndex = 3;
@@ -274,7 +292,8 @@ namespace FoxManPr
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(48, 26);
+            this.label2.Location = new System.Drawing.Point(64, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 1;
@@ -285,7 +304,8 @@ namespace FoxManPr
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Location = new System.Drawing.Point(4, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 15);
             this.label1.TabIndex = 0;
@@ -295,9 +315,10 @@ namespace FoxManPr
             // 
             this.panel.BackgroundImage = global::FoxManPr.Properties.Resources.Square;
             this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel.Location = new System.Drawing.Point(0, 82);
+            this.panel.Location = new System.Drawing.Point(0, 101);
+            this.panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(641, 479);
+            this.panel.Size = new System.Drawing.Size(855, 590);
             this.panel.TabIndex = 4;
             this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
             // 
@@ -308,8 +329,9 @@ namespace FoxManPr
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.Data);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(823, 54);
+            this.panel1.Size = new System.Drawing.Size(1097, 66);
             this.panel1.TabIndex = 3;
             // 
             // Data
@@ -318,7 +340,8 @@ namespace FoxManPr
             this.Data.BackColor = System.Drawing.Color.Transparent;
             this.Data.Font = new System.Drawing.Font("Calibri", 15.75F);
             this.Data.ForeColor = System.Drawing.Color.White;
-            this.Data.Location = new System.Drawing.Point(4, 6);
+            this.Data.Location = new System.Drawing.Point(5, 7);
+            this.Data.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Data.Name = "Data";
             this.Data.Size = new System.Drawing.Size(255, 26);
             this.Data.TabIndex = 1;
@@ -326,11 +349,11 @@ namespace FoxManPr
             // 
             // AddHomeTask
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FoxManPr.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(823, 561);
+            this.ClientSize = new System.Drawing.Size(1097, 690);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
@@ -339,6 +362,8 @@ namespace FoxManPr
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(1113, 729);
             this.Name = "AddHomeTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Выставить домашнее задание ";
