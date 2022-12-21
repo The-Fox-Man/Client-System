@@ -227,3 +227,10 @@ C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj
 C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
 C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
 C:\Users\user\Desktop\You'll miss me when I'm gone\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Help.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddClassesAndSub.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddHomeTask.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddSubWeek.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AdminAdd.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.CheckTimeSheet.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Help.resources
+d:\ПРОГРАММЫ  C++ и C#\SgoSitGit\.git\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.UserCabin.resources

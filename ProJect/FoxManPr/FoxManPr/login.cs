@@ -16,6 +16,8 @@ namespace FoxManPr
 {
     public partial class login : Form
     {
+        bool pop = false;
+
         public static string name = "";
         public static string surn = "";
         public static string type = ""; 
@@ -100,6 +102,14 @@ namespace FoxManPr
             //}
             
            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (pop == false)
+            { pop = true; pictureBox1.Load("../../Pic/eyeopen.png"); t2.PasswordChar = new char(); }
+            else if(pop)
+            { pop = false; pictureBox1.Load("../../Pic/eyeclosed.png"); t2.PasswordChar = '#'; }
         }
     }
 }

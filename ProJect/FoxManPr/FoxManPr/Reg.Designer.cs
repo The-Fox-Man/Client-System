@@ -55,9 +55,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 16);
+            this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Имя:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -65,68 +66,71 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 43);
+            this.label2.Location = new System.Drawing.Point(9, 35);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 16);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Фамилия:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 135);
+            this.label3.Location = new System.Drawing.Point(7, 110);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 16);
+            this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Эл. Почта:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 102);
+            this.label4.Location = new System.Drawing.Point(9, 83);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 16);
+            this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Пароль:";
             // 
             // one
             // 
-            this.one.Location = new System.Drawing.Point(93, 9);
-            this.one.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.one.Location = new System.Drawing.Point(70, 7);
+            this.one.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.one.Name = "one";
-            this.one.Size = new System.Drawing.Size(203, 22);
+            this.one.Size = new System.Drawing.Size(153, 20);
             this.one.TabIndex = 4;
             // 
             // two
             // 
-            this.two.Location = new System.Drawing.Point(93, 39);
-            this.two.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.two.Location = new System.Drawing.Point(70, 32);
+            this.two.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.two.Name = "two";
-            this.two.Size = new System.Drawing.Size(203, 22);
+            this.two.Size = new System.Drawing.Size(153, 20);
             this.two.TabIndex = 5;
             // 
             // five
             // 
-            this.five.Location = new System.Drawing.Point(95, 132);
-            this.five.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.five.Location = new System.Drawing.Point(71, 107);
+            this.five.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.five.Name = "five";
-            this.five.Size = new System.Drawing.Size(203, 22);
+            this.five.Size = new System.Drawing.Size(153, 20);
             this.five.TabIndex = 6;
             // 
             // four
             // 
-            this.four.Location = new System.Drawing.Point(95, 102);
-            this.four.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.four.Location = new System.Drawing.Point(71, 83);
+            this.four.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.four.Name = "four";
-            this.four.Size = new System.Drawing.Size(203, 22);
+            this.four.Size = new System.Drawing.Size(153, 20);
             this.four.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(123, 396);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(92, 322);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 23);
+            this.button1.Size = new System.Drawing.Size(132, 19);
             this.button1.TabIndex = 8;
             this.button1.Text = "Зарегистрироваться";
             this.button1.UseVisualStyleBackColor = true;
@@ -135,9 +139,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 70);
+            this.label5.Location = new System.Drawing.Point(12, 57);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 16);
+            this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 3;
             this.label5.Text = "Тип:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -145,9 +150,10 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 170);
+            this.label6.Location = new System.Drawing.Point(7, 138);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 16);
+            this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Класс:";
             // 
@@ -157,38 +163,34 @@
             this.threee.Items.AddRange(new object[] {
             "Ученик",
             "Учитель"});
-            this.threee.Location = new System.Drawing.Point(95, 70);
-            this.threee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.threee.Location = new System.Drawing.Point(71, 57);
             this.threee.Name = "threee";
-            this.threee.Size = new System.Drawing.Size(201, 24);
+            this.threee.Size = new System.Drawing.Size(152, 21);
             this.threee.TabIndex = 12;
             // 
             // txt
             // 
-            this.txt.Location = new System.Drawing.Point(123, 252);
-            this.txt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt.Location = new System.Drawing.Point(92, 205);
             this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(173, 22);
+            this.txt.Size = new System.Drawing.Size(131, 20);
             this.txt.TabIndex = 13;
             this.txt.Visible = false;
             // 
             // l
             // 
             this.l.AutoSize = true;
-            this.l.Location = new System.Drawing.Point(12, 256);
-            this.l.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.l.Location = new System.Drawing.Point(9, 208);
             this.l.Name = "l";
-            this.l.Size = new System.Drawing.Size(87, 16);
+            this.l.Size = new System.Drawing.Size(69, 13);
             this.l.TabIndex = 14;
             this.l.Text = "Special code";
             this.l.Visible = false;
             // 
             // bub
             // 
-            this.bub.Location = new System.Drawing.Point(13, 212);
-            this.bub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bub.Location = new System.Drawing.Point(10, 172);
             this.bub.Name = "bub";
-            this.bub.Size = new System.Drawing.Size(100, 28);
+            this.bub.Size = new System.Drawing.Size(75, 23);
             this.bub.TabIndex = 15;
             this.bub.Text = "Я учитель";
             this.bub.UseVisualStyleBackColor = true;
@@ -197,20 +199,18 @@
             // txt2
             // 
             this.txt2.FormattingEnabled = true;
-            this.txt2.Location = new System.Drawing.Point(123, 305);
-            this.txt2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt2.Location = new System.Drawing.Point(92, 248);
             this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(173, 24);
+            this.txt2.Size = new System.Drawing.Size(131, 21);
             this.txt2.TabIndex = 16;
             this.txt2.Visible = false;
             // 
             // a
             // 
             this.a.AutoSize = true;
-            this.a.Location = new System.Drawing.Point(19, 309);
-            this.a.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.a.Location = new System.Drawing.Point(14, 251);
             this.a.Name = "a";
-            this.a.Size = new System.Drawing.Size(65, 16);
+            this.a.Size = new System.Drawing.Size(52, 13);
             this.a.TabIndex = 17;
             this.a.Text = "Предмет";
             this.a.Visible = false;
@@ -218,18 +218,16 @@
             // gg
             // 
             this.gg.AutoSize = true;
-            this.gg.Location = new System.Drawing.Point(17, 370);
-            this.gg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gg.Location = new System.Drawing.Point(13, 301);
             this.gg.Name = "gg";
-            this.gg.Size = new System.Drawing.Size(0, 16);
+            this.gg.Size = new System.Drawing.Size(0, 13);
             this.gg.TabIndex = 18;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(123, 212);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(92, 172);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 28);
+            this.button2.Size = new System.Drawing.Size(131, 23);
             this.button2.TabIndex = 19;
             this.button2.Text = "А нет, верните, ученик";
             this.button2.UseVisualStyleBackColor = true;
@@ -238,18 +236,18 @@
             // six
             // 
             this.six.FormattingEnabled = true;
-            this.six.Location = new System.Drawing.Point(93, 170);
-            this.six.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.six.Location = new System.Drawing.Point(70, 138);
             this.six.Name = "six";
-            this.six.Size = new System.Drawing.Size(204, 24);
+            this.six.Size = new System.Drawing.Size(154, 21);
             this.six.TabIndex = 20;
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(6, 389);
+            this.button3.Location = new System.Drawing.Point(4, 316);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(27, 29);
+            this.button3.Size = new System.Drawing.Size(20, 24);
             this.button3.TabIndex = 21;
             this.button3.Text = "?";
             this.button3.UseVisualStyleBackColor = true;
@@ -257,9 +255,9 @@
             // 
             // Reg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 430);
+            this.ClientSize = new System.Drawing.Size(231, 349);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.six);
             this.Controls.Add(this.button2);
@@ -282,8 +280,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(324, 469);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(247, 388);
+            this.MinimumSize = new System.Drawing.Size(247, 388);
             this.Name = "Reg";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Зарегистрироваться";

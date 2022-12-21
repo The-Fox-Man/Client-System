@@ -69,10 +69,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(0, 905);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 834);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1312, 156);
+            this.panel1.Size = new System.Drawing.Size(984, 127);
             this.panel1.TabIndex = 12;
             // 
             // label2
@@ -80,10 +79,9 @@
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(360, 90);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(270, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(554, 16);
+            this.label2.Size = new System.Drawing.Size(445, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Организация проекта: Инженерка, Засвияжский филиал. Все права защищены 2022.\r\n";
             // 
@@ -103,9 +101,9 @@
             this.menu.Controls.Add(this.spravk);
             this.menu.Dock = System.Windows.Forms.DockStyle.Top;
             this.menu.Location = new System.Drawing.Point(0, 0);
-            this.menu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1312, 154);
+            this.menu.Size = new System.Drawing.Size(984, 125);
             this.menu.TabIndex = 11;
             // 
             // change
@@ -113,10 +111,9 @@
             this.change.BackColor = System.Drawing.Color.Transparent;
             this.change.Image = global::FoxManPr.Properties.Resources.Profile;
             this.change.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.change.Location = new System.Drawing.Point(16, 15);
-            this.change.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.change.Location = new System.Drawing.Point(12, 12);
             this.change.Name = "change";
-            this.change.Size = new System.Drawing.Size(56, 46);
+            this.change.Size = new System.Drawing.Size(42, 37);
             this.change.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.change.TabIndex = 15;
             this.change.TabStop = false;
@@ -128,10 +125,9 @@
             this.exit.Image = global::FoxManPr.Properties.Resources.Exit;
             this.exit.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.exit.InitialImage = null;
-            this.exit.Location = new System.Drawing.Point(1245, 55);
-            this.exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exit.Location = new System.Drawing.Point(934, 45);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(51, 47);
+            this.exit.Size = new System.Drawing.Size(38, 38);
             this.exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.exit.TabIndex = 14;
             this.exit.TabStop = false;
@@ -144,10 +140,9 @@
             this.admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.admin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.admin.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.admin.Location = new System.Drawing.Point(657, 55);
-            this.admin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.admin.Location = new System.Drawing.Point(493, 45);
             this.admin.Name = "admin";
-            this.admin.Size = new System.Drawing.Size(187, 47);
+            this.admin.Size = new System.Drawing.Size(140, 38);
             this.admin.TabIndex = 12;
             this.admin.Text = "Администратор";
             this.admin.UseVisualStyleBackColor = false;
@@ -160,10 +155,10 @@
             this.teachers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.teachers.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.teachers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.teachers.Location = new System.Drawing.Point(961, 55);
-            this.teachers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.teachers.Location = new System.Drawing.Point(721, 45);
+            this.teachers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.teachers.Name = "teachers";
-            this.teachers.Size = new System.Drawing.Size(105, 47);
+            this.teachers.Size = new System.Drawing.Size(79, 38);
             this.teachers.TabIndex = 10;
             this.teachers.Text = "Учителя";
             this.teachers.UseVisualStyleBackColor = false;
@@ -176,10 +171,10 @@
             this.sgo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sgo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.sgo.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.sgo.Location = new System.Drawing.Point(1072, 55);
-            this.sgo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.sgo.Location = new System.Drawing.Point(804, 45);
+            this.sgo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sgo.Name = "sgo";
-            this.sgo.Size = new System.Drawing.Size(153, 47);
+            this.sgo.Size = new System.Drawing.Size(115, 38);
             this.sgo.TabIndex = 7;
             this.sgo.Text = "Сетевой город";
             this.sgo.UseVisualStyleBackColor = false;
@@ -192,10 +187,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button6.Location = new System.Drawing.Point(16, 66);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Location = new System.Drawing.Point(12, 54);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 36);
+            this.button6.Size = new System.Drawing.Size(130, 29);
             this.button6.TabIndex = 9;
             this.button6.Text = "Регистрация";
             this.button6.UseVisualStyleBackColor = false;
@@ -207,9 +202,10 @@
             this.loginlbl.BackColor = System.Drawing.Color.Transparent;
             this.loginlbl.ForeColor = System.Drawing.Color.White;
             this.loginlbl.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.loginlbl.Location = new System.Drawing.Point(79, 39);
+            this.loginlbl.Location = new System.Drawing.Point(59, 32);
+            this.loginlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.loginlbl.Name = "loginlbl";
-            this.loginlbl.Size = new System.Drawing.Size(88, 16);
+            this.loginlbl.Size = new System.Drawing.Size(72, 13);
             this.loginlbl.TabIndex = 7;
             this.loginlbl.Text = "Вы не вошли";
             this.loginlbl.Click += new System.EventHandler(this.label2_Click);
@@ -221,10 +217,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button5.Location = new System.Drawing.Point(16, 107);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(12, 87);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(173, 36);
+            this.button5.Size = new System.Drawing.Size(130, 29);
             this.button5.TabIndex = 8;
             this.button5.Text = "Войти";
             this.button5.UseVisualStyleBackColor = false;
@@ -236,10 +232,10 @@
             this.spravk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.spravk.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.spravk.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.spravk.Location = new System.Drawing.Point(851, 55);
-            this.spravk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.spravk.Location = new System.Drawing.Point(638, 45);
+            this.spravk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.spravk.Name = "spravk";
-            this.spravk.Size = new System.Drawing.Size(103, 47);
+            this.spravk.Size = new System.Drawing.Size(77, 38);
             this.spravk.TabIndex = 8;
             this.spravk.Text = "Справка";
             this.spravk.UseVisualStyleBackColor = false;
@@ -253,10 +249,10 @@
             this.pan.Controls.Add(this.panel2);
             this.pan.Controls.Add(this.label1);
             this.pan.Controls.Add(this.pic);
-            this.pan.Location = new System.Drawing.Point(0, 159);
-            this.pan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pan.Location = new System.Drawing.Point(0, 129);
+            this.pan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pan.Name = "pan";
-            this.pan.Size = new System.Drawing.Size(1308, 862);
+            this.pan.Size = new System.Drawing.Size(981, 700);
             this.pan.TabIndex = 0;
             this.pan.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -272,10 +268,9 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(405, 74);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(304, 60);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(858, 322);
+            this.panel2.Size = new System.Drawing.Size(644, 262);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -283,8 +278,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Georgia", 26.25F, System.Drawing.FontStyle.Italic);
-            this.label11.Location = new System.Drawing.Point(355, 20);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(266, 16);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(109, 41);
             this.label11.TabIndex = 8;
@@ -296,8 +290,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic);
             this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(5, 287);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(4, 233);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(495, 19);
             this.label10.TabIndex = 7;
@@ -309,8 +302,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic);
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(7, 260);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(5, 211);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(482, 19);
             this.label9.TabIndex = 6;
@@ -322,8 +314,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic);
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(7, 233);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(5, 189);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(519, 19);
             this.label8.TabIndex = 5;
@@ -335,8 +326,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic);
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(7, 203);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(5, 165);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(632, 19);
             this.label7.TabIndex = 4;
@@ -348,8 +338,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic);
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(4, 174);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(3, 141);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(521, 19);
             this.label6.TabIndex = 3;
@@ -361,8 +350,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic);
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(4, 144);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(3, 117);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(561, 19);
             this.label5.TabIndex = 2;
@@ -374,8 +362,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic);
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(7, 116);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(5, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(534, 19);
             this.label4.TabIndex = 1;
@@ -386,8 +373,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic);
-            this.label3.Location = new System.Drawing.Point(5, 89);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(4, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(619, 19);
             this.label3.TabIndex = 0;
@@ -400,7 +386,8 @@
             this.label1.Font = new System.Drawing.Font("Calibri Light", 29.25F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(21, 338);
+            this.label1.Location = new System.Drawing.Point(16, 275);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 47);
             this.label1.TabIndex = 2;
@@ -412,26 +399,27 @@
             this.pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pic.Image = global::FoxManPr.Properties.Resources.gymn13;
             this.pic.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pic.Location = new System.Drawing.Point(16, 53);
-            this.pic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pic.Location = new System.Drawing.Point(12, 43);
+            this.pic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(363, 263);
+            this.pic.Size = new System.Drawing.Size(272, 214);
             this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic.TabIndex = 0;
             this.pic.TabStop = false;
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1312, 1061);
+            this.ClientSize = new System.Drawing.Size(984, 961);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.pan);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1328, 1222);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(1000, 1000);
+            this.MinimumSize = new System.Drawing.Size(1000, 1000);
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Гимназия №13 - официфльный сайт";
