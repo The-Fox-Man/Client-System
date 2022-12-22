@@ -55,10 +55,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(9, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(32, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "Имя:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -66,37 +67,40 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(9, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.Size = new System.Drawing.Size(57, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "Фамилия:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(7, 110);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.Size = new System.Drawing.Size(61, 14);
             this.label3.TabIndex = 2;
             this.label3.Text = "Эл. Почта:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(9, 83);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
+            this.label4.Size = new System.Drawing.Size(50, 14);
             this.label4.TabIndex = 3;
             this.label4.Text = "Пароль:";
             // 
             // one
             // 
             this.one.Location = new System.Drawing.Point(70, 7);
-            this.one.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.one.Margin = new System.Windows.Forms.Padding(2);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(153, 20);
             this.one.TabIndex = 4;
@@ -104,15 +108,15 @@
             // two
             // 
             this.two.Location = new System.Drawing.Point(70, 32);
-            this.two.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.two.Margin = new System.Windows.Forms.Padding(2);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(153, 20);
             this.two.TabIndex = 5;
             // 
             // five
             // 
-            this.five.Location = new System.Drawing.Point(71, 107);
-            this.five.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.five.Location = new System.Drawing.Point(71, 109);
+            this.five.Margin = new System.Windows.Forms.Padding(2);
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(153, 20);
             this.five.TabIndex = 6;
@@ -120,17 +124,18 @@
             // four
             // 
             this.four.Location = new System.Drawing.Point(71, 83);
-            this.four.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.four.Margin = new System.Windows.Forms.Padding(2);
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(153, 20);
             this.four.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 322);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(92, 316);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 19);
+            this.button1.Size = new System.Drawing.Size(132, 25);
             this.button1.TabIndex = 8;
             this.button1.Text = "Зарегистрироваться";
             this.button1.UseVisualStyleBackColor = true;
@@ -139,10 +144,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(12, 57);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 13);
+            this.label5.Size = new System.Drawing.Size(27, 14);
             this.label5.TabIndex = 3;
             this.label5.Text = "Тип:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -150,10 +156,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(7, 138);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.Size = new System.Drawing.Size(40, 14);
             this.label6.TabIndex = 10;
             this.label6.Text = "Класс:";
             // 
@@ -179,15 +186,17 @@
             // l
             // 
             this.l.AutoSize = true;
-            this.l.Location = new System.Drawing.Point(9, 208);
+            this.l.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.l.Location = new System.Drawing.Point(16, 209);
             this.l.Name = "l";
-            this.l.Size = new System.Drawing.Size(69, 13);
+            this.l.Size = new System.Drawing.Size(31, 14);
             this.l.TabIndex = 14;
-            this.l.Text = "Special code";
+            this.l.Text = "Код:";
             this.l.Visible = false;
             // 
             // bub
             // 
+            this.bub.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.bub.Location = new System.Drawing.Point(10, 172);
             this.bub.Name = "bub";
             this.bub.Size = new System.Drawing.Size(75, 23);
@@ -208,9 +217,10 @@
             // a
             // 
             this.a.AutoSize = true;
+            this.a.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.a.Location = new System.Drawing.Point(14, 251);
             this.a.Name = "a";
-            this.a.Size = new System.Drawing.Size(52, 13);
+            this.a.Size = new System.Drawing.Size(55, 14);
             this.a.TabIndex = 17;
             this.a.Text = "Предмет";
             this.a.Visible = false;
@@ -225,6 +235,7 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(92, 172);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 23);
@@ -245,7 +256,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(4, 316);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(20, 24);
             this.button3.TabIndex = 21;
@@ -280,7 +291,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(247, 388);
             this.MinimumSize = new System.Drawing.Size(247, 388);
             this.Name = "Reg";

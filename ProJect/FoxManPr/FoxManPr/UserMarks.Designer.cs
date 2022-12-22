@@ -113,10 +113,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.Location = new System.Drawing.Point(6, 301);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(204, 20);
+            this.label8.Size = new System.Drawing.Size(164, 19);
             this.label8.TabIndex = 24;
             this.label8.Text = "Воспользуйтесть этим\r\n";
             // 

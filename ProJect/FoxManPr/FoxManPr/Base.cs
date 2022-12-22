@@ -25,6 +25,7 @@ namespace FoxManPr
             lbl.Location = new Point(x, y);
             lbl.Size = new Size(sX, sY);
             lbl.Text = list[i + b];
+            lbl.BackColor = Color.Transparent;
             lbl.Tag = list[i + c];
             pan.Controls.Add(lbl);
         }
@@ -46,18 +47,17 @@ namespace FoxManPr
             List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
             int y = 50;
             for (int i = 0; i < list.Count; i += 7)
-            {
-              
-                LetsDance(i, y, 10, list, 0, 6, panel1, 100, 50);
-                LetsDance(i, y, 120, list, 1, 6, panel1, 100, 50);
-                LetsDance(i, y, 230, list, 2, 6, panel1, 100, 50);
-                LetsDance(i, y, 340, list, 3, 6, panel1, 100, 50);
-                LetsDance(i, y, 450, list, 4, 6, panel1, 100, 50);
-                LetsDance(i, y, 560, list, 5, 6, panel1, 100, 50);
+            { 
+                LetsDance(i, y, 10, list, 0, 6, panel1, 100, 30);
+                LetsDance(i, y, 120, list, 1, 6, panel1, 100, 30);
+                LetsDance(i, y, 230, list, 2, 6, panel1, 100, 30);
+                LetsDance(i, y, 340, list, 3, 6, panel1, 100, 30);
+                LetsDance(i, y, 450, list, 4, 6, panel1, 100, 30);
+                LetsDance(i, y, 560, list, 5, 6, panel1, 100, 30);
                 AmericanIdiot(delete, y, 680, panel1, 100, 30);
                 
 
-                y += 70;
+                y += 47;
             }
         }
         private void delete(object sender, EventArgs e)

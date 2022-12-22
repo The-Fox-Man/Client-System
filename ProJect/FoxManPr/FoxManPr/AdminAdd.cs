@@ -48,21 +48,24 @@ namespace FoxManPr
             {
                     Label lbl = new Label();
                     lbl.Location = new Point(10, y);
-                    lbl.Size = new Size(145, 65);
+                    lbl.Size = new Size(145, 30);
                     lbl.Text = list[i];
                     lbl.Tag = list[i + 2];
+                    lbl.BackColor = Color.Transparent;
                     pan1.Controls.Add(lbl);
 
                     Label lbl1 = new Label();
                     lbl1.Location = new Point(160, y);
-                    lbl1.Size = new Size(145, 65);
+                    lbl1.Size = new Size(145, 30);
                     lbl1.Text = list[i + 1];
+                    lbl1.BackColor = Color.Transparent;
                     pan1.Controls.Add(lbl1);
 
                     Label lbl2 = new Label();
                     lbl2.Location = new Point(320, y);
-                    lbl2.Size = new Size(145, 65);
+                    lbl2.Size = new Size(145, 30);
                     lbl2.Text = list[i + 3];
+                    lbl2.BackColor = Color.Transparent;
                     pan1.Controls.Add(lbl2);
 
                     Button btn = new Button();
@@ -74,7 +77,7 @@ namespace FoxManPr
                     btn.Click += new EventHandler(delete);
                     pan1.Controls.Add(btn);
 
-                    y += 70;
+                    y += 47;
                 
             }
         }
@@ -99,6 +102,11 @@ namespace FoxManPr
                     return;
                 }
             }
+        }
+
+        private void pan1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

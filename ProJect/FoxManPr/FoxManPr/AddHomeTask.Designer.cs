@@ -132,10 +132,10 @@ namespace FoxManPr
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.Location = new System.Drawing.Point(6, 303);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(204, 20);
+            this.label8.Size = new System.Drawing.Size(164, 19);
             this.label8.TabIndex = 23;
             this.label8.Text = "Воспользуйтесть этим\r\n";
             // 
@@ -153,7 +153,7 @@ namespace FoxManPr
             // 
             this.hmtsk.Location = new System.Drawing.Point(5, 64);
             this.hmtsk.Name = "hmtsk";
-            this.hmtsk.Size = new System.Drawing.Size(157, 23);
+            this.hmtsk.Size = new System.Drawing.Size(165, 23);
             this.hmtsk.TabIndex = 21;
             // 
             // label9
@@ -180,7 +180,7 @@ namespace FoxManPr
             // 
             this.dat.Location = new System.Drawing.Point(4, 110);
             this.dat.Name = "dat";
-            this.dat.Size = new System.Drawing.Size(158, 23);
+            this.dat.Size = new System.Drawing.Size(167, 23);
             this.dat.TabIndex = 13;
             // 
             // yup
@@ -188,7 +188,7 @@ namespace FoxManPr
             this.yup.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.yup.Location = new System.Drawing.Point(2, 235);
             this.yup.Name = "yup";
-            this.yup.Size = new System.Drawing.Size(170, 34);
+            this.yup.Size = new System.Drawing.Size(168, 34);
             this.yup.TabIndex = 12;
             this.yup.Text = "Добавить";
             this.yup.UseVisualStyleBackColor = true;
@@ -207,7 +207,7 @@ namespace FoxManPr
             "7"});
             this.numb.Location = new System.Drawing.Point(4, 203);
             this.numb.Name = "numb";
-            this.numb.Size = new System.Drawing.Size(158, 23);
+            this.numb.Size = new System.Drawing.Size(167, 23);
             this.numb.TabIndex = 9;
             // 
             // day
@@ -222,7 +222,7 @@ namespace FoxManPr
             "сб"});
             this.day.Location = new System.Drawing.Point(4, 156);
             this.day.Name = "day";
-            this.day.Size = new System.Drawing.Size(158, 23);
+            this.day.Size = new System.Drawing.Size(166, 23);
             this.day.TabIndex = 8;
             // 
             // label6

@@ -59,15 +59,17 @@ namespace FoxManPr
             {
                     Label lbl = new Label();
                     lbl.Location = new Point(10, y);
-                    lbl.Size = new Size(145, 65);
+                    lbl.Size = new Size(145, 30);
                     lbl.Text = list[i];
+                    lbl.BackColor = Color.Transparent;
                     lbl.Tag = list[i + 2];
                     pan1.Controls.Add(lbl);
 
                     Label lbl1 = new Label();
                     lbl1.Location = new Point(160, y);
-                    lbl1.Size = new Size(145, 65);
+                    lbl1.Size = new Size(145, 30);
                     lbl1.Text = list[i + 1];
+                    lbl1.BackColor = Color.Transparent;
                     pan1.Controls.Add(lbl1);
 
                     List<string> li = NetCity.MySelect("SELECT name FROM sub WHERE id = '" + list[i+3] + "'");
@@ -75,8 +77,9 @@ namespace FoxManPr
                     {
                         Label lbl2 = new Label();
                         lbl2.Location = new Point(320, y);
-                        lbl2.Size = new Size(145, 65);
+                        lbl2.Size = new Size(145, 30);
                         lbl2.Text = li[o];
+                        lbl2.BackColor = Color.Transparent;
                         pan1.Controls.Add(lbl2);
                     }
                     Button btn = new Button();
@@ -88,7 +91,7 @@ namespace FoxManPr
                     btn.Click += new EventHandler(delete);
                     pan1.Controls.Add(btn);
 
-                    y += 70;        
+                    y += 47;        
             }
             
         }
@@ -108,7 +111,7 @@ namespace FoxManPr
                         MySqlCommand cm = new MySqlCommand("DELETE FROM teachers WHERE idtag = '" + control.Tag + "'", Program.con);
                         DbDataReader rea = cm.ExecuteReader();
                         rea.Close();
-                        MessageBox.Show("Учитель удвлён из списка.", "System");
+                        MessageBox.Show("Учитель удалён из списка.", "System");
                         TeachersForm_Load(sender, e);
                         return;
                     }
@@ -121,6 +124,11 @@ namespace FoxManPr
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pan1_Paint(object sender, PaintEventArgs e)
         {
 
         }

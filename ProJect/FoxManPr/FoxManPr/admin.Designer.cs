@@ -38,6 +38,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(13, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(210, 37);
@@ -48,6 +49,7 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(13, 102);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(211, 37);
@@ -58,6 +60,7 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(13, 56);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(210, 40);
@@ -68,6 +71,7 @@
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Location = new System.Drawing.Point(13, 146);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(210, 38);
@@ -78,6 +82,7 @@
             // 
             // secret
             // 
+            this.secret.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.secret.Location = new System.Drawing.Point(13, 190);
             this.secret.Name = "secret";
             this.secret.Size = new System.Drawing.Size(210, 36);
