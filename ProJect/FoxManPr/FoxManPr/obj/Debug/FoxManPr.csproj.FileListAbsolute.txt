@@ -264,3 +264,12 @@ C:\Users\user\Desktop\I have a dream\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManP
 C:\Users\user\Desktop\I have a dream\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.csproj.CopyComplete
 C:\Users\user\Desktop\I have a dream\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.exe
 C:\Users\user\Desktop\I have a dream\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.pdb
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddClassesAndSub.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddHomeTask.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AddSubWeek.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.AdminAdd.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.CheckTimeSheet.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.Help.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.TeachersForm.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.UserCabin.resources
+d:\ПРОГРАММЫ  C++ и C#\YUP\ProJect\FoxManPr\FoxManPr\obj\Debug\FoxManPr.UserMarks.resources

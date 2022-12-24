@@ -15,7 +15,7 @@ namespace FoxManPr
 {
     public partial class adminSub : Form
     {
-       
+
         public adminSub()
         {
             InitializeComponent();
@@ -31,27 +31,36 @@ namespace FoxManPr
                 t6.Items.Add(list[i]);
                 t7.Items.Add(list[i]);
             }
-                for (int i = 0; i < list2.Count; i += 2)
-                {
-                    t9.Items.Add(list2[i]);
-                    cm1.Items.Add(list2[i]);
-                }
+            for (int i = 0; i < list2.Count; i += 2)
+            {
+                t9.Items.Add(list2[i]);
+                cm1.Items.Add(list2[i]);
             }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string[] parts = cm.Text.Split(new char[] {','});
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas)" 
-                                                + "VALUES('"+ t1.Text + "', '"+ t2.Text + "', " +
-                                                "'"+ t3.Text + "', '"+ t4.Text + "'," +
-                                                " '"+ t5.Text + "', '"+ t6.Text + "', '" 
-                                                + t7.Text + "', '" + t8.Text + "', '" + t9.Text + "')", Program.con);
-            DbDataReader read = cmd.ExecuteReader();
-            read.Close();
-            MessageBox.Show("Расписание на один день добавлен.", "System");
-            adminSub_Load(sender, e);
-            return;
-           
+            // string[] parts = cm.Text.Split(new char[] {','});
+            if (t8.Text != "" && t9.Text != "")
+            {
+                List<string> list = NetCity.MySelect("SELECT day, clas FROM subjects WHERE clas = '" + t9.Text + "'AND day = '" + t8.Text + "'");
+                if (list.Count == 0)
+                {
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas)"
+                                    + "VALUES('" + t1.Text + "', '" + t2.Text + "', " +
+                                    "'" + t3.Text + "', '" + t4.Text + "'," +
+                                    " '" + t5.Text + "', '" + t6.Text + "', '"
+                                    + t7.Text + "', '" + t8.Text + "', '" + t9.Text + "')", Program.con);
+                    DbDataReader read = cmd.ExecuteReader();
+                    read.Close();
+                    MessageBox.Show("Расписание на один день добавлено.", "System");
+                    adminSub_Load(sender, e);
+                    return;
+                }
+                else { MessageBox.Show("У вас уже есть этот день.", "System"); }
+            }
+            else { MessageBox.Show("Зпаолните все поля.", "System"); }
+
         }
 
         private void adminSub_Load(object sender, EventArgs e)

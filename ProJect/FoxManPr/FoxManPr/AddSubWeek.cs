@@ -202,17 +202,25 @@ namespace FoxManPr
 
         private void kek(string b, object sender, EventArgs e, ComboBox t1, ComboBox t2, ComboBox t3, ComboBox t4, ComboBox t5, ComboBox t6, ComboBox t7)
         {
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas)"
-                                                + "VALUES('" + t1.Text + "', '" + t2.Text + "', " +
-                                                "'" + t3.Text + "', '" + t4.Text + "'," +
-                                                " '" + t5.Text + "', '" + t6.Text + "', '"
-                                                + t7.Text + "', '" + b + "', '" + aa.Text + "')", Program.con);
-            DbDataReader read = cmd.ExecuteReader();
-            read.Close();
-            AddSubWeek_Load(sender, e);
-            return;
-
-        }
+            if (aa.Text != "")
+            {
+            List<string> list = NetCity.MySelect("SELECT day, clas FROM subjects WHERE clas = '" + aa.Text + "'AND day = '" + b + "'");
+                if (list.Count == 0)
+                {
+                    MySqlCommand cmd = new MySqlCommand("INSERT INTO subjects(1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas)"
+                                                        + "VALUES('" + t1.Text + "', '" + t2.Text + "', " +
+                                                        "'" + t3.Text + "', '" + t4.Text + "'," +
+                                                        " '" + t5.Text + "', '" + t6.Text + "', '"
+                                                        + t7.Text + "', '" + b + "', '" + aa.Text + "')", Program.con);
+                    DbDataReader read = cmd.ExecuteReader();
+                    read.Close();
+                    AddSubWeek_Load(sender, e);
+                    return;
+                }
+                else { MessageBox.Show("У вас уже существует расписание для класса " + aa.Text + " на " + b + ".", "System"); }
+            }
+          else { MessageBox.Show("Зпаолните все поля.", "System"); }
+        }          
         private void AddSubWeek_Load(object sender, EventArgs e)
         {
             List<string> list = NetCity.MySelect("SELECT 1t, 2d, 3d, 4th, 5th, 6th, 7th, day, clas, id FROM subjects");
