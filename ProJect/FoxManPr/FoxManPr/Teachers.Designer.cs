@@ -42,8 +42,10 @@
             this.pan1.BackgroundImage = global::FoxManPr.Properties.Resources.Line;
             this.pan1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.pan1.Location = new System.Drawing.Point(12, 82);
+            this.pan1.MaximumSize = new System.Drawing.Size(494, 522);
+            this.pan1.MinimumSize = new System.Drawing.Size(494, 522);
             this.pan1.Name = "pan1";
-            this.pan1.Size = new System.Drawing.Size(471, 522);
+            this.pan1.Size = new System.Drawing.Size(494, 522);
             this.pan1.TabIndex = 0;
             this.pan1.Paint += new System.Windows.Forms.PaintEventHandler(this.pan1_Paint);
             // 
@@ -97,7 +99,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FoxManPr.Properties.Resources.teachersbg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(495, 631);
+            this.ClientSize = new System.Drawing.Size(518, 631);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -106,8 +108,6 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(511, 670);
-            this.MinimumSize = new System.Drawing.Size(511, 670);
             this.Name = "Teachers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Учителя";

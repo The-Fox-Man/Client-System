@@ -57,12 +57,14 @@ namespace FoxManPr
             
             for (int i = 0; i < list.Count; i += 4)
             {
+                
                     Label lbl = new Label();
                     lbl.Location = new Point(10, y);
                     lbl.Size = new Size(145, 30);
                     lbl.Text = list[i];
                     lbl.BackColor = Color.Transparent;
                     lbl.Tag = list[i + 2];
+
                     pan1.Controls.Add(lbl);
 
                     Label lbl1 = new Label();

@@ -89,6 +89,7 @@
             // 
             // t1
             // 
+            this.t1.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t1.Location = new System.Drawing.Point(149, 18);
             this.t1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.t1.Name = "t1";
@@ -97,6 +98,7 @@
             // 
             // t2
             // 
+            this.t2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.t2.Location = new System.Drawing.Point(638, 18);
             this.t2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.t2.Name = "t2";
