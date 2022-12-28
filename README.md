@@ -5,3 +5,5 @@ Hope I... I won't die while do this.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 If You need to copy my sql data base and You have Denwer, then go to => WebServers\usr\local\mysql-5.5\data\ and copy [sgosit] - my data base.
 ----------------------------------------------------------------------------------------------------------------------------------------------
+To start programm go to ProJect\FoxManPr\FoxManPr\bin\Debug\FoxManPr.exe and open the .exe file.
+----------------------------------------------------------------------------------------------------------------------------------------------
