@@ -29,7 +29,7 @@ namespace FoxManPr
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && cmn.Text != "")
-            {
+            { 
                 List<string> li = NetCity.MySelect("SELECT id FROM sub WHERE name = '" + cmn.Text + "'");
 
                 // List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
