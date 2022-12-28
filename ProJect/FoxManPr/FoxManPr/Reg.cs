@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using MySql.Data.MySqlClient;
 using System.Data.Common;
-
+using System.Media;
 
 namespace FoxManPr
 {
@@ -121,6 +121,8 @@ namespace FoxManPr
 
         private void button3_Click(object sender, EventArgs e)
         {
+            SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+            s.Play();
             reg = "reg";
             Help d = new Help();
             d.ShowDialog();

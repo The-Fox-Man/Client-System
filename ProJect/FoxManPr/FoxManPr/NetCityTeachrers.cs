@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Media;
 namespace FoxManPr
 {
     public partial class NetCityTeachrers : Form
@@ -32,6 +32,8 @@ namespace FoxManPr
         }
         private void open(object sender, EventArgs e)
         {
+            SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+            s.Play();
             Button btn = (Button)sender;
             UserData = Convert.ToString(btn.Tag);
 
@@ -76,6 +78,8 @@ namespace FoxManPr
         {
             if (cm.Text != "")
             {
+                SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+                s.Play();
                 clasTeach = cm.Text;
                 AddHomeTask g = new AddHomeTask();
                 g.ShowDialog();

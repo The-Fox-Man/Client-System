@@ -56,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(9, 7);
+            this.label1.Location = new System.Drawing.Point(9, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 14);
@@ -79,7 +79,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(7, 110);
+            this.label3.Location = new System.Drawing.Point(9, 112);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 14);
@@ -90,7 +90,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(9, 83);
+            this.label4.Location = new System.Drawing.Point(9, 86);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 14);
@@ -145,7 +145,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(12, 57);
+            this.label5.Location = new System.Drawing.Point(9, 60);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 14);
@@ -157,7 +157,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(7, 138);
+            this.label6.Location = new System.Drawing.Point(9, 141);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 14);
@@ -177,9 +177,9 @@
             // 
             // txt
             // 
-            this.txt.Location = new System.Drawing.Point(92, 205);
+            this.txt.Location = new System.Drawing.Point(70, 205);
             this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(131, 20);
+            this.txt.Size = new System.Drawing.Size(153, 20);
             this.txt.TabIndex = 13;
             this.txt.Visible = false;
             // 
@@ -187,7 +187,7 @@
             // 
             this.l.AutoSize = true;
             this.l.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.l.Location = new System.Drawing.Point(16, 209);
+            this.l.Location = new System.Drawing.Point(14, 208);
             this.l.Name = "l";
             this.l.Size = new System.Drawing.Size(31, 14);
             this.l.TabIndex = 14;
@@ -208,9 +208,9 @@
             // txt2
             // 
             this.txt2.FormattingEnabled = true;
-            this.txt2.Location = new System.Drawing.Point(92, 248);
+            this.txt2.Location = new System.Drawing.Point(70, 248);
             this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(131, 21);
+            this.txt2.Size = new System.Drawing.Size(153, 21);
             this.txt2.TabIndex = 16;
             this.txt2.Visible = false;
             // 

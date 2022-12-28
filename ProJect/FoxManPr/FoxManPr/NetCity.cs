@@ -11,7 +11,7 @@ using System.IO;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Data.Common;
-
+using System.Media;
 namespace FoxManPr
 {
     public partial class NetCity : Form
@@ -308,6 +308,8 @@ namespace FoxManPr
 
         private void towards_Click(object sender, EventArgs e)
         {
+            SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+            s.Play();
             tbl1.Controls.Clear();
             tbl2.Controls.Clear();
             tbl3.Controls.Clear();
@@ -481,6 +483,8 @@ namespace FoxManPr
 
         private void back_Click(object sender, EventArgs e)
         {
+            SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+            s.Play();
             tbl1.Controls.Clear();
             tbl2.Controls.Clear();
             tbl3.Controls.Clear();

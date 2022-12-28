@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Media;
 namespace FoxManPr
 {
     public struct people
@@ -130,6 +131,7 @@ namespace FoxManPr
 
         private void filtr_Click(object sender, EventArgs e)
         {
+
             /*if (pan.Size.Height > 100)
            {
                pan.Size = new Size(pan.Size.Width, filtr.Location.Y + filtr.Size.Height);
@@ -140,21 +142,29 @@ namespace FoxManPr
            }*/
             if (login.typeForm == "Ученик")
             {
+                SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+                s.Play();
                 NetCity wha = new NetCity();
                 wha.ShowDialog();
                 
             }
             else if (login.typeForm == "Учитель")
             {
+                SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+                s.Play();
                 NetCityTeachrers wha = new NetCityTeachrers();
                 wha.ShowDialog();
             }
             else if(login.typeForm == "")
             {
+                SoundPlayer s = new SoundPlayer("../../Sounds/msg.wav");
+                s.Play();
                 MessageBox.Show("Сначала войдите.", "System");
             }
             else if (login.typeForm == "Администратор")
             {
+                SoundPlayer s = new SoundPlayer("../../Sounds/msg.wav");
+                s.Play();
                 MessageBox.Show("ВЫ администратор, вам сюда не нужно.", "System");
             }
         }
@@ -166,20 +176,27 @@ namespace FoxManPr
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+
             if (login.typeForm != "")
             {
+                SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+                s.Play();
                 Help a = new Help();
                 a.ShowDialog();
             }
             else if (login.typeForm == "")
             {
+                SoundPlayer s = new SoundPlayer("../../Sounds/msg.wav");
+                s.Play();
                 MessageBox.Show("Сначала войдите.", "System");
             }
         }
 
         private void teachers_Click(object sender, EventArgs e)
         {
-             Teachers t = new Teachers();
+            SoundPlayer s = new SoundPlayer("../../Sounds/list.wav");
+            s.Play();
+            Teachers t = new Teachers();
              t.ShowDialog();
         }
 
@@ -209,12 +226,16 @@ namespace FoxManPr
 
         private void exit_Click(object sender, EventArgs e)
         {
-            Close();
+            SoundPlayer s = new SoundPlayer("../../Sounds/exit.wav");
+            s.Play();
+            Close(); 
         }
 
         private void change_Click(object sender, EventArgs e)
         {
-            if (login.nameForm == "") { MessageBox.Show("Сначала войдите.", "System"); }
+            if (login.nameForm == "")
+            {
+                SoundPlayer s = new SoundPlayer("../../Sounds/msg.wav"); s.Play(); MessageBox.Show("Сначала войдите.", "System"); }
             else { UserCabin n = new UserCabin(); n.ShowDialog(); }
         }
 
