@@ -28,22 +28,25 @@ namespace FoxManPr
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            List<string> li = NetCity.MySelect("SELECT id FROM sub WHERE name = '"+ cmn.Text +"'");
+            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && cmn.Text != "")
+            {
+                List<string> li = NetCity.MySelect("SELECT id FROM sub WHERE name = '" + cmn.Text + "'");
 
-           // List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
-         //   string[] parts = cm.Text.Split(new char[] { ',' });
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + label5.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + "" + "')", Program.con);
-            DbDataReader read = cmd.ExecuteReader();
-            read.Close();
+                // List<string> list = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users");
+                //   string[] parts = cm.Text.Split(new char[] { ',' });
+                MySqlCommand cmd = new MySqlCommand("INSERT INTO users(name, surn, type, pass, post, clas) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + label5.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + "" + "')", Program.con);
+                DbDataReader read = cmd.ExecuteReader();
+                read.Close();
 
-            List<string> list1 = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE post = '" + textBox4.Text + "' AND pass = '" + textBox3.Text + "'");
-            MySqlCommand cmdn = new MySqlCommand("INSERT INTO teachers(name, surn, idtag, idsub) VALUES('" + textBox1.Text + "', '" + textBox2.Text  + "', '" + list1[6] + "', '" + li[0] +"')", Program.con);
-            DbDataReader rea = cmdn.ExecuteReader();
-            rea.Close();
-            
-            MessageBox.Show("Учитель добавлен в список.", "System");
-            TeachersForm_Load(sender, e);
-            return;
+                List<string> list1 = NetCity.MySelect("SELECT name, surn, type, pass, post, clas, id FROM users WHERE post = '" + textBox4.Text + "' AND pass = '" + textBox3.Text + "'");
+                MySqlCommand cmdn = new MySqlCommand("INSERT INTO teachers(name, surn, idtag, idsub) VALUES('" + textBox1.Text + "', '" + textBox2.Text + "', '" + list1[6] + "', '" + li[0] + "')", Program.con);
+                DbDataReader rea = cmdn.ExecuteReader();
+                rea.Close();
+
+                MessageBox.Show("Учитель добавлен в список.", "System");
+                TeachersForm_Load(sender, e);
+                return;
+            }
         }
 
         private void TeachersForm_Load(object sender, EventArgs e)
